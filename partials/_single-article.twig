@@ -1,6 +1,7 @@
 {% import "quotes.twig" as quotes %}
 
 
+{% set imageSuppress = imageSuppress is defined and imageSuppress == 'true' ? 'true' : 'false'  %}
 
 {% if article.articleId > 0 or (isArticle is defined and isArticle == 'true') %}
     {% set articleImg = '' %}
@@ -154,7 +155,6 @@
 
     {% set swap = swap is defined and swap == 'false' ? '' : 'swap'  %}
     {% set figureClass =  article.featuredMedia['type'] == 'video' ? 'video' : '' %}
-    {% set imageSuppress = imageSuppress is defined and imageSuppress == 'true' ? 'true' : 'false'  %}
 
 
     <div class="{{containerClass}}" data-title="{{ articleTitle | raw }}">

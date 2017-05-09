@@ -19,19 +19,34 @@
 <!-- used to index each article as we loop over throughout the template -->
 {% set articleCount = 0 %}
 
-
-
     <!--placeholder temp -->
-    <section class="screen-carousel">
-        <img class="screen_logo" src="{{networkData.templatePath}}/static/images/central-news-logo-clear.png">
-        <div id="screen-swiper" class="swiper-container">
-            <div class="swiper-wrapper">
-                {% for i in 0..2 %}
-                    {% if articles[i] %}                                                                
-                        {{this.render('partials/_screen-article.twig', {article: articles[i], position: (i+1), containerClass: 'swiper-slide', swap: 'false', network:networkData}) | raw}}
-                    {% endif %}
-                {% endfor %}
+
+<main id="main" class="full-height" role="main">
+    <div class="main-screen full-height">
+
+        <div class="row full-height">
+            <div class="col-sm-12 full-height">
+                <div class="row half-height top-row">
+                    {{this.render('partials/_single-article.twig', {article: articles[0], position: (i+1), containerClass: 'screen-card card-lg col-sm-6', network:networkData}) | raw}}
+                    
+                    {% for i in 1..2 %}
+                        {% if articles[i] %}                                                                
+                            {{this.render('partials/_single-article.twig', {article: articles[i], position: (i+1), containerClass: 'screen-card card-sm col-sm-3', network:networkData}) | raw}}
+                        {% endif %}
+                    {% endfor %}
+                </div>
+
+                <div class="row half-height bottom-row">
+                   
+                    {% for i in 0..3 %}
+                        {% if articles[i] %}                                                                
+                            {{this.render('partials/_single-article.twig', {article: articles[i], position: (i+1), containerClass: 'screen-card card-sm col-sm-3', network:networkData}) | raw}}
+                        {% endif %}
+                    {% endfor %}
+                </div>
+
+
             </div>
         </div>
-
-    </section>
+    </div>
+</main>
