@@ -21,7 +21,6 @@
 @import "placeholder";
 @import "social-links";
 @import "advertisements";
-@import "subscribe";
 @import "sidebar-news";
 @import "most-popular";
 @import "site-footer";
@@ -33,32 +32,23 @@
 //Home page
 @import "slider";
 @import "top-stories";
+@import "page-index";
+
 
 
 // ROOMS
-@import "room-view";
-@import "room-living";
-@import "room-board";
-@import "room-sports";
-@import "room-corporate";
-@import "room-engine";
 
 //Article page
 @import "article";
 @import "page-aside";
-@import "related-articles";
 
 //Section page
 @import "section-page";
-@import "room-page";
-@import "view-room-page";
 
 //Static Pages
 @import "page-about";
 @import "page-contact";
 @import "page-supporters";
-
-
 
 
 //Cards

@@ -71,8 +71,29 @@
 
         .footer-brand{
             display: inline-block;
-            width: 202px;
-            padding-top: 61px;
+            width: 64px;
+            height: 71px;
+            margin:40px 15px 60px 0;
+
+            // > img {
+            //     width:100%;
+            //     height:100%;
+            // }
+        }
+
+        .contact {
+            color:white;
+            h2 {
+                font-size: rem(14);
+            }
+            p {
+                font-size: rem(14);
+                font-weight:normal;
+            }
+            a {
+                font-size: rem(14);
+                color:white;
+            }
         }
 
         .symbol{
@@ -116,30 +137,48 @@
 
         }
 
-
+        .footer-middle {
+            margin-bottom:30px;
+        }
 
 
         .social-links{
-            margin-top:25px;
-            margin-bottom: 57px;
 
             > ul{
                 > li{
+                    display:inline-block;
+                    width:15px;
+                    height:40px;
+                    margin-right:10px;
                     > a{
-                        color: #e22f22;
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        &.facebook {
+                            background: url('../images/facebook.svg') no-repeat center;
+                        }
+                        &.twitter {
+                            background: url('../images/twitter.svg') no-repeat center;
+                        }
+                        &.vimeo {
+                            background: url('../images/vimeo.svg') no-repeat center;
+                        }
                     }
                 }
             }
         }
 
-        .footer-menu {
+        .publish {
+            height:80px;
+            position:relative;
+            vertical-align:bottom;
 
             span {
                 position:absolute;
-                top:0;
+                bottom:0;
                 right: 15px;
                 color:white;
-                font-size: em(15);
+                font-size: em(11);
                 font-family: $font-family-sans-serif;
 
                 a {
@@ -151,41 +190,7 @@
             }
         }
 
-    }
-
-    .footer-btm{
-        padding-top: 12px;
-        padding-bottom: 14px;
-
-        .footer-menu {
-            position:relative;
-            display: block;
-            padding-bottom: 0;
-            margin-left: -15px;
-            margin-right: -15px;
-
-            @media screen and (max-width: $sm-break){
-                border-bottom: solid 1px #d4d4d4;
-            }
-            > ul{
-                padding-left: 15px;
-                > li {
-                    margin-right: 30px;
-                    @media screen and (max-width: $sm-break){
-                        margin-right: 20px;
-                    }
-                }
-            }
-
-        }
-
-        .footer-menu > ul > li > a {
-            color: #000;
-            font-size: em(14);
-            text-transform: none;
-        }
-
-        .rooms-link{
+        .section-links{
             float: right;        
             @media screen and (max-width: $sm-break){
                 float: left;
@@ -198,7 +203,7 @@
                 }
                 li{
                     
-                    margin-right: 26px;
+                    margin-right: 50px;
                     &:last-child{
                         margin-right: 0;
                     }
@@ -208,16 +213,49 @@
                     }
 
                     a{
+                        font-size: rem(14);
                         display: block;
-                        
-                        img{
-                            height: 19px;
-                            width: auto;
-                            max-width: 100%;
-                        }
+                        color:white;
                     }
                 }
             }
         }
+
+
     }
+
+    // .footer-btm{
+    //     padding-top: 12px;
+    //     padding-bottom: 14px;
+
+    //     .footer-menu {
+    //         position:relative;
+    //         display: block;
+    //         padding-bottom: 0;
+    //         margin-left: -15px;
+    //         margin-right: -15px;
+
+    //         @media screen and (max-width: $sm-break){
+    //             border-bottom: solid 1px #d4d4d4;
+    //         }
+    //         > ul{
+    //             padding-left: 15px;
+    //             > li {
+    //                 margin-right: 30px;
+    //                 @media screen and (max-width: $sm-break){
+    //                     margin-right: 20px;
+    //                 }
+    //             }
+    //         }
+
+    //     }
+
+    //     .footer-menu > ul > li > a {
+    //         color: #000;
+    //         font-size: em(14);
+    //         text-transform: none;
+    //     }
+
+
+    // }
 }

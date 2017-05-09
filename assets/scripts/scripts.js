@@ -115,7 +115,7 @@ $('document').ready(function() {
         e.preventDefault();
     });
 
-    $(".menuContainer > ul > li.menu-item-search").hover(function (e) {
+    $("ul > li.menu-item-search").hover(function (e) {
         if (window.innerWidth > sbCustomMenuBreakPoint) {
             $(this).children("ul").stop(true, false).slideToggle(225);
             $(this).toggleClass('now-active');

@@ -1,5 +1,5 @@
 .card-lg{
-    margin-bottom: 79.5px;
+    margin-bottom: 45px;
     @media screen and (max-width: $mobile-break){
         margin-bottom: 0;
         background: #000;
@@ -9,7 +9,7 @@
     }
 
     a.card{
-        height:515px;
+        height:375px;
 
         &:after{
             content: '';
@@ -31,104 +31,118 @@
             height: auto;
         }
 
-        > article > figure{
-            position: absolute;
-            left: 0;
-            top: 0;
-            height:100%;
-            width: 100%;
-
-            @media screen and (max-width: $mobile-break){
-                display: none;
-            }
-
-            > img{
-                max-width: 100%;
-            }
-        }
-
-        > article > .content{
-            display:block;
-            padding: 110px 24px 0 24px;
-            margin-bottom: 10px;
-            z-index: 100;
-            position: relative;
-            color: #FFF;
-
-            @media screen and (max-width: $mobile-break){
-                padding: 0;
-            }
-
-            > .category{
-                font-size: em(14);
-                font-weight: bold;
-                color: #fff;
-                display: block;
-                line-height: 1;
-                margin-bottom: 3px;
-
-                @media screen and (max-width: $mobile-break){
-                    color: #8a8b93;
-                    font-family: $font-family-sans-serif;
-                    font-size: em(12);
-                    margin-bottom:15px;
-                    text-transform:uppercase;
-                }
-            }
-
-            > p {
-                height: 150px;
-                @media screen and (max-width: $mobile-break){
-                    display: none;
-                }
-            }
-
-            > h2{
-                font-weight: bold;
-                font-size: em(40);
-                padding-top: 15px;
-                height: 160px;
-
-                @media screen and (max-width: $md-break){
-                    height: 310px;
-                }
-                
-                @media screen and (max-width: $mmd-break){
-                    height: auto;
-                }
-
-                @media screen and (max-width: $mobile-break){
-                    font-size: em(20);
-                    height: 60px;;
-                    padding-top: 0;
-                    border: 0;
-                }
-
-            }
-
-            > .author{
-                @include clearfix;
-                border-top: 1px solid #dadada;
-                padding-top:15px;
+        > article {
+            > figure{
+                position: absolute;
+                left: 0;
+                top: 0;
+                height:100%;
+                width: 100%;
 
                 @media screen and (max-width: $mobile-break){
                     display: none;
                 }
-                p{
-                    color: #FFF;
+
+                > img{
+                    max-width: 100%;
                 }
             }
 
-            > time{
+
+            > .content{
+                padding: 40px 400px 0 24px;
+                margin-bottom: 10px;
+                z-index: 100;
+                position: relative;
                 color: #FFF;
-                padding-top: 15px;
-                margin-top: 10px;
 
                 @media screen and (max-width: $mobile-break){
-                    float: none;
-                    border: 0;
                     padding: 0;
-                    font-size: em(10);
+                }
+
+                > .category{
+                    order:1;
+                    font-size: rem(11);
+                    font-weight: bold;
+                    color: #39bcdc;
+                    display: block;
+                    line-height: 1;
+                    margin-bottom:4px;
+
+                    @media screen and (max-width: $mobile-break){
+                        color: #8a8b93;
+                        font-family: $font-family-sans-serif;
+                        font-size: em(12);
+                        margin-bottom:15px;
+                        text-transform:uppercase;
+                    }
+                }
+
+                > p {
+                    order:4;
+                    font-style: italic;
+                    font-family:$font-family-serif;
+                    font-size: rem(16);
+                    height: 60px;
+                    @media screen and (max-width: $mobile-break){
+                        display: none;
+                    }
+                }
+
+                > h2{
+                    order:3;
+                    font-weight: bold;
+                    font-size: rem(24);
+                    height: 70px;
+                    line-height:1.3em;
+
+                    @media screen and (max-width: $md-break){
+                        height: 310px;
+                    }
+                    
+                    @media screen and (max-width: $mmd-break){
+                        height: auto;
+                    }
+
+                    @media screen and (max-width: $mobile-break){
+                        font-size: em(20);
+                        height: 60px;;
+                        padding-top: 0;
+                        border: 0;
+                    }
+
+                }
+
+                > .author{
+                    order:5;
+                    
+
+                    @include clearfix;
+                    padding-top:15px;
+
+                    @media screen and (max-width: $mobile-break){
+                        display: none;
+                    }
+                    p{
+                        font-size: rem(12);
+                        color: #979797;
+                    }
+                }
+
+                > time{
+                    padding:0;
+                    font-style:italic;
+                    font-family:$font-family-serif;
+                    order:2;
+                    color: #979797;
+                    margin-bottom:47px;
+
+                    @media screen and (max-width: $mobile-break){
+                        float: none;
+                        border: 0;
+                        padding: 0;
+                        font-size: em(10);
+                    }
                 }
             }
         }

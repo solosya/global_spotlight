@@ -1,25 +1,27 @@
 .channel {
     position: relative;
 
-	h1.aboutpage {
-		color:$black;
-        font-size:  ((48px / $font-size-base) + $font-unit);
-        font-weight:600;
-        margin-bottom:30px;
-        @media screen and (max-width: $sm-break) {
-            margin-bottom:0;
-        }
-	}
+    .section {
 
-    h1.sectionpage {
-        color:#1d4a72;
-        font-family:$font-family-sans-serif;
-        font-size: em(40);
-        font-weight:600;
-        text-transform:uppercase;
-        margin-bottom:25px;
-        @media screen and (max-width: $sm-break) {
-            margin-bottom:0;
+        padding-top:50px;
+
+        > h2 {
+            letter-spacing: 1px;
+            font-style:italic;
+            font-size: rem(16);
+            font-family: $font-family-serif;
+            padding:0;
+            padding-bottom:5px;
+            margin:0;
+
+        }
+        > h1 {
+            letter-spacing: 1px;
+            font-size: rem(26);
+            font-family: $font-family-sans-serif;
+            padding:0;
+            margin:0;
+            margin-bottom:26px;
         }
     }
 

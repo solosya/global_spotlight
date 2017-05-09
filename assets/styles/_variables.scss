@@ -1,14 +1,15 @@
 //Fonts
-$font-family-sans-serif:    "Source Sans Pro", Helvetica, Arial, sans-serif;
-$base-font-family: 			"tinos", Helvetica, Arial, sans-serif !default;
+$font-family-sans-serif:    "adelle-sans", Helvetica, Arial, sans-serif;
+$font-family-serif:    		"PT Serif", "Times New Roman", Times, serif;
+$base-font-family: 			"adelle-sans", Helvetica, Arial, sans-serif !default;
 
 
-$font-size-base:            15px;
+$font-size-base:            10px;
 $font-unit:                 0em; 
 $browser-context:           $font-size-base;
 $baseFontSize:				15px; /* ($baseFontSize * 1) + 0px; */
 
-$headings-font-family:      "tinos", Helvetica, Arial, sans-serif;
+$headings-font-family:      "adelle-sans", Helvetica, Arial, sans-serif;
 $headings-font-weight:      700;
 $font-size-h1:              ((60px / $font-size-base) + $font-unit); //48px
 $font-size-h2:              ((34px / $font-size-base) + $font-unit); //26px
@@ -92,7 +93,7 @@ $logo-width:                52px;
 $logo-height:               52px;
 $sticked-logo-height:       34px;
 $sticked-logo-width:        34px;
-$navbar-height:             100px;
+$navbar-height:             70px;
 
 $center:					center;
 

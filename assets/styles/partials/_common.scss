@@ -1,7 +1,16 @@
 body{
+    background: rgba(151, 151, 151, 0.15);
+    
     @media screen and (max-width: $sm-break){
         overflow-x: hidden;
     }
+}
+
+.search-icon{
+    background-image: url(../images/search.svg);
+    background-size:contain;
+    width: 20px;
+    height: 20px;
 }
 
 
@@ -59,12 +68,6 @@ h4.modal-title {
     }
 }
 
-.sidebar{
-    padding-left: 75px;
-    @media screen and (max-width: $md-break){
-        padding-left: 15px;
-    }
-}
 
 .card-group{
     @media screen and (max-width: $sm-break){
@@ -104,85 +107,7 @@ figcaption{
     }
 }
 
-.btn-post{
-    background-color: #3b5b97;
-    color: #FFF;
-    text-transform: uppercase;
-    font-size: em(19);
-    font-weight: bold;
-    border: 0;
-    padding: 2px 12px;
-    margin-right:2px;
 
-    &:hover,
-    &:focus{    
-        color: #FFF;
-    }
-}
-
-.btn-tweet{
-    background-color: #21b0ee;
-    color: #FFF;
-    text-transform: uppercase;
-    font-size: em(22);
-    font-weight: bold;
-    border: 0;
-    padding: 0 10px;
-    margin-right:2px;
-
-    &:hover,
-    &:focus{    
-        color: #FFF;
-    }
-}
-
-.btn-linkedin{
-    background-color: #21b0ee;
-    color: #FFF;
-    text-transform: uppercase;
-    font-size: em(19);
-    font-weight: bold;
-    border: 0;
-    padding: 2px 12px;
-    margin-right:2px;
-
-    &:hover,
-    &:focus{    
-        color: #FFF;
-    }
-}
-
-
-
-.btn-share{
-    background-color: #f57a61;
-    color: #FFF;
-    text-transform: uppercase;
-    font-size: em(19);
-    font-weight: bold;
-    border: 0;
-    padding: 2px 12px;
-
-    &:hover,
-    &:focus{    
-        color: #FFF;
-    }
-}
-
-.btn-email{
-    background-color: #717171;
-    color: #FFF;
-    text-transform: uppercase;
-    font-size: em(16);
-    font-weight: bold;
-    border: 0;
-    padding: 5px 17px 4px 10px;
-
-    &:hover,
-    &:focus{    
-        color: #FFF;
-    }
-}
 
 p.lead{
     font-size: em(20);
@@ -201,78 +126,7 @@ span.leadsentence{
 }
 
 
-p.foundingpartners {
-    margin:0 0 25px 0;
-    text-align:center;
-    color: #8a8b93;
-}
 
-.sponsor-logos {
-    // margin-top:80px;
-    width:100%;
-    text-align: center;
-    
-    @media screen and (max-width: $sm-break){
-        margin-bottom: 35px;
-    }
-
-
-    
-    ul {
-        margin: 0 auto;
-
-
-        li {
-            display:inline-block;
-            margin-right:10px;
-
-            &.sponsor-holden {
-                width:200px;
-                height:50px;
-                background: url('../images/Holden_BASIC_TAG_LAND_POS_MONO.svg');
-                background-repeat: no-repeat;
-                background-size: contain;
-            }
-
-            &.sponsor-chorus {
-                width:200px;
-                height:50px;
-                background: url('../images/Chorus_Logo_SB_W.svg');
-                background-repeat: no-repeat;
-                background-size: contain;
-            }
-
-            &.sponsor-vic-uni-wellington {
-                width:200px;
-                height:50px;
-                background: url('../images/VIC-LOGO-Landscape-AW-BW-v3-[Converted].svg');
-                background-repeat: no-repeat;
-                background-size: contain;
-            }
-
-            &.sponsor-uni-auckland {
-                width:200px;
-                height:45px;
-                background: url('../images/UOA_H_Black.svg?ver=2');
-                background-repeat: no-repeat;
-                background-size: contain;
-                margin-left:40px;
-                position: relative;
-                top: -5px;
-            }
-
-
-            &.sponsor-stuff {
-                width:130px;
-                height:100px;
-                background: url('../images/stuff.svg?ver=1');
-                background-position: 0 20px;
-                background-repeat: no-repeat;
-            }
-        }
-    }
-
-}
 
 
 .flex_col {

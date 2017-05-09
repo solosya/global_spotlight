@@ -1,104 +1,10 @@
 .card-sm{
-    
-    margin-bottom: 79.5px;
+    position:relative;
+    margin-bottom: 60px;
     @media screen and (max-width: $mobile-break){
         margin-bottom: -2px;
     }
 
-
-
-
-
-    &.advert {
-        a.card {
-            margin-left: -35px;
-            background: #0082c9;
-
-            @media screen and (max-width: $md-break){
-                margin-left:0;
-            }
-
-            @media screen and (max-width: $mobile-break){
-                margin-left:-15px;
-            }
-
-
-
-            > article {
-                @media screen and (max-width: $mmd-break){
-                    display:-webkit-box;
-                    display:-webkit-flex;
-                    display:-moz-flex;
-                    display:-ms-flexbox;
-                    display:flex;
-                    height: 235px;
-                    flex-wrap: nowrap;
-                    -webkit-flex-wrap: nowrap;
-                    -ms-flex-wrap: nowrap;
-                }
-                @media screen and (max-width: $mobile-break){
-                    display:block;
-                    height:auto !important;
-                }
-
-
-                figure {
-                    height:312px;
-
-                    @media screen and (max-width: $mmd-break){
-                        width: 330px;
-                        height:235px;
-                        -ms-flex: 0 0 330px;
-                        -webkit-flex: 0 0 330px;
-                        flex: 0 0 330px;
-                        overflow: hidden;
-                        float: left;
-                    }
-
-                    @media screen and (max-width: $mobile-break){
-                        height:116px;
-                        width:116px;
-                    }    
-
-                    > img {
-                        object-fit:fill;
-                    }       
-                }
-            
-               > .content {
-                    border:none;
-                    display:block;
-                    @media screen and (max-width: $mobile-break){
-                        padding-left:126px;
-                        height:116px;
-                    }
-
-                    > h2 {
-                        margin-top:12px;
-                        font-size: em(24);
-                        font-weight:600;
-                        color:white;
-                        padding-bottom:15px;
-                        border-bottom: solid 1px #dadada;
-                    
-                        @media screen and (max-width: $mmd-break){
-                            font-size: em(28);
-                            margin: 50px 0 0 0;
-                            min-height:110px;
-                            padding-bottom:30px;
-                        }
-                        @media screen and (max-width: $mobile-break){
-                            margin: 12px 0 0 0;
-                            min-height:auto;
-                            padding-bottom:15px;
-                        }
-
-                    }
-                }  
-            }
-
-        }
-    }
 
     &.inverted{
         @media screen and (min-width: $mobile-break){
@@ -134,7 +40,7 @@
     }
 
 
-    a.card{
+    a.card {
 
         height:100%;
 
@@ -157,166 +63,212 @@
             }    
         }
 
-        > article > figure{
-            width: auto;
-            overflow: hidden;
-            height:208px;
-            @media screen and (max-width: $mobile-break){
-                width: 116px;
-                height:116px;
-                flex: 0 0 116px;
-            }
+        > article {
 
-            &.video {
+            height: 368px;
 
-                &:after{
-                    top: 35%;
-                    left: 40%;
-                    
-                    @media screen and (max-width: $md-break){
-                        top: 40%;
-                        left: 35%;
-                        width: 40px;
-                        height: 40px;
+            > figure{
+                width: auto;
+                overflow: hidden;
+                height:242px;
+                @media screen and (max-width: $mobile-break){
+                    width: 116px;
+                    height:116px;
+                    flex: 0 0 116px;
+                }
+
+                &.video {
+
+                    &:after{
+                        top: 35%;
+                        left: 40%;
+                        
+                        @media screen and (max-width: $md-break){
+                            top: 40%;
+                            left: 35%;
+                            width: 40px;
+                            height: 40px;
+                        }
+
+                        @media screen and (max-width: $mobile-break){
+                            width: 30px;
+                            height: 30px;
+                        }
                     }
 
+                }
+
+
+                > img{
+                    max-width: 100%;
+                }
+            }
+
+
+
+
+            > .content{
+                position:relative;
+                height: 126px;
+                background:white;
+                padding: 13px 15px 8px 15px;
+                @media screen and (max-width: $mobile-break){
+                    height: auto;
+                    padding: 10px;
+                    border: 0;
+                    width:100%;
+                }
+
+                > .category{
+                    font-size: rem(11);
+                    font-weight: bold;
+                    color: #39bcdc;
+                    display: block;
+                    line-height: 1;
+                    margin-bottom: 8px;
                     @media screen and (max-width: $mobile-break){
-                        width: 30px;
-                        height: 30px;
+                        font-size: em(12);
+                        text-transform:uppercase;
+                        margin-bottom: 5px;
                     }
                 }
 
-            }
+                > h2{
+                    font-weight: normal;
+                    font-size: em(17);
 
-
-
-
-
-
-            > img{
-                max-width: 100%;
-            }
-        }
-
-        > article > .content{
-            position:relative;
-            height: 125px;
-            border: 1px solid #dadada;
-            padding: 13px 15px 8px 15px;
-            @media screen and (max-width: $mobile-break){
-                height: auto;
-                padding: 10px;
-                border: 0;
-                width:100%;
-            }
-
-            > .category{
-                font-size: em(14);
-                font-weight: bold;
-                color: #8a8b93;
-                display: block;
-                line-height: 1;
-                margin-bottom: 8px;
-                @media screen and (max-width: $mobile-break){
-                    font-size: em(12);
-                    text-transform:uppercase;
-                    margin-bottom: 5px;
                 }
-            }
 
-            > h2{
-                font-weight: normal;
-                font-size: em(20);
-
-                @media screen and (max-width: $mobile-break){
-                    font-size: em(20);
+                > .author{
+                    display: none;
                 }
-            }
 
-            > .author{
-                display: none;
-            }
-
-            > time{
-                // position:absolute;
-                // bottom:5px;
-                // float: none;
-                padding: 0;
-                border: 0;
-                color: #f73d30;
-                @media screen and (max-width: $mobile-break){
-                    color: #6c6c6c;
-                    font-size: em(10);
+                > time{
+                    font-size: rem(12);
+                    padding: 0;
+                    border: 0;
+                    color: #333333;
+                    @media screen and (max-width: $mobile-break){
+                        color: #6c6c6c;
+                        font-size: em(10);
+                    }
                 }
-            }
 
-            p {
-                display: none;
+                p {
+                    display: none;
+                }
             }
         }
 
 
-        &.without__image {
-
+        &.article.without__image {
             .content {
-                height:333px;
+                padding-top:87px;
+                height:100%;
 
-                @media screen and (max-width: $mobile-break){
-                    height: 116px;
-                    padding-top: 20px;                
+
+                h2 {
+                    font-size: rem(17);
+                    font-weight:bold;
+                    max-height:52px;
+                }
+
+                > p {
+                    font-size: rem(13);
+                    display: block;
+                    max-height:100px;
+                    margin-bottom: 18px;
                 }
 
 
-
-                > h2 {
-                    margin-top: 60px;
-                    font-size: 30px;
-                    height: 190px;
-                    
-                    @media screen and (max-width: $mobile-break){
-                        height:auto;
-                        margin-top:0;
-                        font-size: em(20);
-                    }
-                }
             }
         }
-
 
 
         &.social {
+
+            article {
+                background: rgba(0,0,0,0.8);
+            }
+
             .content {
+                
                 .category {
                     margin-top:0;
                     margin-bottom:8px;
                 }
         
+
+                time {
+                    color: #979797;
+                }
+
                 > p {
                     display:block;
-
-                    // display: block;
-                    // // background:rgba(20, 200, 100, .1);
                     font-size: em(18);
-                    // height:117px;
-                    // padding-bottom:27px;
                 }
-                .author {
+            }
 
+
+
+            &.facebook,
+            &.twitter,
+            &.instagram {
+                .content {
+                    padding-top:87px;
+                }
+            }
+
+
+            &.facebook.withImage__content,
+            &.twitter.withImage__content,
+            &.instagram.withImage__content {
+                figure {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height:100%;
+
+                    &:after{
+                        content: '';
+                        opacity: 0.4;
+                        background-color: #000;
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+                }
+                .content {
+                    padding-top:87px;
+                    background:transparent;
+                    z-index:1;
+
+                    > p {
+                        min-height:85px;
+                        color:white;
+                    }
                 }
             }
 
             &.without__image {
 
                 .content {
-                    height:100%;
+                    height:333px;
+                    background:transparent;
+                    
+                    @media screen and (max-width: $mobile-break){
+                        height: 116px;
+                        padding-top: 20px;                
+                    }
 
-                    > p {
-                        height: 225px;
-                        margin-bottom:52px;
+            
 
-                        @media screen and (max-width: $mobile-break){
-                            height:auto;
-                        }
+                    > p {   
+                        min-height:85px;
+                        color:white;
                     }
                 }
             }
@@ -325,13 +277,55 @@
 
         }
 
-        &.youtube{
-            .content{
-                p{
+        &.facebook{
+            .category {
+                &:before {
+                    content: '';
+                    width:25px;
+                    height:25px;
+                    background-image: url('../images/facebook.svg');
+                    background-position:center;
+                    background-size: contain;
+                    background-repeat:no-repeat;
+                    display:block;
+                    margin-bottom:18px;
                 }
             }
         }
-      
+        &.vimeo{
+        }
+
+        &.twitter{
+            .category {
+                &:before {
+                    content: '';
+                    width:25px;
+                    height:25px;
+                    background-image: url('../images/twitter.svg');
+                    background-position:center;
+                    background-size: contain;
+                    background-repeat:no-repeat;
+                    display:block;
+                    margin-bottom:18px;
+                }
+            }
+        }
+
+        &.instagram{
+            .category {
+                &:before {
+                    content: '';
+                    width:25px;
+                    height:25px;
+                    background-image: url('../images/instagram.svg');
+                    background-position:center;
+                    background-size: contain;
+                    background-repeat:no-repeat;
+                    display:block;
+                    margin-bottom:18px;
+                }
+            }
+        }      
 
         
     }

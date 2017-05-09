@@ -12,11 +12,11 @@
         width: 100%;
 
         > h3 {
-            font-size: em(26);
+            font-size: rem(17);
             font-family: $font-family-sans-serif;
-            font-weight: normal;
+            font-weight: bold;
             float: left;
-            margin-top: 5px;
+            margin-top:0;
             margin-bottom:0;
 
             > span {
@@ -29,86 +29,80 @@
         }
     }
 
-    a.card{
-        margin-bottom: 27px;
-        height: 100px;
+    a.card {
+        margin-bottom: 5px;
+        height: 110px;
         width: 100%;
     
+
         > article {
-            display: -webkit-box;
-            display: -webkit-flex;
-            display: -ms-flexbox;
-            display: flex;
-            flex-wrap: nowrap;
-            -webkit-flex-wrap: nowrap;
-        }
 
-        > article > figure{
-            width: 100px;
-            height:100px;
-            flex: 0 0 100px;
-            overflow: hidden;
-            float: left;
-            margin-right: 19px;
-
-            > img{
-                max-width: 100%;
-            }
-        }
-
-        > article .content{
-            border-bottom: 1px solid #dadada;
-            padding-bottom: 3px;
-            width: 100%;
-            -ms-flex: 1 0;
-            -webkit-flex: 1 0;
-            flex: 1 0;
-            
-            > .category{
-                font-size: em(11);
-                font-weight: bold;
-                color: #8a8b93;
-                display: block;
-                line-height: 1;
-                margin-bottom: 7px;
-                @media screen and (max-width: $sm-break){
-                    font-size: em(22);
-                    // margin-bottom:5px;
-                    text-transform:none;
-                }
-            }
-
-            > h2{
-                font-weight: 700;
-                font-size: em(22);
-                height: 55px;
+            > figure {
+                width: 100px;
+                height:110px;
                 overflow: hidden;
-                text-overflow: ellipsis;
-                @media screen and (max-width: $sm-break){
-                    font-size: em(20);
+                float: left;
+
+                > img{
+                    max-width: 100%;
+                }
+            }
+
+            > .content{
+                height:110px;
+                padding: 7px 0 0 10px;
+                width: auto;
+                background:white;
+                
+                > .category{
+                    font-size: em(11);
+                    font-weight: bold;
+                    color: #39bcdc;
+                    display: block;
+                    line-height: 1;
+                    margin-bottom: 5px;
+                    
+                    @media screen and (max-width: $sm-break){
+                        font-size: em(22);
+                        // margin-bottom:5px;
+                        text-transform:none;
+                    }
                 }
 
+                > h2{
+                    font-weight:normal;
+                    font-size: em(16);
+                    height: 64px;
+                    line-height:1.3em;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    
+                    @media screen and (max-width: $sm-break){
+                        font-size: em(20);
+                    }
 
 
-            }
 
-            > p {
-                display:none;
-            }
+                }
 
-            > .author{
-                display: none;
-            }
+                > p {
+                    display:none;
+                }
 
-            > time{
-                padding: 0;
-                border: 0;
-                line-height: 1;
-                float: left;
-                color: #f73d30;
-                font-size: em(12);
+                > .author{
+                    display: none;
+                }
+
+                > time{
+                    font-style:italic;
+                    font-size: rem(12);
+                    font-family:$font-family-serif;
+                    color: #333333;
+                    padding: 0;
+                    border: 0;
+                    line-height: 1;
+                }
             }
         }
-
     }
 }
