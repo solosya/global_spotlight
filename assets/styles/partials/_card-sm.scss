@@ -1,57 +1,23 @@
 .card-sm{
     position:relative;
-    margin-bottom: 60px;
+    margin-bottom: 45px;
     @media screen and (max-width: $mobile-break){
-        margin-bottom: -2px;
+        margin-bottom: 8px;
     }
 
 
-    &.inverted{
-        @media screen and (min-width: $mobile-break){
-            > a.card{
-                background-color: #000;
-                color: #FFF;
-                
-                > article { 
-                    -ms-flex-direction: row-reverse;
-                    -webkit-flex-direction: row-reverse;
-                    flex-direction: row-reverse;
-                }
-
-                > article > .content{
-                    border: 1px solid #000;
-                        > .category{
-                            color: #27aae1;
-                        }
-
-                        > .author p{
-                            color: #FFF;
-                        }
-
-                        > time{
-                            color: #FFF;
-                        }
-                        > p {
-                            display: none;
-                        }
-                }
-            }
-        }
-    }
 
 
     a.card {
 
-        height:100%;
+        height:366px;
 
         @media screen and (max-width: $mobile-break){
             height: 115px;
-            margin-left: -15px;
-            margin-right: -15px;
-            border-top: 2px solid #dadada;
-            border-bottom: 2px solid #dadada;
             height: auto;
-            
+            margin-left:-15px;
+            margin-right:-15px;
+
             > article {
                 display: -webkit-box;
                 display: -webkit-flex;
@@ -64,8 +30,8 @@
         }
 
         > article {
-
-            height: 368px;
+            position:relative;
+            // height: 368px;
 
             > figure{
                 width: auto;
@@ -136,6 +102,9 @@
                 > h2{
                     font-weight: normal;
                     font-size: em(17);
+                    @media screen and (max-width: $mobile-break){
+                        height:50px;
+                    }
 
                 }
 
@@ -165,7 +134,9 @@
             .content {
                 padding-top:87px;
                 height:100%;
-
+                @media screen and (max-width: $mobile-break){
+                    padding-top:10px;
+                }
 
                 h2 {
                     font-size: rem(17);
@@ -186,6 +157,12 @@
 
 
         &.social {
+            
+            height:366px;
+
+            @media screen and (max-width: $mobile-break){
+                height:115px;
+            }
 
             article {
                 background: rgba(0,0,0,0.8);
@@ -225,10 +202,15 @@
             &.instagram.withImage__content {
                 figure {
                     position: absolute;
-                    left: 0;
+                    left: 15px;
+                    right: 15px;
                     top: 0;
-                    width: 100%;
                     height:100%;
+
+                    @media screen and (max-width: $mobile-break){
+                        width: 100%;
+                    }
+
 
                     &:after{
                         content: '';
@@ -245,10 +227,19 @@
                     padding-top:87px;
                     background:transparent;
                     z-index:1;
+                    @media screen and (max-width: $mobile-break){
+                        padding-top:10px;
+                    }
 
                     > p {
                         min-height:85px;
                         color:white;
+
+                        @media screen and (max-width: $mobile-break){
+                            min-height:60px;
+                        }
+
+
                     }
                 }
             }
@@ -289,6 +280,10 @@
                     background-repeat:no-repeat;
                     display:block;
                     margin-bottom:18px;
+                    @media screen and (max-width: $mobile-break){
+                        display:none;
+                    }
+
                 }
             }
         }
@@ -307,6 +302,10 @@
                     background-repeat:no-repeat;
                     display:block;
                     margin-bottom:18px;
+                    @media screen and (max-width: $mobile-break){
+                        display:none;
+                    }
+
                 }
             }
         }
@@ -323,6 +322,10 @@
                     background-repeat:no-repeat;
                     display:block;
                     margin-bottom:18px;
+                    @media screen and (max-width: $mobile-break){
+                        display:none;
+                    }
+
                 }
             }
         }      

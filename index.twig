@@ -55,7 +55,7 @@
 
                     <div class="col-sm-12 col-md-8 main-content">
                         <div class="card-group">
-                            {% for i in 0..10 %}
+                            {% for i in 0..4 %}
                                 {% if articles[articleCount] %}                                                                
                                     {{this.render('partials/_single-article.twig', {article: articles[articleCount], position: (articleCount+1), containerClass: 'card-rec'}) | raw}}
                                     {% set articleCount = articleCount + 1 %}
@@ -67,27 +67,31 @@
 
                     <div class="col-sm-12 col-md-4 sidebar">
 
-                        <section class="sidebar-news">
-                            <div class="sidebar-top">
-                                <header>
-                                    <h3>Popular Stories</h3>
-                                </header>
-                                {% if popularArticles|length > 0 %}
-                                    {% for i in 0..3 %}
-                                        {% if popularArticles[i] %}
-                                            {{this.render('partials/_single-article.twig', {article: popularArticles[i], containerClass: '', swap: 'false', isArticle: 'true'}) | raw}}
-                                        {% endif %}
-                                    {% endfor %}
-                                {% endif %}
+                        <section class="row sidebar-news">
+                            <div class="col-sm-12 sidebar-top">
+                                <div class="row">
+                                    <header>
+                                        <h3>Popular Stories</h3>
+                                    </header>
+                                    {% if popularArticles|length > 0 %}
+                                        {% for i in 0..4 %}
+                                            {% if popularArticles[i] %}
+                                                {{this.render('partials/_single-article.twig', {article: popularArticles[i], containerClass: 'col-sm-12 s100x110', swap: 'false', isArticle: 'true'}) | raw}}
+                                            {% endif %}
+                                        {% endfor %}
+                                    {% endif %}
+                                </div>
                             </div>
 
-                            <div class="sidebar-bottom">
-                                {% for i in 0..10 %}
-                                    {% if articles[i] %}                                                                
-                                        {{this.render('partials/_single-article.twig', {article: articles[i], position: (articleCount+1), containerClass: 'card-sm'}) | raw}}
-                                        {% set articleCount = articleCount + 1 %}
-                                    {% endif %}
-                                {% endfor %}
+                            <div class="col-sm-12 sidebar-bottom">
+                                <div class="row">
+                                    {% for i in 0..1 %}
+                                        {% if articles[articleCount] %}                                                                
+                                            {{this.render('partials/_single-article.twig', {article: articles[articleCount], position: (articleCount+1), containerClass: 'col-sm-12 card-sm'}) | raw}}
+                                            {% set articleCount = articleCount + 1 %}
+                                        {% endif %}
+                                    {% endfor %}
+                                </div>
                             </div>
                         </section><!-- .sidebar-news -->
                     </div><!-- .col-sm-4-->

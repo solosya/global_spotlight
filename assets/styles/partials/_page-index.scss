@@ -9,6 +9,17 @@
         right: -31px;;
         width:1px;
         background:#979797;
+
+
+        @media (max-width: 1200px) {
+            right:0;
+        }
+
+        @media (max-width: $mmd-break-down) {
+            display:none;
+        }
+
+
     }
 }
 
@@ -25,6 +36,11 @@
         height:1px;
         width:97%;
         background:#979797;
+        @media (max-width: $mmd-break-down) {
+            display:none;
+        }
+
+
     }
 }
 
@@ -57,8 +73,12 @@
 
     > .sidebar-news {
         > .sidebar-top {
-            padding-bottom: 45px;
+            padding-bottom: 41px;
             border-bottom: 1px solid #979797;
+            @media screen and (max-width: $md-break){
+                border: none;
+            }
+
         }
         > .sidebar-bottom {
             margin-top: 45px;

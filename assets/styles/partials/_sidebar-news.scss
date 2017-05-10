@@ -1,8 +1,9 @@
 .sidebar-news{
     // margin-bottom: 100px;
     
-    @media screen and (max-width: $mmd-break) {
-        display:none;
+    @media screen and (max-width: $mobile-break) {
+        margin-left:-15px;
+        margin-right:-15px;
     }
 
 
@@ -15,12 +16,14 @@
             font-size: rem(17);
             font-family: $font-family-sans-serif;
             font-weight: bold;
-            float: left;
             margin-top:0;
             margin-bottom:0;
+            margin-left:15px;
 
-            > span {
-                font-weight: 700;
+
+            @media screen and (max-width: $mobile-break) {
+                font-size: rem(17);
+                margin-left:18px;
             }
         }
 
@@ -32,8 +35,13 @@
     a.card {
         margin-bottom: 5px;
         height: 110px;
-        width: 100%;
-    
+        // width: 100%;
+       
+        @media screen and (max-width: $mobile-break){
+            height: 115px;
+            margin-bottom: 8px;
+        }
+
 
         > article {
 
@@ -42,6 +50,11 @@
                 height:110px;
                 overflow: hidden;
                 float: left;
+
+                @media screen and (max-width: $mobile-break) {
+                    width: 115px;
+                    height:115px;
+                }
 
                 > img{
                     max-width: 100%;
@@ -54,6 +67,12 @@
                 width: auto;
                 background:white;
                 
+                @media screen and (max-width: $mobile-break){
+                    height:115px;
+                }
+
+
+
                 > .category{
                     font-size: em(11);
                     font-weight: bold;
@@ -62,10 +81,8 @@
                     line-height: 1;
                     margin-bottom: 5px;
                     
-                    @media screen and (max-width: $sm-break){
-                        font-size: em(22);
-                        // margin-bottom:5px;
-                        text-transform:none;
+                    @media screen and (max-width: $mobile-break){
+                        font-size: em(10);
                     }
                 }
 
@@ -77,8 +94,8 @@
                     overflow: hidden;
                     text-overflow: ellipsis;
                     
-                    @media screen and (max-width: $sm-break){
-                        font-size: em(20);
+                    @media screen and (max-width: $mobile-break){
+                        height: 60px;
                     }
 
 

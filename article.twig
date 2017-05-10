@@ -104,7 +104,7 @@
                 <div class="related-articles">
                     <div class="row">
             
-                        <div class="col-md-12">
+                        <div class="col-sm-12">
 
                             <section>
                                 <h2>You might also like</h2>
@@ -112,7 +112,7 @@
                                 {% set popularArticles = _Article.getPopularArticles({ limit: 4, excludeArticleId : article.id }) %}
                                 {% if popularArticles|length > 0 %}
                                     {% for article in popularArticles %}
-                                        {{this.render('partials/_single-article.twig', {article: article, containerClass: 'col-sm-3 card-sm s110x110'}) | raw}}
+                                        {{this.render('partials/_single-article.twig', {article: article, containerClass: 'col-sm-6 col-md-3 card-sm s110x110'}) | raw}}
                                     {% endfor %}
                                 {% else %}
                                     <p class="nodata text-center">No data found.</p>
