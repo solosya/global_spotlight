@@ -27,20 +27,20 @@
         <div class="row full-height">
             <div class="col-sm-12 full-height">
                 <div class="row half-height top-row">
-                    {{this.render('partials/_single-article.twig', {article: articles[0], position: (i+1), containerClass: 'screen-card card-lg col-sm-6', network:networkData}) | raw}}
+                    {{this.render('partials/_single-article.twig', {article: articles[0], position: (i+1), containerClass: 'screen-card card-lg-screen col-sm-6', network:networkData}) | raw}}
                     
                     {% for i in 1..2 %}
                         {% if articles[i] %}                                                                
-                            {{this.render('partials/_single-article.twig', {article: articles[i], position: (i+1), containerClass: 'screen-card card-sm col-sm-3', network:networkData}) | raw}}
+                            {{this.render('partials/_single-article.twig', {article: articles[i], position: (i+1), containerClass: 'screen-card card-sm-screen col-sm-3', network:networkData}) | raw}}
                         {% endif %}
                     {% endfor %}
                 </div>
 
                 <div class="row half-height bottom-row">
                    
-                    {% for i in 0..3 %}
+                    {% for i in 3..6 %}
                         {% if articles[i] %}                                                                
-                            {{this.render('partials/_single-article.twig', {article: articles[i], position: (i+1), containerClass: 'screen-card card-sm col-sm-3', network:networkData}) | raw}}
+                            {{this.render('partials/_single-article.twig', {article: articles[i], position: (i+1), containerClass: 'screen-card card-sm-screen col-sm-3', network:networkData}) | raw}}
                         {% endif %}
                     {% endfor %}
                 </div>
