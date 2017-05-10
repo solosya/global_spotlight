@@ -2,45 +2,31 @@ body.article {
 	background:#fff;
 }
 .article {
-	// .site-header {
-	// 	margin-bottom: 55px;
-	// 	.site-branding-bottom {
-	// 		padding-bottom: 10px;
 
-	// 		.sb-custom-menu {
-	// 			// border-top: 0;
-	// 			.menu-mobile {
-	// 				margin-top: 20px;
-	// 				@media screen and (max-width: $sm-break) {
-	// 					margin-top: 5px;
-	// 				}
-	// 			}
-	// 			> ul > li {
-	// 				&:first-child > a {
-	// 					padding-left: 0;
-	// 				}
 
-	// 				> a {
-	// 					padding: 25px 13px;
-	// 					@media screen and (max-width: $header-break) {
-	// 						padding-left: 0;
-	// 						padding-top: 10px;
-	// 						padding-bottom: 10px;
-	// 					}
-	// 				}
-	// 			}
-	// 		}
+	div.social-share {
+		width:172px;
+		height:38px;
+		position:absolute;
+		bottom:0;
+		right:0;
+		background:#39bddc;
 
-	// 		.navbar-brand {
-	// 			width: 105px;
-	// 			.mobile-logo {
-	// 			}
-	// 		}
-	// 	}
-	// }
+		@media screen and (max-width: $mobile-break) {
+			left:0;
+			width:100%;
+		}
 
-	article.article-main {
-		figure.featured {
+		> .links {
+			height:100%;
+			margin:0 auto;
+			width:175px;
+		}
+	}
+
+
+	article.page-hero {
+		.featured {
 			position:relative;
 			height:572px;
 
@@ -50,18 +36,11 @@ body.article {
 
 			}
 
-			> div.social-share {
-				width:172px;
-				height:38px;
-				position:absolute;
-				bottom:0;
-				right:0;
-				background:#39bddc;
-			}
 
 		}
+	}
 
-
+	article.article-main {
 
 		.page-content {
 			margin-top:57px;
@@ -71,6 +50,12 @@ body.article {
 			font-family: $font-family-serif;
 			line-height: 1.88;
 			letter-spacing:0.9px;
+
+			@media screen and (max-width: $sm-break) {
+				margin-top:35px;
+			}
+
+
 
 			.content-block-top {
 				margin-bottom: 17px;
@@ -257,6 +242,7 @@ body.article {
 		    	width:auto;
 		    	padding-left:0;
 		        margin-bottom: 25px;
+
 		    }
 
 		    section > h2 {
@@ -266,6 +252,10 @@ body.article {
 		        font-weight: bold;
 		        font-style: normal;
 		        margin-bottom:48px;
+		        
+		        @media screen and (max-width: $mobile-break) {
+		        	margin-bottom: 15px;
+		        }
 
 		    }
 
@@ -277,6 +267,11 @@ body.article {
 
 	        	    > figure {
 	        	   		height: 209px;
+						
+						@media screen and (max-width: $mobile-break) {
+							height: 115px;
+						}
+
 
 			            > img {
 			                max-width: 100%;
@@ -287,6 +282,11 @@ body.article {
 			        > .content {
 						border: 1px solid #979797;
 						border-top:none;
+						@media screen and (max-width: $mobile-break) {
+							border-top:1px solid #6b6d71;
+							border-left:none;
+							border-right:none;
+						}
 
 						time { 
 							font-family: $font-family-serif;

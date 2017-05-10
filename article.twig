@@ -32,33 +32,62 @@
 
 
     <main id="main" class="site-main" role="main">
-        <article class="article-main">
-           {% if articleImg %} 
-                <figure class="featured">
-                    <img src="{{articleImg}}" class="img-responsive">
-                    {% if article.media[0].type == 'video' %} 
-                        {% set mediaUrl = "" %}
-                        {% if article.media[0].media.isSystemVideo == 'TRUE'%}
-                            {% set mediaUrl = _Media.getMediaVideoUrl(article.media[0].media, 0, 0,{resource_type: 'video', format: 'mp4'})  %}
-                        {% endif %}
-                        <a href="javascript:void(0)" itemprop="video" class="video-overlay video-player" data-source="{{article.media[0].source}}" data-video-id="{{article.media[0].videoId}}" data-url="{{mediaUrl}}" data-poster="{{article.media[0].path}}" data-caption="{{article.title | raw}}">
-                           <div class="icons">
-                               <div class="icon"><i class="fa fa-play"></i></div>
-                           </div>
-                        </a>
-                    {% endif %}
 
-                    <div class="social-share">
-                        <a href="https://www.facebook.com/sharer/sharer.php?u={{article.url}}&title={{ article.title|url_encode }}" class="btn btn-post"></a
-                        ><a href="https://twitter.com/share?text={{ article.title|url_encode }}&url={{article.url}}" class="btn btn-tweet"></a
-                        ><a href="https://www.linkedin.com/shareArticle?mini=true&url={{article.url}}&title={{article.title|url_encode}}" class="btn btn-instagram"></a
-                        ><a href="mailto:?subject=Check%20out%20this%20article&body={{article.url}}" class="btn btn-vimeo"></a>
-                    </div>
-                 {# <figcaption>
-                        <p>{{article.media[0].caption}}</p>
-                    </figcaption> #}
-                </figure>
-            {% endif %}
+        {% if articleImg %} 
+
+         <section class="page-hero">
+             <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject" 
+                  class="featured image-wrapper news__slide slide lazyload-remove" 
+                  data-thumbnail="{{articleImg}}" 
+                  data-original="{{articleImg}}" 
+                  style="background-image: url({{articleImg}})">
+
+                 <meta itemprop="url" content="{{articleImg}}">
+                 <meta itemprop="height" content="{{article.media[0].height}}">
+                 <meta itemprop="width" content="{{article.media[0].width}}">
+                 {% if article.media[0].type == 'video' %} 
+                     {% set mediaUrl = "" %}
+                     {% if article.media[0].isSystemVideo == 'TRUE'%}
+                         {% set mediaUrl = _article.media[0].getMediaVideoUrl(media, 0, 0,{resource_type: 'video', format: 'mp4'})  %}
+                     {% endif %}
+                     <a  href="javascript:void(0)"  
+                         itemprop="video" 
+                         class="video-overlay video-player" 
+                         data-source="{{article.media[0].source}}" 
+                         data-video-id="{{article.media[0].videoId}}" 
+                         data-url="{{mediaUrl}}" 
+                         data-poster="{{articleImg}}" 
+                         data-caption="{{article.title | raw}}">
+
+                        <div class="icons">
+                         
+                            <div class="icon"><i class="fa fa-play"></i></div>
+                        </div>
+                     </a>
+               
+                 {% endif %}
+
+                 <div class="social-share">
+                     <div class="links">
+                         <a href="https://www.facebook.com/sharer/sharer.php?u={{article.url}}&title={{ article.title|url_encode }}" class="btn btn-post"></a
+                         ><a href="https://twitter.com/share?text={{ article.title|url_encode }}&url={{article.url}}" class="btn btn-tweet"></a
+                         ><a href="https://www.linkedin.com/shareArticle?mini=true&url={{article.url}}&title={{article.title|url_encode}}" class="btn btn-instagram"></a
+                         ><a href="mailto:?subject=Check%20out%20this%20article&body={{article.url}}" class="btn btn-vimeo"></a>
+                     </div>
+                 </div>
+
+
+             </div>
+        </section><!--page-hero-->
+        {% endif %}
+
+
+
+
+
+
+
+        <article class="article-main">
 
 
 
@@ -106,7 +135,7 @@
             
                         <div class="col-sm-12">
 
-                            <section>
+                            <section class="row">
                                 <h2>You might also like</h2>
 
                                 {% set popularArticles = _Article.getPopularArticles({ limit: 4, excludeArticleId : article.id }) %}

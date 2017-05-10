@@ -9,8 +9,7 @@
                     </a>
 {#                     <a class="footer-brand" href="{{networkData.defaultBlogUrl}}" rel="Home" tabindex="-1" title="Home">
                         <img src="{{networkData.templatePath}}/static/images/global-spotlight.svg" alt="logo" class="text-logo">
-                    </a>
- #}                 <span><a href="https://publish.aap.com.au">POWERED BY AAP PUBLISH</a></span>
+                    </a> #}
                 </div><!-- .col-sm-3-->
 
 
@@ -18,6 +17,28 @@
 
 
             <div class="row footer-middle">
+                <div class="col-sm-12 contact visible-xs-block">
+                    <div class="section-links-mobile">
+                        <ul>
+                            {% set menuItems = blog.blogHeaderMenu %}
+                            {% for i, parentItem in menuItems %}
+                                {% set activeClass = (parentItem.link == _AppHelper.getServerUrl()) ? 'active' : ''%}
+                                {% set externalClass = (parentItem.isExternal) ? 'external-link' : '' %}
+                                
+                                {% if (parentItem.blogTitle | lower != roomInfo[0] | lower ) %}
+                                    <li>
+                                        <a href="{{parentItem.link |raw}}" class="{{activeClass}} {{externalClass}}" {% if parentItem.target != "" %}target="{{parentItem.target}}"{% endif %}>
+                                            {{parentItem.blogTitle | upper}}
+                                        </a>
+                                    </li>
+                                {% endif %}
+
+                            {% endfor %}
+
+                        </ul>
+                    </div>
+
+                </div><!-- .col-sm-12-->
 
                 <div class="col-sm-4 contact">
                     <h2>Contact us</h2>
@@ -27,7 +48,7 @@
 
 
 
-                <div class="col-sm-8 publish">
+                <div class="col-sm-8 publish hidden-xs">
                     <span><a href="https://publish.aap.com.au">POWERED BY AAP PUBLISH</a></span>
                 </div><!-- .col-sm-12-->
             </div><!-- .row-->
@@ -40,11 +61,16 @@
                             <li><a class="twitter" href="https://twitter.com/NewsroomNZ"></a></li>
                             <li><a class="vimeo" href="https://www.linkedin.com/company/newsroom-new-zealand"></a></li>
                         </ul>
-                    </div><!-- .social-links-->                    
+                    </div><!-- .social-links-->      
+
+                    <div class="publish-mobile visible-xs-block">
+                        <span><a href="https://publish.aap.com.au">POWERED BY AAP PUBLISH</a></span>
+                    </div><!-- .col-sm-12-->
+              
                 </div>
 
 
-                <div class="col-sm-9">
+                <div class="col-sm-9 hidden-xs">
                     <div class="section-links">
                         <ul>
                             {% set menuItems = blog.blogHeaderMenu %}
