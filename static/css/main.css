@@ -8617,9 +8617,11 @@ span.leadsentence {
         font-size: 1.4rem;
         margin-bottom: 10px; }
       .site-footer .footer-top .contact p {
+        opacity: 0.8;
         font-size: 1.4rem;
         font-weight: normal; }
       .site-footer .footer-top .contact a {
+        opacity: 0.8;
         font-size: 1.4rem;
         color: white; }
     .site-footer .footer-top .symbol {
@@ -10472,13 +10474,14 @@ body.article {
     .channel .section > h2 {
       letter-spacing: 1px;
       font-style: italic;
+      opacity: 0.6;
       font-size: 1.6rem;
       font-family: "PT Serif", "Times New Roman", Times, serif;
       padding: 0;
       padding-bottom: 5px;
       margin: 0; }
     .channel .section > h1 {
-      letter-spacing: 1px;
+      letter-spacing: 3px;
       font-size: 2.6rem;
       font-family: "adelle-sans", Helvetica, Arial, sans-serif;
       padding: 0;
@@ -11130,8 +11133,9 @@ body.screen {
         font-size: 4.6rem;
         color: white;
         margin-bottom: 8px;
-        line-height: 1.4;
-        padding: 0; }
+        line-height: 1.04;
+        padding: 0;
+        max-height: 150px; }
         @media screen and (max-width: 1200px) {
           .featured-slider a.card .content h2 {
             font-size: 2.4em; } }
@@ -11157,7 +11161,8 @@ body.screen {
         min-height: 0;
         line-height: 1.5em;
         color: white;
-        height: 50px; }
+        max-height: 50px;
+        margin-bottom: 0; }
         @media screen and (max-width: 620px) {
           .featured-slider a.card .content > p {
             max-height: 40px;
@@ -11191,11 +11196,12 @@ body.screen {
         -moz-flex-shrink: 0;
         order: 5;
         min-height: 35px;
-        max-height: 35px; }
+        max-height: 35px;
+        padding: 0;
+        margin-top: 20px; }
         .featured-slider a.card .content .author > p {
           color: #dadada;
-          font-size: 1.2rem;
-          padding-top: 8px; }
+          font-size: 1.2rem; }
     .featured-slider a.card.social .content .category {
       order: 2; }
     .featured-slider a.card.social .content > p {
@@ -11286,7 +11292,7 @@ body.screen {
       background: white; }
       @media screen and (max-width: 620px) {
         .card-rec a.card > article > .content {
-          padding: 14px 28px 10px 14px; } }
+          padding: 14px 28px 0 14px; } }
       .card-rec a.card > article > .content > .category {
         font-size: 1.1em;
         font-weight: bold;
@@ -11294,6 +11300,9 @@ body.screen {
         display: block;
         line-height: 1;
         margin-bottom: 15px; }
+        @media screen and (max-width: 620px) {
+          .card-rec a.card > article > .content > .category {
+            margin-bottom: 5px; } }
       .card-rec a.card > article > .content > h2 {
         font-weight: bold;
         font-size: 2.4em;
@@ -11303,7 +11312,7 @@ body.screen {
         @media screen and (max-width: 620px) {
           .card-rec a.card > article > .content > h2 {
             font-size: 1.6em;
-            height: 40px; } }
+            height: 60px; } }
       .card-rec a.card > article > .content > p {
         font-family: "PT Serif", "Times New Roman", Times, serif;
         height: 66px;
@@ -11326,7 +11335,8 @@ body.screen {
         padding: 0;
         font-size: 1.2em;
         font-family: "PT Serif", "Times New Roman", Times, serif;
-        float: right; }
+        float: right;
+        font-style: italic; }
         @media screen and (max-width: 620px) {
           .card-rec a.card > article > .content > time {
             float: none;

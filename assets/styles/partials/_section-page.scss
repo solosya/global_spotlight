@@ -8,6 +8,7 @@
         > h2 {
             letter-spacing: 1px;
             font-style:italic;
+            opacity:0.6;
             font-size: rem(16);
             font-family: $font-family-serif;
             padding:0;
@@ -16,7 +17,7 @@
 
         }
         > h1 {
-            letter-spacing: 1px;
+            letter-spacing: 3px;
             font-size: rem(26);
             font-family: $font-family-sans-serif;
             padding:0;

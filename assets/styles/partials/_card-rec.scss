@@ -81,7 +81,7 @@
                 background:white;
 
                 @media screen and (max-width: $mobile-break){
-                    padding: 14px 28px 10px 14px;
+                    padding: 14px 28px 0 14px;
                 }
 
 
@@ -92,6 +92,9 @@
                     display: block;
                     line-height: 1;
                     margin-bottom: 15px;
+                    @media screen and (max-width: $mobile-break){
+                        margin-bottom: 5px;
+                    }
 
                 }
 
@@ -104,7 +107,7 @@
 
                     @media screen and (max-width: $mobile-break){
                         font-size: em(16);
-                        height: 40px;
+                        height: 60px;
                     }
 
 
@@ -142,6 +145,7 @@
                     font-size: em(12);
                     font-family: $font-family-serif;
                     float:right;
+                    font-style:italic;
 
                     @media screen and (max-width: $mobile-break){
                         float:none;

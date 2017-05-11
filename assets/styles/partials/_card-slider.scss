@@ -135,9 +135,9 @@
                 font-size: rem(46);
                 color:white;
                 margin-bottom: 8px;
-                line-height:1.4;
+                line-height: 1.04;
                 padding:0;
-
+                max-height: 150px;
 
                 @media screen and (max-width: $md-break){
                    font-size: em(24);
@@ -167,7 +167,8 @@
                 min-height:0;
                 line-height:1.5em;
                 color:white;
-                height:50px;
+                max-height:50px;
+                margin-bottom:0;
 
                 @media screen and (max-width: $mobile-break){
                     max-height:40px;
@@ -213,14 +214,14 @@
                 order:5;
                 min-height:35px;
                 max-height:35px;
-
+                padding:0;
+                margin-top:20px;
 
 
 
                 > p {
                     color:#dadada;
                     font-size: rem(12);
-                    padding-top:8px;
                 }
 
                 // @media screen and (max-width: $mobile-break){
