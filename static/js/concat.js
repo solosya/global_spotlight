@@ -28822,38 +28822,48 @@ var systemCardTemplate =
 '</div>';
                                                 
 var socialCardTemplate =  '<div class="{{containerClass}}">' +
-                                '<a href="{{social.url}}" target="_blank" class="card swap card__{{social.source}} {{#if social.hasMedia}} withImage__content {{else }} without__image {{/if}} {{videoClass}}" data-id="{{socialId}}" data-position="{{position}}" data-social="1" data-article-image="{{{social.media.path}}}" data-article-text="{{social.content}}">'+
-                                    '{{#if social.hasMedia}}'+
-                                    '<div class="card-image lazyload" data-original="{{social.media.path}}" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=33&txt=Loading&w=450&h=250)">'+
-                                        '<div class="play_icon video-player" data-source="{{social.source}}" data-url="{{social.media.videoUrl}}" data-poster="{{social.media.path}}"></div>'+
-                                    '</div>' +
-                                    '{{/if}}'+
-                                    '<div class="content-section">' +
-                                        '<div class="title-section">' +
-                                            '<span>{{social.source}}</span>' +
-                                            '<div class="card-icon"></div>' +
-                                        '</div>' +
-                                        '<p class="description" id="updateSocial{{socialId}}" data-update="0">{{{social.content}}}</p>' +
-                                        '<div class="caption_bottom">' +
-                                            '<div class="author_name">{{social.user.name}}</div>' +
-                                            '<div class="post_date">{{social.publishDate}}</div>' +
-                                        '</div>' +
-                                    '</div>' +
-                                    '{{#if userHasBlogAccess}}'+
-                                        '<div class="btn_overlay articleMenu">'+
-                                            '<button title="Hide" data-guid="{{social.guid}}" class="btnhide social-tooltip HideBlogArticle" type="button" data-social="1">'+
-                                                '<i class="fa fa-eye-slash"></i><span class="hide">Hide</span>'+
-                                            '</button>'+
-                                            '<button title="Edit" class="btnhide social-tooltip editSocialPost" type="button" data-url="/admin/social-funnel/update-social?guid={{blog.guid}}&socialguid={{social.guid}}">'+
-                                            '<i class="fa fa-edit"></i><span class="hide">Edit</span>'+
-                                            '</button>'+
-                                            '<button data-position="{{position}}" data-social="1" data-id="{{socialId}}" title="{{pinTitle}}" class="btnhide social-tooltip PinArticleBtn" type="button" data-status="{{isPinned}}">'+
-                                                '<i class="fa fa-thumb-tack"></i><span class="hide">{{pinText}}</span>'+
-                                            '</button>'+
-                                        '</div>'+
-                                    '{{/if}}'+   
-                                '</a>' +
-                            '</div>';
+                                '<a href="{{social.url}}"\
+                                    target="_blank"\
+                                    class="card swap social {{social.source}} {{#if social.hasMedia}} withImage__content {{else }} without__image {{/if}} {{videoClass}}"\
+                                    data-id="{{socialId}}"\
+                                    data-position="{{position}}"\
+                                    data-social="1"\
+                                    data-article-image="{{{social.media.path}}}"\
+                                    data-article-text="{{social.content}}">\
+                                    {{#if social.hasMedia}}\
+                                    <article class="">\
+                                    \
+                                        <figure class="{{videoClass}}">\
+                                            <img class="img-responsive" src="{{social.media.path}}" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=33&txt=Loading&w=450&h=250)">\
+                                        </figure>\
+                                        {{/if}}\
+                                        \
+                                        <div class="content">\
+                                            <div class="category {{social.source}}">{{social.source}}</div>\
+                                            <p id="updateSocial{{article.socialId}}" data-update="0">{{{social.content}}}</p>\
+                                            <time datetime="2016-11-16"></time>\
+                                            <div class="author">\
+                                                <p class="">{{ social.user.name }}</p>\
+                                            </div>\
+                                        </div>'+
+
+
+                                        '{{#if userHasBlogAccess}}\
+                                            <div class="btn_overlay articleMenu">\
+                                                <button title="Hide" data-guid="{{social.guid}}" class="btnhide social-tooltip HideBlogArticle" type="button" data-social="1">\
+                                                    <i class="fa fa-eye-slash"></i><span class="hide">Hide</span>\
+                                                </button>\
+                                                <button title="Edit" class="btnhide social-tooltip editSocialPost" type="button" data-url="/admin/social-funnel/update-social?guid={{blog.guid}}&socialguid={{social.guid}}">\
+                                                <i class="fa fa-edit"></i><span class="hide">Edit</span>\
+                                                </button>\
+                                                <button data-position="{{position}}" data-social="1" data-id="{{socialId}}" title="{{pinTitle}}" class="btnhide social-tooltip PinArticleBtn" type="button" data-status="{{isPinned}}">\
+                                                    <i class="fa fa-thumb-tack"></i><span class="hide">{{pinText}}</span>\
+                                                </button>\
+                                            </div>\
+                                        {{/if}}\
+                                    </article>\
+                                </a>\
+                            </div>';
 // var ArticleController = (function ($) {
 //     return {
 //         view: function () {
@@ -29191,12 +29201,13 @@ HomeController.Listing = (function ($) {
 
         $('button.HideBlogArticle').Ajax_deleteArticle({
             onSuccess: function(data, obj){
-                var sectionPostsCount = $(obj).closest('.section__content').find('.card__news').length;
-                if(sectionPostsCount <= 1) {
-                    $(obj).closest('.section__content').addClass('hide');
-                }
+                // var section = $(obj).closest('.section__content');
+                // var sectionPostsCount = section.find('.card__news').length;
+                // if(sectionPostsCount <= 1) {
+                //     section.addClass('hide');
+                // }
                 $(obj).closest('.card').parent('div').remove();
-                var postsCount = $('body').find('.card__news').length;
+                var postsCount = $('body').find('.card').length;
                 if(postsCount <= 0) {
                     $('.NoArticlesMsg').removeClass('hide');
                 }
@@ -29523,6 +29534,7 @@ HomeController.Blog = (function ($) {
 
 }(jQuery));
 $('document').ready(function() {
+    console.log('loaded document');
     var isMenuBroken, isMobile;
     var sbCustomMenuBreakPoint = 1120;
     var mobileView = 620;
@@ -29639,10 +29651,12 @@ $('document').ready(function() {
         e.preventDefault();
     });
 
-    $(".menuContainer > ul > li.menu-item-search").hover(function (e) {
+    $("ul > li.menu-item-search").on("click", function (e) {
+        console.log('hovering');
         if (window.innerWidth > sbCustomMenuBreakPoint) {
-            $(this).children("ul").stop(true, false).slideToggle(225);
-            $(this).toggleClass('now-active');
+            console.log('slide toggling');
+            $("#searchpanel").stop(true, false).slideToggle(225);
+
             e.preventDefault();
         }
     });
