@@ -1,4 +1,5 @@
 $('document').ready(function() {
+    console.log('loaded document');
     var isMenuBroken, isMobile;
     var sbCustomMenuBreakPoint = 1120;
     var mobileView = 620;
@@ -115,10 +116,12 @@ $('document').ready(function() {
         e.preventDefault();
     });
 
-    $("ul > li.menu-item-search").hover(function (e) {
+    $("ul > li.menu-item-search").on("click", function (e) {
+        console.log('hovering');
         if (window.innerWidth > sbCustomMenuBreakPoint) {
-            $(this).children("ul").stop(true, false).slideToggle(225);
-            $(this).toggleClass('now-active');
+            console.log('slide toggling');
+            $("#searchpanel").stop(true, false).slideToggle(225);
+
             e.preventDefault();
         }
     });

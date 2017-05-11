@@ -53,6 +53,9 @@
     .featured-slider{
 
         margin-bottom:70px;
+        @media screen and (max-width: $mobile-break) {
+            margin-bottom:35px;
+        }
 
         &.channel {
             a.card {                

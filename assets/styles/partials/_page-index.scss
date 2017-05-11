@@ -72,11 +72,26 @@
     }
 
     > .sidebar-news {
+
         > .sidebar-top {
             padding-bottom: 41px;
-            border-bottom: 1px solid #979797;
-            @media screen and (max-width: $md-break){
-                border: none;
+            // border-bottom: 1px solid #979797;
+            // @media screen and (max-width: $md-break){
+            //     border: none;
+            // }
+
+            &:after {
+                content: "";
+                position:absolute;
+                bottom:0;
+                right: 15px;
+                left: 15px;
+                height:1px;
+                background:#979797;
+
+                @media screen and (max-width: $mmd-break){
+                    display: none;
+                }
             }
 
         }

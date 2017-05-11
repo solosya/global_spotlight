@@ -19,6 +19,7 @@
             > figure{
                 width: auto;
                 overflow: hidden;
+
                 @media screen and (max-width: $mobile-break){
                     width: 116px;
                     height:116px;
@@ -58,7 +59,7 @@
             > .content{
                 position:relative;
                 background:white;
-                padding: 52px 15px 8px 15px;
+                padding: 59px 15px 8px 15px;
                 @media screen and (max-width: $mobile-break){
                     height: auto;
                     padding: 10px;
@@ -144,6 +145,7 @@
                 .content {
                     height:100%;
                     .category {
+                        visibility:hidden;
                         color:white;
                         margin-top:0;
                         margin-bottom:8px;
@@ -233,6 +235,7 @@
         &.facebook{
             .category {
                 &:before {
+                    visibility: visible;
                     content: '';
                     width:25px;
                     height:25px;
@@ -241,7 +244,7 @@
                     background-size: contain;
                     background-repeat:no-repeat;
                     display:block;
-                    margin-bottom:18px;
+                    margin-bottom:0;
                 }
             }
         }
@@ -249,35 +252,95 @@
         }
 
         &.twitter{
-            .category {
+
+            figure {
                 &:before {
-                    content: '';
-                    width:25px;
-                    height:25px;
-                    background-image: url('../images/twitter.svg');
-                    background-position:center;
-                    background-size: contain;
-                    background-repeat:no-repeat;
-                    display:block;
-                    margin-bottom:18px;
+                  content: '';
+                  position: absolute;
+                  top: 0;
+                  bottom: 0;
+                  width: 100%;
+                  opacity: 0.6;
+                  background-color: #00A4CD;
+                  z-index: 1;
+                }
+            }
+
+            .content {
+                .author {
+                    position:absolute;
+                    bottom:0;
+
+                    display:inline-block;
+                    float:left;
+                    > p {
+                        color:#dadada;
+                        font-size: rem(15);
+                        display:block;
+                    }
+                }
+                time {
+                    right:20px
+                }
+
+                .category {
+                    &:before {
+                        visibility: visible;
+                        content: '';
+                        width:25px;
+                        height:25px;
+                        background-image: url('../images/twitter.svg');
+                        background-position:center;
+                        background-size: contain;
+                        background-repeat:no-repeat;
+                        display:block;
+                        margin-bottom:0;
+                    }
                 }
             }
         }
 
         &.instagram{
-            .category {
-                &:before {
-                    content: '';
-                    width:25px;
-                    height:25px;
-                    background-image: url('../images/instagram.svg');
-                    background-position:center;
-                    background-size: contain;
-                    background-repeat:no-repeat;
-                    display:block;
-                    margin-bottom:18px;
+            .content {
+                .author {
+                    position:absolute;
+                    bottom:0;
+
+                    display:inline-block;
+                    float:left;
+                    > p {
+                        color:#dadada;
+                        font-size: rem(15);
+                        display:block;
+
+                        &:before {
+                            content: '@';
+                        }
+
+                    }
+                }
+                time {
+                    display:none;
+                }
+
+                
+
+                .category {
+                    &:before {
+                        visibility: visible;
+                        content: '';
+                        width:25px;
+                        height:25px;
+                        background-image: url('../images/instagram.svg');
+                        background-position:center;
+                        background-size: contain;
+                        background-repeat:no-repeat;
+                        display:block;
+                        margin-bottom:0;
+                    }
                 }
             }
+
         }      
 
         

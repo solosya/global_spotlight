@@ -16,13 +16,15 @@
 .sb-custom-menu .menu-mobile{
     display: none;
     width: 95px;
+    height:30px;
     text-decoration:none;
-    background-image: url(../images/mobile-menu.svg);
+    background-image: url(../images/mobile-menu_white.svg);
     background-size: 45px 30px;
     background-position: right;
     background-repeat: no-repeat;
     padding: 5px 0;
     color: #f73d30;
+    margin-right:30px;
 
     @media screen and (max-width: $header-break){
         display: block;
@@ -65,8 +67,9 @@
     }
 
     > div > ul{
-        margin: 0;
+        margin: 0 30px 0 0;
         padding-left: 0;
+
 
         > li{
             display:block;
@@ -82,14 +85,17 @@
 
             > a{
                 @media screen and (max-width: $header-break){
-                    padding: 12px 20px;
+                    padding: 15px 20px;
                 }
                 @media (max-width: $header-break){
                     color:#fff;
                 }
+                color:#fff;
+                font-weight:normal;
                 display: block;
-                padding: 16px 13px;
+                padding: 0 13px;
                 position: relative; 
+                letter-spacing: 1.5px;
 
                 &:hover{
                     text-decoration: none;
@@ -131,9 +137,12 @@
         display:none;
     }
     .menu-item {
+        margin-left:20px;
         display:inline-block;
     }
 }
+
+
 
 /* Search box */
 .search-sub-menu{
@@ -174,6 +183,7 @@
         padding-bottom: 0px;
         padding-left: 20px;
         padding-right: 20px;
+        list-style: none;
     }
 
     .btn-default{
@@ -306,15 +316,17 @@ ul.menu > li > ul.sub-menu.breaking-news-menu > li > ul.sub-sub-menu > li{
 
         .secondary-menu{
             display:block;
-            // padding: 15px;
+            height:50px;
             background:white;
             
             ul {
                 margin:0;
                 padding:0;
+                height:100%;
 
                 > li {
                     border-bottom: 1px solid black;
+                    height:100%;
 
                     > a {
                         position:relative;
@@ -574,7 +586,7 @@ ul.menu > li > ul.sub-menu.breaking-news-menu > li > ul.sub-sub-menu > li{
 
 @media (max-width: $header-break){
     .sb-custom-menu .show-on-tablet > ul{
-        background: #1d1d1d;
+        background: #333333;
         width: 100%;
     }
     .sb-custom-menu{

@@ -6,9 +6,19 @@ body{
     }
 }
 
+ul.search-sub-menu {
+    margin-top:70px;
+    background: rgba(255,255,255,.8);
+    position:absolute;
+    z-index:10;
+    width:100%;
+}
+
 .search-icon{
     background-image: url(../images/search.svg);
+    background-repeat: no-repeat;
     background-size:contain;
+    background-size:20px;
     width: 20px;
     height: 20px;
 }
@@ -26,12 +36,12 @@ div.fancybox-title {
     text-decoration: none;
     display: block;
     margin: 0 auto;
-    border: 1px solid #e12e21;
-    width: 160px;
-    height: 45px;
+    border: 1px solid #39bddc;
+    width: 122px;
+    height: 35px;
     text-align: center;
-    line-height: 45px;
-    color: #e12e21;
+    line-height: 35px;
+    color: #39bddc;
 
     @media screen and (max-width: $sm-break){
         margin-top:40px;
