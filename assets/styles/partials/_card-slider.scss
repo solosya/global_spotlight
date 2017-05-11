@@ -131,7 +131,7 @@
 
             h2{
                 order:3;
-                -webkit-flex:1 0 0;-ms-flex:1 0 0;flex:1 0 0;-moz-flex:1 0 0;
+                // -webkit-flex:1 0 0;-ms-flex:1 0 0;flex:1 0 0;-moz-flex:1 0 0;
                 font-size: rem(46);
                 color:white;
                 margin-bottom: 8px;
@@ -159,7 +159,7 @@
             }
 
             > p {
-                -webkit-flex:1 0 0;-ms-flex:1 0 0;flex:1 0 0;-moz-flex:1 0 0;
+                // -webkit-flex:1 0 0;-ms-flex:1 0 0;flex:1 0 0;-moz-flex:1 0 0;
                 order:4;
                 font-family:$font-family-serif;
                 font-style:italic;
@@ -169,6 +169,7 @@
                 color:white;
                 max-height:50px;
                 margin-bottom:0;
+                margin-top:10px;
 
                 @media screen and (max-width: $mobile-break){
                     max-height:40px;
@@ -210,7 +211,9 @@
             }
 
             .author{
-                -ms-flex-negative:0;-webkit-flex-shrink:0;flex-shrink:0;-moz-flex-shrink:0;
+                // -ms-flex-negative:0;-webkit-flex-shrink:0;flex-shrink:0;-moz-flex-shrink:0;
+                -webkit-flex:4 0 0;-ms-flex:4 0 0;flex:4 0 0;-moz-flex:4 0 0;
+
                 order:5;
                 min-height:35px;
                 max-height:35px;
