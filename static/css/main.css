@@ -11728,7 +11728,8 @@ body.screen {
           margin-top: 20px;
           display: block;
           line-height: 1.3;
-          font-size: 2.2em; }
+          font-size: 2.2em;
+          font-size: 1.8vw; }
     .card-sm-screen a.card.social.facebook.withImage__content figure, .card-sm-screen a.card.social.twitter.withImage__content figure, .card-sm-screen a.card.social.instagram.withImage__content figure {
       position: absolute;
       left: 15px;
@@ -11804,6 +11805,8 @@ body.screen {
       background-repeat: no-repeat;
       display: block;
       margin-bottom: 0; }
+    .card-sm-screen a.card.instagram .content > p {
+      display: none; }
     .card-sm-screen a.card.instagram .content .author {
       position: absolute;
       bottom: 0;
@@ -12112,6 +12115,7 @@ body.screen {
         order: 3;
         display: block;
         font-size: 2.2rem;
+        font-size: 1.8vw;
         line-height: 1.27; }
       .card-lg-screen a.card > article > .content > .author {
         display: none; }
@@ -12151,6 +12155,8 @@ body.screen {
         background-repeat: no-repeat;
         display: block;
         margin-bottom: 18px; }
+    .card-lg-screen a.card.instagram > p {
+      display: none; }
     .card-lg-screen a.card.instagram .category {
       visibility: hidden; }
       .card-lg-screen a.card.instagram .category:before {

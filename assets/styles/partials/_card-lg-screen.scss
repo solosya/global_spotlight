@@ -60,6 +60,7 @@
                     order:3;
                     display:block;
                     font-size: rem(22);
+                    font-size: 1.8vw;
                     line-height: 1.27;
                     // margin-top:40px;
 
@@ -123,6 +124,11 @@
         }
 
         &.instagram{
+
+            >p {
+                display:none;
+            }
+
             .category {
                 visibility:hidden;
 
