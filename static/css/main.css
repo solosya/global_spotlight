@@ -11805,22 +11805,22 @@ body.screen {
       background-repeat: no-repeat;
       display: block;
       margin-bottom: 0; }
-    .card-sm-screen a.card.instagram .content > p {
+    .card-sm-screen a.card.instagram article .content > p {
       display: none; }
-    .card-sm-screen a.card.instagram .content .author {
+    .card-sm-screen a.card.instagram article .content .author {
       position: absolute;
       bottom: 0;
       display: inline-block;
       float: left; }
-      .card-sm-screen a.card.instagram .content .author > p {
+      .card-sm-screen a.card.instagram article .content .author > p {
         color: #dadada;
         font-size: 1.5rem;
         display: block; }
-        .card-sm-screen a.card.instagram .content .author > p:before {
+        .card-sm-screen a.card.instagram article .content .author > p:before {
           content: '@'; }
-    .card-sm-screen a.card.instagram .content time {
+    .card-sm-screen a.card.instagram article .content time {
       display: none; }
-    .card-sm-screen a.card.instagram .content .category:before {
+    .card-sm-screen a.card.instagram article .content .category:before {
       visibility: visible;
       content: '';
       width: 25px;

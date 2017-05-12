@@ -302,51 +302,53 @@
         }
 
         &.instagram{
-            .content {
+            article {
 
-                > p {
-                    display:none;
-                }
+                .content {
 
-                .author {
-                    position:absolute;
-                    bottom:0;
-
-                    display:inline-block;
-                    float:left;
                     > p {
-                        color:#dadada;
-                        font-size: rem(15);
-                        display:block;
-
-                        &:before {
-                            content: '@';
-                        }
-
+                        display:none;
                     }
-                }
-                time {
-                    display:none;
-                }
 
-                
+                    .author {
+                        position:absolute;
+                        bottom:0;
 
-                .category {
-                    &:before {
-                        visibility: visible;
-                        content: '';
-                        width:25px;
-                        height:25px;
-                        background-image: url('../images/instagram.svg');
-                        background-position:center;
-                        background-size: contain;
-                        background-repeat:no-repeat;
-                        display:block;
-                        margin-bottom:0;
+                        display:inline-block;
+                        float:left;
+                        > p {
+                            color:#dadada;
+                            font-size: rem(15);
+                            display:block;
+
+                            &:before {
+                                content: '@';
+                            }
+
+                        }
+                    }
+                    time {
+                        display:none;
+                    }
+
+                    
+
+                    .category {
+                        &:before {
+                            visibility: visible;
+                            content: '';
+                            width:25px;
+                            height:25px;
+                            background-image: url('../images/instagram.svg');
+                            background-position:center;
+                            background-size: contain;
+                            background-repeat:no-repeat;
+                            display:block;
+                            margin-bottom:0;
+                        }
                     }
                 }
             }
-
         }      
 
         
