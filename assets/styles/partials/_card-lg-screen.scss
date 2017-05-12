@@ -61,7 +61,7 @@
                     display:block;
                     font-size: rem(22);
                     line-height: 1.27;
-                    margin-top:40px;
+                    // margin-top:40px;
 
                 }
 
@@ -86,7 +86,10 @@
         &.facebook{
             .category {
                 order:2;
+                visibility:hidden;
+
                 &:before {
+                    visibility: visible;
                     order:1;
                     content: '';
                     width:25px;
@@ -102,7 +105,10 @@
         }
         &.twitter{
             .category {
+                visibility:hidden;
+
                 &:before {
+                    visibility: visible;
                     content: '';
                     width:25px;
                     height:25px;
@@ -118,7 +124,11 @@
 
         &.instagram{
             .category {
+                visibility:hidden;
+
                 &:before {
+                    visibility: visible;
+
                     content: '';
                     width:25px;
                     height:25px;
