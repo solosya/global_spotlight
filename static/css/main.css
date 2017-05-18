@@ -9273,16 +9273,20 @@ ul.menu > li > ul.sub-menu.breaking-news-menu > li > ul.sub-sub-menu > li {
         height: 60px; } }
     .site-header .site-header-main input.field {
       font-size: 2rem; }
-    @media screen and (max-width: 620px) {
-      .site-header .site-header-main .navbar-brand {
-        height: 60px;
-        padding: 8px; } }
-    @media screen and (max-width: 620px) {
-      .site-header .site-header-main .navbar-brand > img.text-logo {
-        width: 170px; } }
-    @media screen and (max-width: 420px) {
-      .site-header .site-header-main .navbar-brand > img.text-logo {
-        width: 140px; } }
+    .site-header .site-header-main .navbar-brand {
+      height: 80px; }
+      @media screen and (max-width: 620px) {
+        .site-header .site-header-main .navbar-brand {
+          height: 60px;
+          padding: 8px; } }
+      @media screen and (max-width: 620px) {
+        .site-header .site-header-main .navbar-brand > img.text-logo {
+          width: 170px; } }
+      @media screen and (max-width: 420px) {
+        .site-header .site-header-main .navbar-brand > img.text-logo {
+          width: 140px; } }
+      .site-header .site-header-main .navbar-brand > img.main-logo {
+        height: 60px; }
     .site-header .site-header-main .navbar-right {
       margin-top: 25px; }
       @media screen and (max-width: 620px) {

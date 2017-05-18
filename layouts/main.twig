@@ -44,7 +44,7 @@
 
 
         {% if _AppHelper.getApplicationEnv() == 'PROD'%}
-            <link rel="stylesheet" href="{{networkData.templatePath}}/static/css/concat.min.css?ver=19" type="text/css" media="all">
+            <link rel="stylesheet" href="{{networkData.templatePath}}/static/css/concat.min.css?ver=20" type="text/css" media="all">
         {% else %}
             <link type="text/css" rel="stylesheet" href="{{networkData.templatePath}}/assets/scripts/plugins/jquery.fancybox/source/jquery.fancybox.css?ver=2" />
             <link type="text/css" rel="stylesheet" href="{{networkData.templatePath}}/assets/scripts/plugins/jquery.noty-2.3.8/demo/animate.css?ver=1" />
@@ -67,64 +67,75 @@
 
 
     {% set themeColors = networkData['styling']['colours'] %}
+
     <style type="text/css">
     {% if primaryFont != "" %}
         body, .body, p {
             font-family: "{{primaryFont | replace({'+': ' '})}}" !important;
         }
     {% endif %}
+
     {% if secFont != "" %}
         h1, h2, h3, h4, h5, a.header__navigation-link {
             font-family: "{{secFont | replace({'+': ' '})}}" !important;
         }
     {% endif %}
+
     {% if themeColors.linkColor != "" %}
         a {
             color: {{themeColors.linkColor}} !important;
         }
     {% endif %}
+
     {% if themeColors.linkHoverColor != "" %}
         a:hover {
             color: {{themeColors.linkHoverColor}} !important;
         }
     {% endif %}
+
     {% if themeColors.headingColor != "" %}
         h1, h2, h3, h4, h5 {
             color: {{themeColors.headingColor}} !important;
         }
     {% endif %}
+
     {% if themeColors.navigationColor != "" %}
         .header__search-text, a.header__navigation-link {
             color: {{themeColors.navigationColor}} !important;
         }
     {% endif %}
+
     {% if themeColors.navigationHoverColor != "" %}
         a.header__navigation-link:hover {
             color: {{themeColors.navigationHoverColor}} !important;
         }
     {% endif %}
+
     {% if themeColors.navigationActiveColor != "" %}
         a.header__navigation-link.header__navigation-selected {
             color: {{themeColors.navigationActiveColor}} !important;
         }
     {% endif %}
+
     {% if themeColors.navigationBgColor != "" %}
     .header__navigation {
         background-color: {{themeColors.navigationBgColor}} !important;
     }
     {% endif %}
+
     {% if themeColors.headerBgColor != "" %}
     .header__heading {
         background-color: {{themeColors.headerBgColor}} !important;
     }
     {% endif %}
     {% if themeColors.footerBgColor != "" %}
-    .footer {
+    .site-footer .footer-top{
         background-color: {{themeColors.footerBgColor}} !important;
     }
     {% endif %}
+
     {% if themeColors.pageBgColor != "" %}
-    .body, .body > .section {
+    body, body > .section {
         background-color: {{themeColors.pageBgColor}} !important;
     }
     .sub_header {
