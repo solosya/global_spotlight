@@ -18,6 +18,7 @@
         }
 
         .navbar-brand {
+            padding:0;
             height:80px;
             @media screen and (max-width: $mobile-break){
                 height:60px;
@@ -33,7 +34,7 @@
             }
             
             > img.main-logo {
-                height:60px;
+                height:70px;
             }
 
         }
