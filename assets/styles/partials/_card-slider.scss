@@ -82,11 +82,11 @@
             
             vertical-align: top;
             line-height: normal;
-            width: 500px;
+            width: 600px;
             max-width: 600px;
             height: auto;
             max-height:587px;
-            padding: 160px 15px 10px 31px;
+            padding: 160px 15px 10px 0;
             z-index: 2;
 
             @media screen and (max-width:1600px){
@@ -95,8 +95,8 @@
             }
 
                             // Not under:                     Not over:
-            @media screen and (min-width:$mobile-break) and (max-width:$mmd-break){
-                padding: 100px 15px 15px 15px;
+            @media screen and (min-width:$mobile-break) and (max-width:$sm-break){
+                padding: 170px 15px 15px 15px;
             }
 
 
@@ -115,32 +115,32 @@
                 -ms-flex-negative:0;-webkit-flex-shrink:0;flex-shrink:0;-moz-flex-shrink:0;
                 order:1;
                 font-size: rem(11);
-                margin-bottom: 5px;
+                margin-bottom: 7px;
                 display: block;
                 max-height:20px;
-                color:#39bcdc;
                 text-transform:uppercase;
 
                 @media screen and (max-width: $mobile-break){
                     font-family: $font-family-sans-serif;
                     font-size: em(10);
-                    margin-bottom: 0;
+                    margin-bottom: 35px;
 
                 }
             }
 
             h2{
                 order:3;
-                // -webkit-flex:1 0 0;-ms-flex:1 0 0;flex:1 0 0;-moz-flex:1 0 0;
                 font-size: rem(46);
                 color:white;
                 margin-bottom: 8px;
-                line-height: 1.04;
+                line-height: 1.1;
                 padding:0;
+                padding-bottom: 8px;
+
                 max-height: 150px;
 
                 @media screen and (max-width: $md-break){
-                   font-size: em(24);
+                   font-size: em(40);
                 }
 
                 @media screen and (max-width: $sm-break){
@@ -148,10 +148,17 @@
                      border: 0;
                 }
 
+                // @media screen and (max-width: $sm-break-down){
+                //      font-size: em(35);
+                //      border: 0;
+                // }
+
+                
+
                 @media screen and (max-width: $mobile-break){
                     min-height:66px;
                     max-height:90px;
-                    font-size: rem(24);
+                    font-size: rem(30);
                     margin-bottom:0;
                 }
 
@@ -189,10 +196,12 @@
             time{
                 -ms-flex-negative:0;-webkit-flex-shrink:0;flex-shrink:0;-moz-flex-shrink:0;
                 order:2;
+                color:#fff;
                 font-size: rem(12);
                 max-height:30px;
                 margin-bottom:38px;
                 font-style:italic;
+                padding:0;
                 // @media screen and (max-width: 1100px){
                 //     display:none;
                 // }
@@ -211,7 +220,8 @@
             }
 
             .author{
-                // -ms-flex-negative:0;-webkit-flex-shrink:0;flex-shrink:0;-moz-flex-shrink:0;
+                // display:none;
+                -ms-flex-negative:0;-webkit-flex-shrink:0;flex-shrink:0;-moz-flex-shrink:0;
                 -webkit-flex:4 0 0;-ms-flex:4 0 0;flex:4 0 0;-moz-flex:4 0 0;
 
                 order:5;
@@ -227,17 +237,17 @@
                     font-size: rem(12);
                 }
 
-                // @media screen and (max-width: $mobile-break){
-                //     img{
-                //         display: none;
-                //     }
-                //     p{
-                //         font-family: $base-font-family;
-                //         font-size: em(18);
-                //         padding: 0;
-                //         color: #FFF;
-                //     }
-                // }
+                @media screen and (max-width: $mobile-break){
+                    img{
+                        display: none;
+                    }
+                    p{
+                        font-family: $base-font-family;
+                        font-size: em(18);
+                        padding: 0;
+                        color: #FFF;
+                    }
+                }
             }
     
         }

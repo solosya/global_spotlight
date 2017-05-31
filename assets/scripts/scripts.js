@@ -1,5 +1,5 @@
 $('document').ready(function() {
-    console.log('loaded document');
+
     var isMenuBroken, isMobile;
     var sbCustomMenuBreakPoint = 1120;
     var mobileView = 620;
@@ -65,36 +65,36 @@ $('document').ready(function() {
     };   
 
 
-    var scrollUpMenu = function() {
-        if ( scrollMetric[1] === 'up' && isScolledPast(400) && isDesktop() ){
-            foldawayPanel.addClass('showMenuPanel');
-            menuContainer.show();
-        } else {
-            menu_top_foldaway.addClass('hide');
-            menu_bottom_foldaway.addClass('hide');
-            foldawayPanel.removeClass('showMenuPanel');
-            menuContainer.show();
-        }
-    }
+    // var scrollUpMenu = function() {
+    //     if ( scrollMetric[1] === 'up' && isScolledPast(400) && isDesktop() ){
+    //         foldawayPanel.addClass('showMenuPanel');
+    //         menuContainer.show();
+    //     } else {
+    //         menu_top_foldaway.addClass('hide');
+    //         menu_bottom_foldaway.addClass('hide');
+    //         foldawayPanel.removeClass('showMenuPanel');
+    //         menuContainer.show();
+    //     }
+    // }
 
 
     //Onload and resize events
-    $(window).on("resize", function () {
-        stickHeader();
-        scrollUpMenu();
-    }).resize();
+    // $(window).on("resize", function () {
+    //     stickHeader();
+    //     scrollUpMenu();
+    // }).resize();
 
     //On Scroll
-    $(window).scroll(function() {
-        var direction = 'down';
-        var scroll = $(window).scrollTop();
-        if (scroll < scrollMetric[0]) {
-            direction = 'up';
-        }
-        scrollMetric = [scroll, direction];
-        stickHeader();
-        scrollUpMenu();
-    });
+    // $(window).scroll(function() {
+    //     var direction = 'down';
+    //     var scroll = $(window).scrollTop();
+    //     if (scroll < scrollMetric[0]) {
+    //         direction = 'up';
+    //     }
+    //     scrollMetric = [scroll, direction];
+    //     stickHeader();
+    //     scrollUpMenu();
+    // });
 
 
 
@@ -117,10 +117,10 @@ $('document').ready(function() {
     });
 
     $("ul > li.menu-item-search").on("click", function (e) {
-        console.log('hovering');
         if (window.innerWidth > sbCustomMenuBreakPoint) {
             console.log('slide toggling');
-            $("#searchpanel").stop(true, false).slideToggle(225);
+            // $("#searchpanel").stop(true, false).css({'height': '90px'});
+            $("#searchpanel").toggleClass('active');
 
             e.preventDefault();
         }
@@ -160,6 +160,30 @@ $('document').ready(function() {
     }), 750);
 
 
+    $('#submitlivestreamform').on('click', function(e) {
+        e.preventDefault();
+        var email = $('#submitlivestreamformemail').val();
+        var name = $('#submitlivestreamformname').val();
+        var lastname = $('#submitlivestreamformlastname').val();
+        var wantsmail = $('#submitlivestreamformgetmail').is(":checked");
+
+        if (email !== '' && name !== '' && lastname !== ''){
+            $.get( 'http://submit.pagemasters.com.au/wobi/submit.php?email='+encodeURI(email)+'&name='+encodeURI(name)+'&lastname='+encodeURI(lastname)+'&wantsemail='+encodeURI(wantsmail) );
+
+            $('#streamform').html(
+                "<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe width='640' height='360' src='https://secure.metacdn.com/r/j/bekzoqlva/wbfs/embed' frameborder='0' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen </iframe></div>"
+            );
+
+            $('#streamformfooter').html(
+                "<h2>Thanks</h2>"
+            );
+           
+
+        } else {
+            alert ("Please fill out all fields.");
+        }
+
+    });
 
     //Main slider
     // var swiper = new Swiper('.swiper-container', {

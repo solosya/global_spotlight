@@ -25,7 +25,26 @@ body.screen {
     margin:0;
   }
 
+  .two-card-logo {
+    position:absolute;
+    bottom:15px;
+    right:20px;
 
+  
+
+    >div {
+      display:inline-block;
+      position: relative;
+      top: 10px;
+      >p {
+        vertical-align:bottom;
+        margin-bottom: 19px;
+        font-size: rem(14);
+        display:inline-block;
+        color:#fff;
+      }
+    }
+  }
 
 }
 .top-row{
