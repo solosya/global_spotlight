@@ -10,6 +10,14 @@ $('document').ready(function() {
     var menu_top_foldaway = $("#menu-top-foldaway");
     var menu_bottom_foldaway = $("#menu-bottom-foldaway");
 
+    $('.video-player').videoPlayer();
+    
+    $("img.lazyload").lazyload({
+        effect : "fadeIn"
+    });
+
+
+
     var isMenuBroken = function(){
         if (window.innerWidth > sbCustomMenuBreakPoint) {
             return false;

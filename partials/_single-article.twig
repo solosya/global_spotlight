@@ -52,7 +52,7 @@
 
 
     <div class="{{containerClass}}" data-title="{{ articleTitle | raw }}">
-        
+        {% set articleImgSmall = _Media.getMediaUrl(article.featuredMedia,500, 500, {'crop': 'fill', 'gravity': 'faces'} ) %}
         {% set articleImg = _Media.getMediaUrl(article.featuredMedia,imgWidth, imgHeight, {'crop': 'fill', 'gravity': 'faces'} ) %}
 
         <a  href="{{article.url}}" 
@@ -66,20 +66,12 @@
             <article class="">
                 {% if (article.hasMedia == 'TRUE' or article.hasPreviewMedia == 'TRUE') and imageSuppress == 'false' %}
                     <figure class="{{figureClass}}">
-                        {% if lazyload == false %}
-                            <img class="img-responsive" src="{{articleImg}}"  {% if articleImg is not empty %} style="background-image:url('{{placeholder}}');" {%endif%}>
-                        {% else %}
-                            <img class="img-responsive lazyload" data-original="{{articleImg}}" src="{{articleImg}}"  {% if articleImg is not empty %} style="background-image:url('{{placeholder}}');" {%endif%}>
-                        {%endif%}
+                        <picture>
+                            <source  media="(max-width: 620px)" srcset="{{articleImgSmall}}">
+                            <img class="img-responsive lazyload" data-original="{{articleImg}}"  {% if articleImg is not empty %} style="background-image:url('{{placeholder}}');" {%endif%}>
+                        </picture>
                     </figure>
                 {% endif %}
-
-
-                {# {% if cardClass == 'soundcloud' %}  
-                    <div class="other-content">
-                        <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/289583160&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_artwork=false"></iframe>
-                    </div>
-                {% endif %} #}
 
 
                 <div class="content">
