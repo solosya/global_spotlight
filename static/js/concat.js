@@ -30386,6 +30386,7 @@ $('document').ready(function() {
 
 
     $(".sb-custom-menu > .menuContainer > ul > li").hover(function (e) {
+        console.log('hovering on menu');
         if ($(window).width() > sbCustomMenuBreakPoint) {
             $(this).children("ul").stop(true, false).slideToggle(275);
             // $(this).toggleClass('now-active');
