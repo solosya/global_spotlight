@@ -8582,24 +8582,20 @@ ul.menu > li > ul.sub-menu.breaking-news-menu > li > ul.sub-sub-menu > li {
       font-size: 2rem; }
     .site-header .site-header-main .navbar-brand {
       padding: 0;
-      margin-top: 10px;
       height: 46px; }
       @media screen and (max-width: 620px) {
         .site-header .site-header-main .navbar-brand {
+          margin-top: 0;
           padding: 8px; } }
-      @media screen and (max-width: 620px) {
-        .site-header .site-header-main .navbar-brand > img.text-logo {
-          width: 170px; } }
-      @media screen and (max-width: 420px) {
-        .site-header .site-header-main .navbar-brand > img.text-logo {
-          width: 140px; } }
+      @media screen and (min-width: 620px) {
+        .site-header .site-header-main .navbar-brand > img.mobile-logo {
+          display: none; } }
       .site-header .site-header-main .navbar-brand > img.main-logo {
+        margin-top: 10px;
         height: 46px; }
         @media screen and (max-width: 620px) {
           .site-header .site-header-main .navbar-brand > img.main-logo {
-            margin-top: 0;
-            margin-left: 10px;
-            height: 43px; } }
+            display: none; } }
     .site-header .site-header-main .navbar-right {
       margin-top: 25px; }
       @media screen and (max-width: 620px) {
