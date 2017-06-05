@@ -20,7 +20,7 @@
 {% set articleCount = 0 %}
 
 {# {% set recentArticles = _Article.getRecentArticles({'limit': 5}) %} #}
-{# {% set popularArticles = _Article.getPopularArticles({ limit: 4, sortBy: 'VIEWS' }) %} #}
+{% set popularArticles = _Article.getPopularArticles({ limit: 4, sortBy: 'VIEWS' }) %}
 
     {% set sections =  {
             "solutions": {
@@ -100,12 +100,12 @@
                         <div class="col-sm-12 sidebar-top">
                             <div class="row">
                                 <header>
-                                    <h3>Social</h3>
+                                    <h3>Popular Stories</h3>
                                 </header>
-                                {% if sections['social'].feed.articles|length > 0 %}
+                                {% if popularArticles|length > 0 %}
                                     {% for i in 0..3 %}
-                                        {% if sections['social'].feed.articles[i] %}
-                                            {{this.render('partials/_single-article.twig', {article: sections['social'].feed.articles[i], swap: 'false', containerClass: 'col-xs-12 col-sm-6 col-md-12 s100x110', swap: 'false'}) | raw}}
+                                        {% if popularArticles[i] %}
+                                            {{this.render('partials/_single-article.twig', {article: popularArticles[i], swap: 'false', containerClass: 'col-xs-12 col-sm-6 col-md-12 s100x110', swap: 'false'}) | raw}}
                                         {% endif %}
                                     {% endfor %}
                                 {% endif %}
