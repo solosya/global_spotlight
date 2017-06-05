@@ -51,13 +51,7 @@
 
         {% if articles|length > 0 %}
 
-{#         {% if articles[0].articleId > 0 %}
-            {% set articleImg = _Media.getMediaUrl(articles[0].featuredMedia,imgWidth, imgHeight, {'crop': 'fill', 'gravity': 'faces'} ) %}
-        {% elseif articles[0].socialId == "1" %}
-            {% set articleImg = articles[0].social.media['path'] %}
-        {% endif %}
-        <div class="banner-image image-wrapper tintGradient" style="background-image:url('{{articleImg}}');"></div>
- #}
+
         <section class="featured-slider test2">
             <div class="">
                 {% if articles[0] %}                                                                
@@ -84,7 +78,7 @@
                     {{ this.render('partials/ajaxarticles.twig', {
                         limit: limit, 
                         non_pinned: articlesArr.existingNonPinnedCount, 
-                        articles: sections['social'].feed,
+                        articles: articles,
                         card_style: "col-sm-4 card-sm",
                         container:"mainAjaxArticles"
                     }) | raw }}
