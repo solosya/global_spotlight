@@ -23,13 +23,7 @@
 {# {% set popularArticles = _Article.getPopularArticles({ limit: 4, sortBy: 'VIEWS' }) %} #}
 
     {% set sections =  {
-            "social": {
-                "feed": "",
-                "link": "",
-                "limit": 4,
-                "id" : ""
-            }, 
-            "gallery": {
+            "solutions": {
                 "feed": "",
                 "link": "",
                 "limit": 12,
@@ -143,17 +137,17 @@
             </div><!-- .row-->
 
 
-            {% if sections['gallery'].feed.articles|length > 0 %}
+            {% if sections['solutions'].feed.articles|length > 0 %}
             <div class="row index-bottom">
                 <div class="col-sm-12">
                     <div class="row gutter-60">
                         <div class="col-sm-12">
-                            <h3>The Gallery</h3>
+                            <h3>The Solutions</h3>
                         </div>
 
                         {% for i in 0..3 %}
-                            {% if sections['gallery'].feed.articles[i] %}                                                                
-                                {{this.render('partials/_single-article.twig', {article: sections['gallery'].feed.articles[i], swap: 'false', containerClass: 'col-xs-6 col-md-3 card-sm'}) | raw}}
+                            {% if sections['solutions'].feed.articles[i] %}                                                                
+                                {{this.render('partials/_single-article.twig', {article: sections['solutions'].feed.articles[i], swap: 'false', containerClass: 'col-xs-6 col-md-3 card-sm'}) | raw}}
                             {% endif %}
                         {% endfor %}
                     </div>
