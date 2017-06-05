@@ -29640,11 +29640,11 @@ Card.prototype.events = function()
 };
 (function ($) {
     
-    $('.video-player').videoPlayer();
+    // $('.video-player').videoPlayer();
     
-    $("div.lazyload").lazyload({
-        effect : "fadeIn"
-    });
+    // $("img.lazyload").lazyload({
+    //     effect : "fadeIn"
+    // });
     
     // $(window).resize(function() {
     //     if ($('.side-navigation').is(':visible')) {
@@ -30175,7 +30175,7 @@ HomeController.Listing = (function ($) {
                         $('.video-player').videoPlayer();
                         
                         //Lazyload implement
-                        $("div.lazyload").lazyload({
+                        $("img.lazyload").lazyload({
                             effect: "fadeIn"
                         });
                         if (_appJsConfig.isUserLoggedIn === 1 && _appJsConfig.userHasBlogAccess === 1) {
@@ -30252,6 +30252,14 @@ $('document').ready(function() {
     var menuContainer = $("#menuContainer");
     var menu_top_foldaway = $("#menu-top-foldaway");
     var menu_bottom_foldaway = $("#menu-bottom-foldaway");
+
+    $('.video-player').videoPlayer();
+    
+    $("img.lazyload").lazyload({
+        effect : "fadeIn"
+    });
+
+
 
     var isMenuBroken = function(){
         if (window.innerWidth > sbCustomMenuBreakPoint) {
