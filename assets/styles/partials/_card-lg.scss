@@ -65,7 +65,7 @@
                     order:1;
                     font-size: rem(11);
                     font-weight: bold;
-                    color: #fff;
+                    color: #39bcdc;
                     display: block;
                     line-height: 1;
                     margin-bottom:4px;
@@ -126,7 +126,7 @@
 
                     p{
                         font-size: rem(12);
-                        color: #fff;
+                        color: #979797;
                     }
                 }
 
@@ -135,7 +135,7 @@
                     font-style:italic;
                     font-family:$font-family-serif;
                     order:2;
-                    color: inherit;
+                    color: #979797;
                     margin-bottom:47px;
 
                     @media screen and (max-width: $mobile-break){

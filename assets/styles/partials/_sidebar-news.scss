@@ -78,6 +78,7 @@
                 > .category{
                     font-size: em(11);
                     font-weight: bold;
+                    color: #39bcdc;
                     display: block;
                     line-height: 1;
                     margin-bottom: 5px;
@@ -115,40 +116,12 @@
                     font-style:italic;
                     font-size: rem(12);
                     font-family:$font-family-serif;
-                    color: #979797;
+                    color: #333333;
                     padding: 0;
                     border: 0;
                     line-height: 1;
                 }
             }
         }
-        &.social {
-            article {
-                .content {
-                    >p {
-                        display:block;
-
-                        font-weight:normal;
-                        font-size: em(16);
-                        height: 64px;
-                        line-height:1.3em;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                        
-                        @media screen and (max-width: $mobile-break){
-                            height: 60px;
-                        }
-                    }
-                }
-            }
-            
-        }
-        // &.without__image {
-
-        //     > p {   
-        //         min-height:50px;
-        //         margin-top: 0;
-        //     }
-        // }
     }
 }

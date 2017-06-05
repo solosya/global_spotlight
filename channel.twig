@@ -4,8 +4,8 @@
 {{ set(this, 'title', blogInfo.title) }}
 
 
-{{this.registerJs("CardController();")}}
-{{this.registerJs("BlogController();")}}
+{{this.registerJs("HomeController.listing();")}}
+{{this.registerJs("HomeController.blog();")}}
 
 {% set limit = 10 %}
 
@@ -31,6 +31,7 @@
     
         <section class="home-page-content">
             <div class="container section">
+                <h2>Global Spotlight</h2>
                 <h1>{{blogInfo.title | upper}}</h1>
 
                 <div class="row">

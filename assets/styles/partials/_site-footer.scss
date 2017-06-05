@@ -1,6 +1,6 @@
 .site-footer{
     width: 100%;
-    margin-top: 0;
+    margin-top: 60px;
     @media screen and (max-width: $sm-break){
         margin-top: 55px;
     }
@@ -25,7 +25,7 @@
     }
 
     .footer-top{
-        background: #2b3744;
+        background: #000;
         position: relative;
         // @media screen and (max-width: $sm-break){
         //     padding-top: 155px;
@@ -73,15 +73,10 @@
             display: inline-block;
             width: 64px;
             height: 71px;
-            margin:150px 15px 60px 0;
+            margin:40px 15px 60px 0;
 
             @media screen and (max-width: $sm-break){
                 margin-bottom:30px;
-            }
-
-            >img {
-                width: 250px;
-                margin-left: -40px;
             }
 
         }
@@ -195,16 +190,24 @@
 
 
         .publish {
-            text-align:right;
-            margin-bottom:30px;
+            height:80px;
             position:relative;
             vertical-align:bottom;
 
-           a {
+            span {
+                position:absolute;
+                bottom:0;
+                right: 15px;
                 color:white;
                 font-size: em(11);
                 font-family: $font-family-sans-serif;
-                text-decoration:none;
+
+                a {
+                    color:white;
+                    text-decoration:none;
+                }
+
+
             }
         }
 
