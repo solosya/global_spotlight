@@ -7893,7 +7893,7 @@ span.leadsentence {
         color: #FFF;
         text-transform: uppercase; }
   .site-footer .footer-top {
-    background: #2b3744;
+    background: #000000;
     position: relative; }
     .site-footer .footer-top .icon-wrapper {
       position: relative; }
@@ -7919,8 +7919,7 @@ span.leadsentence {
         .site-footer .footer-top .footer-brand {
           margin-bottom: 30px; } }
       .site-footer .footer-top .footer-brand > img {
-        width: 250px;
-        margin-left: -40px; }
+        width: 285px; }
     .site-footer .footer-top .contact {
       color: white; }
       .site-footer .footer-top .contact h2 {
@@ -8583,6 +8582,7 @@ ul.menu > li > ul.sub-menu.breaking-news-menu > li > ul.sub-sub-menu > li {
       font-size: 2rem; }
     .site-header .site-header-main .navbar-brand {
       padding: 0;
+      margin-top: 10px;
       height: 46px; }
       @media screen and (max-width: 620px) {
         .site-header .site-header-main .navbar-brand {
