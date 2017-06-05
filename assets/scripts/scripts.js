@@ -47,30 +47,30 @@ $('document').ready(function() {
         return false;
     };
 
-    var stickHeader = function(){
-        if ( isScolledPast(210) ){
-            $("#topAddBlock").removeClass("fixadd");
-            // $("#masthead").removeClass("site-header-extra-padding");
-            $("#topAddBlock").css({
-                "position": "absolute",
-                "top":"212px"
-            });
-            $(".menu-mobile").data('foldaway', true);
+    // var stickHeader = function(){
+    //     if ( isScolledPast(210) ){
+    //         $("#topAddBlock").removeClass("fixadd");
+    //         // $("#masthead").removeClass("site-header-extra-padding");
+    //         $("#topAddBlock").css({
+    //             "position": "absolute",
+    //             "top":"212px"
+    //         });
+    //         $(".menu-mobile").data('foldaway', true);
             
 
-            // $('.site-branding-bottom').addClass('branding-bottom-fixed');
-        } else {
-            $("#topAddBlock").addClass("fixadd");
-            // $("#masthead").addClass("site-header-extra-padding");
-            $("#topAddBlock").css({
-                "position": "",
-                "top":""
-            });
-            // $('.site-branding-bottom').removeClass('branding-bottom-fixed');
+    //         // $('.site-branding-bottom').addClass('branding-bottom-fixed');
+    //     } else {
+    //         $("#topAddBlock").addClass("fixadd");
+    //         // $("#masthead").addClass("site-header-extra-padding");
+    //         $("#topAddBlock").css({
+    //             "position": "",
+    //             "top":""
+    //         });
+    //         // $('.site-branding-bottom').removeClass('branding-bottom-fixed');
 
-        }
-        return false;
-    };   
+    //     }
+    //     return false;
+    // };   
 
 
     // var scrollUpMenu = function() {
@@ -141,21 +141,31 @@ $('document').ready(function() {
         }
     });
 
-    //For accessibility
-    $(".sb-custom-menu > ul > li > a").focus(function(e) {
-        if (window.innerWidth > sbCustomMenuBreakPoint) {
-            $('ul.menu > li').children('ul.sub-menu').stop(true,true).slideUp('fast');
-            $(this).parent().children('ul').stop(true,true).slideDown('fast');
+
+    $(".sb-custom-menu > .menuContainer > ul > li").hover(function (e) {
+        if ($(window).width() > sbCustomMenuBreakPoint) {
+            $(this).children("ul").stop(true, false).slideToggle(275);
+            // $(this).toggleClass('now-active');
             e.preventDefault();
         }
     });
 
 
-      $('#profile').on('click', function(e) {
+    //For accessibility
+    $(".sb-custom-menu > .menuContainer > ul > li > a").focus(function(e) {
+        // if (window.innerWidth > sbCustomMenuBreakPoint) {
+            $('ul.menu > li').children('ul.sub-menu').stop(true,true).slideUp('fast');
+            $(this).parent().children('ul').stop(true,true).slideDown('fast');
+            e.preventDefault();
+        // }
+    });
+
+
+    $('#profile').on('click', function(e) {
         $('#header__menu').toggleClass('Profile_Open');
         $('body').toggleClass('no_profile');
         e.preventDefault();
-      });
+    });
 
 
 
@@ -168,30 +178,30 @@ $('document').ready(function() {
     }), 750);
 
 
-    $('#submitlivestreamform').on('click', function(e) {
-        e.preventDefault();
-        var email = $('#submitlivestreamformemail').val();
-        var name = $('#submitlivestreamformname').val();
-        var lastname = $('#submitlivestreamformlastname').val();
-        var wantsmail = $('#submitlivestreamformgetmail').is(":checked");
+    // $('#submitlivestreamform').on('click', function(e) {
+    //     e.preventDefault();
+    //     var email = $('#submitlivestreamformemail').val();
+    //     var name = $('#submitlivestreamformname').val();
+    //     var lastname = $('#submitlivestreamformlastname').val();
+    //     var wantsmail = $('#submitlivestreamformgetmail').is(":checked");
 
-        if (email !== '' && name !== '' && lastname !== ''){
-            $.get( 'http://submit.pagemasters.com.au/wobi/submit.php?email='+encodeURI(email)+'&name='+encodeURI(name)+'&lastname='+encodeURI(lastname)+'&wantsemail='+encodeURI(wantsmail) );
+    //     if (email !== '' && name !== '' && lastname !== ''){
+    //         $.get( 'http://submit.pagemasters.com.au/wobi/submit.php?email='+encodeURI(email)+'&name='+encodeURI(name)+'&lastname='+encodeURI(lastname)+'&wantsemail='+encodeURI(wantsmail) );
 
-            $('#streamform').html(
-                "<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe width='640' height='360' src='https://secure.metacdn.com/r/j/bekzoqlva/wbfs/embed' frameborder='0' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen </iframe></div>"
-            );
+    //         $('#streamform').html(
+    //             "<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe width='640' height='360' src='https://secure.metacdn.com/r/j/bekzoqlva/wbfs/embed' frameborder='0' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen </iframe></div>"
+    //         );
 
-            $('#streamformfooter').html(
-                "<h2>Thanks</h2>"
-            );
+    //         $('#streamformfooter').html(
+    //             "<h2>Thanks</h2>"
+    //         );
            
 
-        } else {
-            alert ("Please fill out all fields.");
-        }
+    //     } else {
+    //         alert ("Please fill out all fields.");
+    //     }
 
-    });
+    // });
 
     //Main slider
     // var swiper = new Swiper('.swiper-container', {

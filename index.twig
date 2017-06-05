@@ -105,7 +105,7 @@
                                 {% if popularArticles|length > 0 %}
                                     {% for i in 0..3 %}
                                         {% if popularArticles[i] %}
-                                            {{this.render('partials/_single-article.twig', {article: popularArticles[i], swap: 'false', containerClass: 'col-xs-12 col-sm-6 col-md-12 s100x110', swap: 'false'}) | raw}}
+                                            {{this.render('partials/_single-article.twig', {article: popularArticles[i], swap: 'false', containerClass: 'col-xs-12 col-sm-6 col-md-12 s100x110'}) | raw}}
                                         {% endif %}
                                     {% endfor %}
                                 {% endif %}

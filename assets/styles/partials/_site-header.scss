@@ -5,7 +5,7 @@
     z-index:140;
 
     .site-header-main {
-        background:#2b3744;
+        background:#333333;
         height: 70px;
 
 
@@ -50,7 +50,7 @@
 
         }
         .navbar-right {
-            margin-top:20px;
+            margin-top:25px;
             @media screen and (max-width: $mobile-break){
                 margin-top:12px;
             }

@@ -63,6 +63,20 @@
                                      {{parentItem.pageTitle | upper}}
                                   {% endif %}
                                 </a>
+
+                                {% if parentItem.children is defined and parentItem.children | length > 0 %}
+                                    <ul class="sub-menu">
+                                        {% for childItem in parentItem.children %}
+                                            {% set externalClass = (childItem.isExternal) ? 'external-link' : '' %}
+                                        <li><a class="{{externalClass}}" href="{{childItem.link |raw}}" {% if childItem.target != "" %}target="{{childItem.target}}"{% endif %}>
+                                                {{ ((childItem.label is empty) ? ((childItem.pageTitle is empty) ? childItem.blogTitle : childItem.pageTitle) : childItem.label)}}
+                                         </a></li>
+                                         {% endfor %}
+                                    </ul>
+                                {% endif %}
+
+
+
                             </li>
 
                         {% endfor %}

@@ -8163,7 +8163,8 @@ span.leadsentence {
       display: block;
       float: left;
       padding: 0;
-      margin: 0; }
+      margin: 0;
+      position: relative; }
       .sb-custom-menu > div > ul > li > a {
         color: #fff;
         font-weight: normal;
@@ -8185,19 +8186,20 @@ span.leadsentence {
         position: absolute;
         list-style: none;
         margin: 0;
-        background: #f5f5f5;
+        background: #333333;
+        top: 45px;
         left: 0;
         right: 0;
-        width: 100%;
-        padding-left: 0;
+        width: auto;
+        min-width: 300px;
+        padding: 10px;
         margin-top: 0; }
-        .sb-custom-menu > div > ul > li > ul.sub-menu h3 {
-          font-size: 1.6em;
-          font-weight: 700;
-          color: #000;
-          margin-top: 2px; }
-        .sb-custom-menu > div > ul > li > ul.sub-menu img {
-          max-width: 100%; }
+        .sb-custom-menu > div > ul > li > ul.sub-menu > li {
+          border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+          padding: 10px; }
+          .sb-custom-menu > div > ul > li > ul.sub-menu > li > a {
+            font-weight: 300;
+            color: #fff; }
   .sb-custom-menu .secondary-menu {
     display: none; }
   .sb-custom-menu ul.pages {
@@ -8571,7 +8573,7 @@ ul.menu > li > ul.sub-menu.breaking-news-menu > li > ul.sub-sub-menu > li {
   max-width: none;
   z-index: 140; }
   .site-header .site-header-main {
-    background: #2b3744;
+    background: #333333;
     height: 70px; }
     @media screen and (max-width: 620px) {
       .site-header .site-header-main {
@@ -8599,7 +8601,7 @@ ul.menu > li > ul.sub-menu.breaking-news-menu > li > ul.sub-sub-menu > li {
             margin-left: 10px;
             height: 43px; } }
     .site-header .site-header-main .navbar-right {
-      margin-top: 20px; }
+      margin-top: 25px; }
       @media screen and (max-width: 620px) {
         .site-header .site-header-main .navbar-right {
           margin-top: 12px; } }
