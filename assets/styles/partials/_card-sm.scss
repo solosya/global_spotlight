@@ -5,9 +5,6 @@
         margin-bottom: 8px;
     }
 
-
-
-
     a.card {
 
         height:366px;
@@ -88,7 +85,6 @@
                 > .category{
                     font-size: rem(11);
                     font-weight: bold;
-                    color: #39bcdc;
                     display: block;
                     line-height: 1;
                     margin-bottom: 8px;
@@ -116,7 +112,7 @@
                     font-size: rem(12);
                     padding: 0;
                     border: 0;
-                    color: #333333;
+                    color: #979797;
                     @media screen and (max-width: $mobile-break){
                         color: #6c6c6c;
                         font-size: em(10);
@@ -192,10 +188,33 @@
             &.twitter,
             &.instagram {
                 .content {
-                    padding-top:87px;
+                    padding-top:40px;
                 }
             }
+            &.instagram {
+                .content {
+                    height: 100%;
 
+                    .category {
+                        visibility:hidden;
+                    }
+                    >p {
+                        display:none;
+                    }
+                    >time {
+                        display:none;
+                    }
+                    .author {
+                        position:absolute;
+                        bottom:20px;
+                        display:block;
+                        >p {
+                            color:#dadada;
+                            display:block;
+                        }
+                    }
+                }
+            }
 
             &.facebook.withImage__content,
             &.twitter.withImage__content,
@@ -224,7 +243,7 @@
                     }
                 }
                 .content {
-                    padding-top:87px;
+                    padding-top:40px;
                     background:transparent;
                     z-index:1;
                     @media screen and (max-width: $mobile-break){
@@ -240,6 +259,14 @@
                         }
 
 
+                    }
+                }
+            }
+
+            &.instagram.withImage__content {
+                figure {
+                    &:after{
+                        display:none;
                     }
                 }
             }
@@ -260,6 +287,7 @@
                     > p {   
                         min-height:85px;
                         color:white;
+                        margin-top: 30px;
                     }
                 }
             }
@@ -271,6 +299,7 @@
         &.facebook{
             .category {
                 &:before {
+                    visibility: visible;
                     content: '';
                     width:25px;
                     height:25px;
@@ -293,6 +322,7 @@
         &.twitter{
             .category {
                 &:before {
+                    visibility: visible;
                     content: '';
                     width:25px;
                     height:25px;
@@ -313,6 +343,7 @@
         &.instagram{
             .category {
                 &:before {
+                    visibility: visible;
                     content: '';
                     width:25px;
                     height:25px;
@@ -329,7 +360,84 @@
                 }
             }
         }      
+    }
+}
 
-        
+
+.sidebar-news {
+
+
+    @media screen and (max-width: $sm-break){
+        .card-sm{
+            a.card {
+                &.without__image {
+                    > article {
+                        > .content{
+                            > p {   
+                                min-height:185px;
+                                font-size:rem(30);
+                                margin-top: 0;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+
+
+    @media screen and (max-width: $mobile-break){
+        .card-sm{
+            a.card {
+                &.without__image {
+                    > article {
+                        > .content{
+                            > p {   
+                                font-size:rem(18);
+
+                                min-height:50px;
+                                margin-top: 0;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+.index-bottom {
+    @media screen and (max-width: $mobile-break){
+
+        .card-sm{
+            
+            margin-bottom:20px;
+
+            a.card {
+
+                margin-left:0;
+                margin-right:0;
+                height:240px;
+
+
+                > article {
+
+                    > figure {
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        top: 0;
+                        height:100%;
+                        width: 100%;
+
+                    }
+                    > .content{
+                    }
+                }
+            }
+        }
     }
 }

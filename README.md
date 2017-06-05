@@ -1,2 +1,1 @@
-# global_spotlight
-Theme for Global Spotlight
+# world_business_form

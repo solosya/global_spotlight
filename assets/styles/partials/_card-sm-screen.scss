@@ -9,11 +9,11 @@
 
     a.card {
 
-        height:100%;
+        height:85%;
 
 
         > article {
-
+            position:relative;
             height: 368px;
 
             > figure{
@@ -109,6 +109,7 @@
         }
 
 
+
         &.article.without__image {
             .content {
                 padding-top:52px;
@@ -137,8 +138,8 @@
 
             article {
                 height:100%;
-                background: #3c4c57;
-                background: #ee412f;
+                background: #ea8235;
+
                 // background: rgba(0,0,0,0.8);
 
 
@@ -179,21 +180,21 @@
             &.instagram.withImage__content {
                 figure {
                     position: absolute;
-                    left: 15px;
-                    right: 15px;
-                    width: auto;
+                    // left: 15px;
+                    // right: 15px;
+                    width: 100%;
                     height:100%;
 
-                    &:after{
-                        content: '';
-                        opacity: 0.4;
-                        background-color: #000;
-                        width: 100%;
-                        height: 100%;
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                    }
+                    // &:after{
+                    //     content: '';
+                    //     opacity: 0.4;
+                    //     background-color: #000;
+                    //     width: 100%;
+                    //     height: 100%;
+                    //     position: absolute;
+                    //     top: 0;
+                    //     left: 0;
+                    // }
                 }
                 .content {
                     padding-top:52px;
@@ -201,8 +202,9 @@
                     z-index:1;
 
                     > p {
-                        min-height:85px;
-                        color:white;
+                        display:none;
+                        // min-height:85px;
+                        // color:white;
                     }
                     time {
                         color: #dadada;
@@ -214,7 +216,10 @@
 
                 .content {
                     background:transparent;
-                    
+                    padding-top: 52px;
+                    height:100%;
+                    position:relative;
+
                     @media screen and (max-width: $mobile-break){
                         height: 116px;
                         padding-top: 20px;                
@@ -222,7 +227,11 @@
 
             
 
-                    > p {   
+                    > p { 
+                        // margin-top:100px;
+                        width: 90%;
+                        // font-size:rem(50);
+                        font-size:6vh;
                         min-height:85px;
                         color:white;
                     }
@@ -254,18 +263,18 @@
 
         &.twitter{
 
-            figure {
-                &:before {
-                  content: '';
-                  position: absolute;
-                  top: 0;
-                  bottom: 0;
-                  width: 100%;
-                  opacity: 0.6;
-                  background-color: #00A4CD;
-                  z-index: 1;
-                }
-            }
+            // figure {
+            //     &:before {
+            //       content: '';
+            //       position: absolute;
+            //       top: 0;
+            //       bottom: 0;
+            //       width: 100%;
+            //       opacity: 0.6;
+            //       background-color: #00A4CD;
+            //       z-index: 1;
+            //     }
+            // }
 
             .content {
                 .author {
@@ -278,6 +287,11 @@
                         color:#dadada;
                         font-size: rem(15);
                         display:block;
+                        &:before {
+                            content: '@';
+                        }
+
+
                     }
                 }
                 time {

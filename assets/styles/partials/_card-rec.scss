@@ -38,6 +38,8 @@
                 flex: 0 0 330px;
                 overflow: hidden;
                 float: left;
+                height:100%;
+                min-height:100%;
 
                 @media screen and (max-width: $mobile-break){
                     width: 116px;
@@ -81,14 +83,13 @@
                 background:white;
 
                 @media screen and (max-width: $mobile-break){
-                    padding: 14px 28px 0 14px;
+                    padding: 11px 28px 10px 14px;
                 }
 
 
                 > .category{
                     font-size: em(11);
                     font-weight: bold;
-                    color: #39bcdc;
                     display: block;
                     line-height: 1;
                     margin-bottom: 15px;
@@ -180,8 +181,13 @@
                     @media screen and (max-width: $mobile-break){
                         display:block;
                         border: none;
-                        height:80px;
+                        font-size:rem(18);
+                        font-weight:normal;
+                        height:48px;
+                        line-height:1.3;
                         padding:0;
+                        margin-bottom:10px;
+                        margin-top:10px;
 
                     }
 
@@ -248,9 +254,24 @@
 
         &.youtube, &.vimeo{
             .content {
+                .category {
+                    @media screen and (max-width: $mobile-break){
+                        font-size:rem(10);
+                        margin-bottom:5px;
+                    }
+
+                }
                 >p {
                     color:black;
                     height:127px;
+                    @media screen and (max-width: $mobile-break){
+                        height:65px;
+                        font-size:rem(16);
+                        font-weight:bold;
+                        margin-bottom:0;
+                        margin-top:0;
+                    }
+
                 }
             }
 

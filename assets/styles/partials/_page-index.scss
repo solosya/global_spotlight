@@ -1,3 +1,7 @@
+#main {
+    position:relative;
+}
+
 .main-content{
     // border-right:2px solid black;
     // padding-right:44px;
@@ -5,7 +9,8 @@
         content: "";
         position:absolute;
         top:0;
-        bottom: 46px;
+        bottom: 80px;
+        // bottom: 46px;
         right: -31px;;
         width:1px;
         background:#979797;
@@ -21,6 +26,10 @@
 
 
     }
+}
+
+.home-page-content {
+    padding-bottom:50px;
 }
 
 .index-top {
@@ -98,5 +107,23 @@
         > .sidebar-bottom {
             margin-top: 45px;
         }
+    }
+}
+
+section.sponsors {
+    padding-bottom:50px;
+
+    h2 {
+        margin-top:57px;
+        margin-bottom:14px;
+        font-size: rem(17);
+        font-weight: bold;
+        color:rgba(0, 0, 0, 0.52);
+    }
+
+    div.justify_children {
+        display:flex;
+        justify-content: space-between;
+        align-items:flex-start;
     }
 }

@@ -1,9 +1,11 @@
 .site-header {
+    position:relative;
     padding:0;
     max-width:none;
+    z-index:140;
 
     .site-header-main {
-        background:#333333;
+        background:#2b3744;
         height: 70px;
 
 
@@ -19,9 +21,9 @@
 
         .navbar-brand {
             padding:0;
-            height:80px;
+            height:46px;
             @media screen and (max-width: $mobile-break){
-                height:60px;
+                // height:60px;
                 padding:8px;
             }
             > img.text-logo {
@@ -34,12 +36,21 @@
             }
             
             > img.main-logo {
-                height:70px;
+                // margin-top: 25px;
+                // margin-left: 40px;
+                height:46px;
+
+                @media screen and (max-width: $mobile-break){
+                    margin-top: 0;
+                    margin-left: 10px;
+                    height: 43px;
+                }
+
             }
 
         }
         .navbar-right {
-            margin-top:25px;
+            margin-top:20px;
             @media screen and (max-width: $mobile-break){
                 margin-top:12px;
             }
