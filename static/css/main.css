@@ -9584,6 +9584,8 @@ body.article {
       .article article.article-main .page-content .article_content blockquote > p {
         font-size: 2.6rem;
         line-height: 1.46; }
+    .article article.article-main .page-content .article_content h4 {
+      font-size: 1.2em; }
 
 .article article.article-main .related-articles {
   margin-top: 105px;
