@@ -11334,6 +11334,9 @@ body.screen {
   line-height: 1.29;
   color: #000000; }
 
+.videos-section .card-sm a.card.social article {
+  background: transparent; }
+
 @media screen and (max-width: 768px) {
   .sidebar-news .card-sm a.card.without__image > article > .content > p {
     min-height: 185px;
@@ -11359,10 +11362,7 @@ body.screen {
         right: 0;
         top: 0;
         height: 100%;
-        width: 100%; }
-      .index-bottom .card-sm a.card.social article {
-        height: auto;
-        background: transparent; } }
+        width: 100%; } }
 
 .card-sm-screen {
   position: relative;

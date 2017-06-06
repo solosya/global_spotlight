@@ -383,6 +383,11 @@
                     }
                 }
             }
+            &.social {
+                article {
+                    background:transparent;
+                }
+            }
         }
     }
 }
@@ -461,15 +466,8 @@
                     > .content{
                     }
                 }
-            
-            &.social {
-                article {
-                    height:auto;
-                    background:transparent;
-                }
-            }
-            }
 
+            }
 
         }
     }
