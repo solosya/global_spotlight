@@ -5,7 +5,7 @@
 
 
 {{this.registerJs("CardController();")}}
-{{this.registerJs("BlogController();")}}
+{# {{this.registerJs("BlogController();")}} #}
 
 {% set limit = 10 %}
 
@@ -31,7 +31,22 @@
     
         <section class="home-page-content">
             <div class="container section">
-                <h1>{{blogInfo.title | upper}}</h1>
+                <div class="row header">
+                    <div class="col-sm-12">
+                        <h2>Global Spotlight</h2>
+                        <h1>{{blogInfo.title | upper}}</h1>
+                    </div>
+                </div>
+
+
+                {% if blogInfo.shortDescription %}
+                <div class="row description">
+                    <div class="col-sm-12 col-md-8">
+                        <p>{{blogInfo.shortDescription}}</p>
+                    </div>
+                </div>
+                {% endif %}
+
 
                 <div class="row">
                     

@@ -5,24 +5,48 @@
 
         padding-top:50px;
 
-        > h2 {
+        > .header h2 {
             letter-spacing: 1px;
             font-style:italic;
             opacity:0.6;
             font-size: rem(16);
             font-family: $font-family-serif;
+            font-weight:normal;
             padding:0;
             padding-bottom:5px;
             margin:0;
 
         }
-        > h1 {
+        > .header h1 {
             letter-spacing: 3px;
             font-size: rem(26);
             font-family: $font-family-sans-serif;
             padding:0;
             margin:0;
             margin-bottom:26px;
+        }
+
+        > .description {
+            p {
+                opacity: 0.6;
+                font-family: $font-family-serif;
+                font-size: rem(14);
+                font-style: italic;
+                line-height: 1.57;
+                letter-spacing: 0.1px;
+                color: #000000;
+                margin-bottom:40px;
+                margin-top:-12px;
+
+                &:before {
+                    content:"";
+                    display:block;
+                    background:#979797;
+                    width:100px;
+                    height:1px;
+                    margin-bottom:15px;
+                }
+            }
         }
     }
 

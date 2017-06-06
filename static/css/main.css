@@ -9766,22 +9766,40 @@ body.article {
 
 .channel .section {
   padding-top: 50px; }
-  .channel .section > h2 {
+  .channel .section > .header h2 {
     letter-spacing: 1px;
     font-style: italic;
     opacity: 0.6;
     font-size: 1.6rem;
     font-family: "PT Serif", "Times New Roman", Times, serif;
+    font-weight: normal;
     padding: 0;
     padding-bottom: 5px;
     margin: 0; }
-  .channel .section > h1 {
+  .channel .section > .header h1 {
     letter-spacing: 3px;
     font-size: 2.6rem;
     font-family: "adelle-sans", Helvetica, Arial, sans-serif;
     padding: 0;
     margin: 0;
     margin-bottom: 26px; }
+  .channel .section > .description p {
+    opacity: 0.6;
+    font-family: "PT Serif", "Times New Roman", Times, serif;
+    font-size: 1.4rem;
+    font-style: italic;
+    line-height: 1.57;
+    letter-spacing: 0.1px;
+    color: #000000;
+    margin-bottom: 40px;
+    margin-top: -12px; }
+    .channel .section > .description p:before {
+      content: "";
+      display: block;
+      background: #979797;
+      width: 100px;
+      height: 1px;
+      margin-bottom: 15px; }
 
 .channel .follow-box {
   position: relative;

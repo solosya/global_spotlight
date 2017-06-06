@@ -26,7 +26,13 @@
             "solutions": {
                 "feed": "",
                 "link": "",
-                "limit": 12,
+                "limit": 4,
+                "id" : ""
+            },
+            "videos": {
+                "feed": "",
+                "link": "",
+                "limit": 4,
                 "id" : ""
             }
         }
@@ -146,20 +152,6 @@
                     </div>
                 </div>
             </div>
-
-
-            {#                 {{ this.render('partials/ajaxarticles.twig', {
-                                limit: sections['gallery'].limit,
-                                non_pinned: articlesArr.existingNonPinnedCount, 
-                                articles: sections['gallery'].feed,
-                                card_style: "col-sm-3 card-sm",
-                                container:"galleryAjaxArticles",
-                                blogid: sections['gallery'].id
-                            }) | raw }}
-
-             #}                
-
-            
             {% endif %}
             
 
