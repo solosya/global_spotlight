@@ -11359,7 +11359,10 @@ body.screen {
         right: 0;
         top: 0;
         height: 100%;
-        width: 100%; } }
+        width: 100%; }
+      .index-bottom .card-sm a.card.social article {
+        height: auto;
+        background: transparent; } }
 
 .card-sm-screen {
   position: relative;

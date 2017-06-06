@@ -461,7 +461,16 @@
                     > .content{
                     }
                 }
+            
+            &.social {
+                article {
+                    height:auto;
+                    background:transparent;
+                }
             }
+            }
+
+
         }
     }
 }
