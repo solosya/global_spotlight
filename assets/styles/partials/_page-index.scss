@@ -83,10 +83,18 @@
 
 
     > .cta {
-        height:334px;
+        // height:334px;
         background:#39bddc;
         padding:25px;
         margin: 0 0 65px 0;
+        padding-bottom:0;
+
+
+        @media screen and (max-width: $md-break){
+            height: auto;
+        }
+
+
 
         h1 {
             margin:0;

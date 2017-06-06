@@ -7629,7 +7629,7 @@ span.leadsentence {
   transition-duration: 0.5s;
   transition: all 0.5s ease; }
 
-.social-links > ul, .site-footer .footer-menu > ul, .site-footer .footer-top .section-links-mobile > ul, .site-footer .footer-top .section-links > ul {
+.social-links > ul, .site-footer .footer-menu > ul, .site-footer .section-links-mobile > ul {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7890,7 +7890,8 @@ span.leadsentence {
 
 .site-footer {
   width: 100%;
-  margin-top: 0; }
+  margin-top: 0;
+  background: #000000; }
   @media screen and (max-width: 768px) {
     .site-footer {
       margin-top: 55px; } }
@@ -7904,151 +7905,177 @@ span.leadsentence {
       .site-footer .footer-menu > ul > li > a {
         color: #FFF;
         text-transform: uppercase; }
-  .site-footer .footer-top {
-    background: #000000;
+  .site-footer .icon-wrapper {
     position: relative; }
-    .site-footer .footer-top .icon-wrapper {
-      position: relative; }
-      .site-footer .footer-top .icon-wrapper span {
-        display: none; }
-        @media screen and (max-width: 768px) {
-          .site-footer .footer-top .icon-wrapper span {
-            position: absolute;
-            bottom: 0;
-            right: 20px;
-            display: inline-block;
-            font-family: "adelle-sans", Helvetica, Arial, sans-serif;
-            font-size: 1em; } }
-        .site-footer .footer-top .icon-wrapper span a {
-          color: white;
-          text-decoration: none; }
-    .site-footer .footer-top .footer-brand {
-      display: inline-block;
-      width: 64px;
-      height: 71px;
-      margin: 150px 15px 60px 0; }
+    .site-footer .icon-wrapper span {
+      display: none; }
       @media screen and (max-width: 768px) {
-        .site-footer .footer-top .footer-brand {
-          margin-bottom: 30px; } }
-      .site-footer .footer-top .footer-brand > img {
-        width: 285px; }
-    .site-footer .footer-top .contact {
-      color: white; }
-      .site-footer .footer-top .contact h2 {
-        font-size: 1.4rem;
-        margin-bottom: 10px; }
-      .site-footer .footer-top .contact p {
-        opacity: 0.8;
-        font-size: 1.4rem;
-        font-weight: normal; }
-      .site-footer .footer-top .contact a {
-        opacity: 0.8;
-        font-size: 1.4rem;
-        color: white; }
-    .site-footer .footer-top .symbol {
-      margin-right: 46px;
-      padding-top: 15px; }
-      @media screen and (max-width: 768px) {
-        .site-footer .footer-top .symbol {
-          float: left; } }
-      @media screen and (max-width: 620px) {
-        .site-footer .footer-top .symbol {
-          padding-top: 155px;
-          width: 55px;
-          padding-top: 45px; } }
-    .site-footer .footer-top .footer_btn-lg {
-      background-color: #e22f22;
-      color: #FFF;
-      padding-top: 20px; }
-      @media screen and (max-width: 768px) {
-        .site-footer .footer-top .footer_btn-lg {
-          float: right; } }
-      .site-footer .footer-top .footer_btn-lg > a {
-        font-family: 'IM Fell Great Primer', serif;
-        color: #FFF;
-        font-size: 16px;
-        font-weight: normal; }
-      .site-footer .footer-top .footer_btn-lg > div {
-        background-color: white;
-        margin-top: 20px; }
-        .site-footer .footer-top .footer_btn-lg > div > input {
-          font-family: 'PT Sans', Tahoma, Arial, serif;
-          color: #000; }
-    .site-footer .footer-top .footer-middle {
-      margin-bottom: 30px; }
-    .site-footer .footer-top .social-links > ul {
-      margin-bottom: 0; }
-      .site-footer .footer-top .social-links > ul > li {
-        display: inline-block;
-        width: 15px;
-        height: 40px;
-        margin-right: 10px; }
-        .site-footer .footer-top .social-links > ul > li > a {
-          display: block;
-          width: 100%;
-          height: 100%; }
-          .site-footer .footer-top .social-links > ul > li > a.facebook {
-            background: url("../images/facebook.svg") no-repeat center; }
-          .site-footer .footer-top .social-links > ul > li > a.twitter {
-            background: url("../images/twitter.svg") no-repeat center; }
-          .site-footer .footer-top .social-links > ul > li > a.vimeo {
-            background: url("../images/vimeo.svg") no-repeat center; }
-    .site-footer .footer-top .publish-mobile {
-      position: relative; }
-      .site-footer .footer-top .publish-mobile span {
+        .site-footer .icon-wrapper span {
+          position: absolute;
+          bottom: 0;
+          right: 20px;
+          display: inline-block;
+          font-family: "adelle-sans", Helvetica, Arial, sans-serif;
+          font-size: 1em; } }
+      .site-footer .icon-wrapper span a {
         color: white;
-        font-size: 1em;
-        font-family: "adelle-sans", Helvetica, Arial, sans-serif; }
-        .site-footer .footer-top .publish-mobile span a {
-          color: white;
-          text-decoration: none; }
-    .site-footer .footer-top .publish {
-      text-align: right;
-      margin-bottom: 30px;
-      position: relative;
-      vertical-align: bottom; }
-      .site-footer .footer-top .publish a {
-        color: white;
-        font-size: 1.1em;
-        font-family: "adelle-sans", Helvetica, Arial, sans-serif;
         text-decoration: none; }
-    .site-footer .footer-top .section-links-mobile {
-      margin-bottom: 35px; }
+  .site-footer .minds-logo {
+    text-align: right; }
+    @media screen and (max-width: 768px) {
+      .site-footer .minds-logo {
+        text-align: left; } }
+    .site-footer .minds-logo a {
+      display: inline-block;
+      margin-top: 50px; }
       @media screen and (max-width: 768px) {
-        .site-footer .footer-top .section-links-mobile > ul {
-          display: block;
-          padding-top: 15px; } }
-      .site-footer .footer-top .section-links-mobile > ul li {
-        margin-right: 50px; }
-        .site-footer .footer-top .section-links-mobile > ul li:last-child {
-          margin-right: 0; }
-        @media screen and (max-width: 768px) {
-          .site-footer .footer-top .section-links-mobile > ul li {
-            margin-bottom: 15px; } }
-        .site-footer .footer-top .section-links-mobile > ul li a {
-          font-size: 1.4rem;
-          display: block;
-          color: white; }
-    .site-footer .footer-top .section-links {
-      float: right; }
+        .site-footer .minds-logo a {
+          margin: 20px 0; } }
+  .site-footer .footer-brand {
+    display: inline-block;
+    width: 64px;
+    height: 71px;
+    margin: 30px 15px 60px 0; }
+    @media screen and (max-width: 768px) {
+      .site-footer .footer-brand {
+        margin-bottom: 30px; } }
+    .site-footer .footer-brand > img {
+      width: 285px; }
+  .site-footer .contact {
+    text-align: right;
+    color: white; }
+    @media screen and (max-width: 768px) {
+      .site-footer .contact {
+        text-align: left; } }
+    .site-footer .contact h2 {
+      font-size: 1.4rem;
+      margin-bottom: 10px; }
+    .site-footer .contact p {
+      opacity: 0.8;
+      font-size: 1.4rem;
+      font-weight: normal; }
+    .site-footer .contact a {
+      opacity: 0.8;
+      font-size: 1.4rem;
+      color: white; }
+  .site-footer .symbol {
+    margin-right: 46px;
+    padding-top: 15px; }
+    @media screen and (max-width: 768px) {
+      .site-footer .symbol {
+        float: left; } }
+    @media screen and (max-width: 620px) {
+      .site-footer .symbol {
+        padding-top: 155px;
+        width: 55px;
+        padding-top: 45px; } }
+  .site-footer .footer_btn-lg {
+    background-color: #e22f22;
+    color: #FFF;
+    padding-top: 20px; }
+    @media screen and (max-width: 768px) {
+      .site-footer .footer_btn-lg {
+        float: right; } }
+    .site-footer .footer_btn-lg > a {
+      font-family: 'IM Fell Great Primer', serif;
+      color: #FFF;
+      font-size: 16px;
+      font-weight: normal; }
+    .site-footer .footer_btn-lg > div {
+      background-color: white;
+      margin-top: 20px; }
+      .site-footer .footer_btn-lg > div > input {
+        font-family: 'PT Sans', Tahoma, Arial, serif;
+        color: #000; }
+  .site-footer .footer-middle {
+    margin-bottom: 30px; }
+  .site-footer .social-links {
+    margin-bottom: 0;
+    padding: 0; }
+    .site-footer .social-links > li {
+      display: inline-block;
+      width: 15px;
+      height: 40px;
+      margin-right: 10px; }
+      .site-footer .social-links > li > a {
+        display: block;
+        width: 100%;
+        height: 100%; }
+        .site-footer .social-links > li > a.facebook {
+          background: url("../images/facebook.svg") no-repeat center; }
+        .site-footer .social-links > li > a.twitter {
+          background: url("../images/twitter.svg") no-repeat center; }
+        .site-footer .social-links > li > a.vimeo {
+          background: url("../images/vimeo.svg") no-repeat center; }
+  .site-footer .publish-mobile {
+    position: relative; }
+    .site-footer .publish-mobile span {
+      color: white;
+      font-size: 1em;
+      font-family: "adelle-sans", Helvetica, Arial, sans-serif; }
+      .site-footer .publish-mobile span a {
+        color: white;
+        text-decoration: none; }
+  .site-footer .publish {
+    text-align: right;
+    margin-bottom: 30px;
+    position: relative;
+    vertical-align: bottom; }
+    @media screen and (max-width: 768px) {
+      .site-footer .publish {
+        text-align: left; } }
+    .site-footer .publish a {
+      color: white;
+      font-size: 1.1em;
+      font-family: "adelle-sans", Helvetica, Arial, sans-serif;
+      text-decoration: none; }
+  .site-footer .section-links-mobile {
+    margin-bottom: 35px; }
+    @media screen and (max-width: 768px) {
+      .site-footer .section-links-mobile > ul {
+        display: block;
+        padding-top: 15px; } }
+    .site-footer .section-links-mobile > ul li {
+      margin-right: 50px; }
+      .site-footer .section-links-mobile > ul li:last-child {
+        margin-right: 0; }
       @media screen and (max-width: 768px) {
-        .site-footer .footer-top .section-links {
-          float: left; } }
-      @media screen and (max-width: 768px) {
-        .site-footer .footer-top .section-links > ul {
-          display: block;
-          padding-top: 15px; } }
-      .site-footer .footer-top .section-links > ul li {
-        margin-right: 50px; }
-        .site-footer .footer-top .section-links > ul li:last-child {
-          margin-right: 0; }
-        @media screen and (max-width: 768px) {
-          .site-footer .footer-top .section-links > ul li {
-            margin-bottom: 15px; } }
-        .site-footer .footer-top .section-links > ul li a {
-          font-size: 1.4rem;
-          display: block;
-          color: white; }
+        .site-footer .section-links-mobile > ul li {
+          margin-bottom: 15px; } }
+      .site-footer .section-links-mobile > ul li a {
+        font-size: 1.4rem;
+        display: block;
+        color: white; }
+  .site-footer .section-links > * {
+    display: inline-block;
+    vertical-align: top;
+    line-height: normal; }
+  .site-footer .section-links > ul.left {
+    width: 240px;
+    border-right: 1px solid white; }
+  .site-footer .section-links > ul.right {
+    margin-left: 20px; }
+  .site-footer .section-links > ul {
+    padding: 0; }
+    .site-footer .section-links > ul li {
+      list-style-type: none;
+      margin-bottom: 15px; }
+      .site-footer .section-links > ul li a {
+        font-size: 1.2rem;
+        display: block;
+        color: white; }
+  .site-footer .bottom-links ul {
+    padding: 0; }
+    .site-footer .bottom-links ul li {
+      display: inline-block;
+      margin-right: 17px; }
+      .site-footer .bottom-links ul li a {
+        font-size: 1rem;
+        letter-spacing: 0.4px;
+        color: #fff; }
+  .site-footer .bottom {
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.4); }
 
 .page-hero {
   height: 520px;
@@ -9400,10 +9427,13 @@ button.swiper-pagination-bullet {
     .sidebar {
       padding-left: 15px; } }
   .sidebar > .cta {
-    height: 334px;
     background: #39bddc;
     padding: 25px;
-    margin: 0 0 65px 0; }
+    margin: 0 0 65px 0;
+    padding-bottom: 0; }
+    @media screen and (max-width: 1200px) {
+      .sidebar > .cta {
+        height: auto; } }
     .sidebar > .cta h1 {
       margin: 0;
       color: #fff;
