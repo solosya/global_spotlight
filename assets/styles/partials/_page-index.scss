@@ -65,7 +65,7 @@
 .videos-section {
     padding-top:40px;
     background:rgba(51,51,51,.05);
-    
+
     h3 {
         font-size: rem(17);
         margin: 0 0 16px 0;
@@ -80,6 +80,46 @@
     @media screen and (max-width: $md-break){
         padding-left: 15px;
     }
+
+
+    > .cta {
+        height:334px;
+        background:#39bddc;
+        padding:25px;
+        margin: 0 0 65px 0;
+
+        h1 {
+            margin:0;
+            color:#fff;
+            font-size:rem(36);
+            margin-bottom: 25px;
+        }
+        p {
+            color:#fff;
+            font-size:rem(20);
+            &:before {
+                content:"";
+                display:block;
+                background:#fff;
+                width:55px;
+                height:1px;
+                margin-bottom:15px;
+            }
+
+            &:after {
+                content:"";
+                margin-top:10px;
+                display:block;
+                // background:#fff;
+                background: url('../images/cta_arrow.svg') no-repeat center;
+                width:51px;
+                height:51px;
+            }
+
+
+        }
+    }
+
 
     > .sidebar-news {
 

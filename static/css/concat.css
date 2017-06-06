@@ -9399,6 +9399,33 @@ button.swiper-pagination-bullet {
   @media screen and (max-width: 1200px) {
     .sidebar {
       padding-left: 15px; } }
+  .sidebar > .cta {
+    height: 334px;
+    background: #39bddc;
+    padding: 25px;
+    margin: 0 0 65px 0; }
+    .sidebar > .cta h1 {
+      margin: 0;
+      color: #fff;
+      font-size: 3.6rem;
+      margin-bottom: 25px; }
+    .sidebar > .cta p {
+      color: #fff;
+      font-size: 2rem; }
+      .sidebar > .cta p:before {
+        content: "";
+        display: block;
+        background: #fff;
+        width: 55px;
+        height: 1px;
+        margin-bottom: 15px; }
+      .sidebar > .cta p:after {
+        content: "";
+        margin-top: 10px;
+        display: block;
+        background: url("../images/cta_arrow.svg") no-repeat center;
+        width: 51px;
+        height: 51px; }
   .sidebar > .sidebar-news > .sidebar-top {
     padding-bottom: 41px; }
     .sidebar > .sidebar-news > .sidebar-top:after {
