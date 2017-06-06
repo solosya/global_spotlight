@@ -370,6 +370,9 @@
             article {
                 > figure{
                     height:200px;
+                    @media screen and (max-width: $sm-break){
+                        height:auto;
+                    }
                 }
 
                 >.content {

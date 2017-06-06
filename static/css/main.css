@@ -11325,6 +11325,9 @@ body.screen {
 
 .videos-section .card-sm a.card article > figure {
   height: 200px; }
+  @media screen and (max-width: 768px) {
+    .videos-section .card-sm a.card article > figure {
+      height: auto; } }
 
 .videos-section .card-sm a.card article > .content h2 {
   margin-top: 5px;
