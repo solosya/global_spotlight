@@ -67,7 +67,7 @@
                 {% if (article.hasMedia == 'TRUE' or article.hasPreviewMedia == 'TRUE') and imageSuppress == 'false' %}
                     <figure class="{{figureClass}}">
                         <picture>
-                            <source  media="(max-width: 620px)" srcset="{{articleImgSmall}}">
+                            <source media="(max-width: 620px)" srcset="{{articleImgSmall}}">
                             <img class="img-responsive lazyload" data-original="{{articleImg}}"  {% if articleImg is not empty %} style="background-image:url('{{placeholder}}');" {%endif%}>
                         </picture>
                     </figure>

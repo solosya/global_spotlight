@@ -1,3 +1,12 @@
+.showOnScroll {
+    top:0 !important;
+}
+
+.fixHeader {
+    position:fixed;
+    top:-70px;
+}
+
 .site-header {
     position:relative;
     padding:0;
@@ -5,8 +14,11 @@
     z-index:140;
 
     .site-header-main {
+        @include transition(100000s);
+
         background:#333333;
         height: 70px;
+        width:100%;
 
 
         @media screen and (max-width: $mobile-break){

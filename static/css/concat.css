@@ -2654,7 +2654,7 @@ select[multiple].input-lg,
 
 .navbar-brand {
   float: left;
-  padding: 28px 15px;
+  padding: 12px;
   font-size: 13px;
   line-height: 14px;
   height: 70px; }
@@ -2662,6 +2662,8 @@ select[multiple].input-lg,
     text-decoration: none; }
   .navbar-brand > img {
     display: block; }
+  .navbar-brand > img.text-logo {
+    margin-top: 12px; }
   @media (min-width: 768px) {
     .navbar > .container .navbar-brand, .login-page .navbar > .container .navbar-brand, .navbar > .profile__container .navbar-brand,
     .navbar > .container-fluid .navbar-brand {
@@ -2997,10 +2999,9 @@ select[multiple].input-lg,
   outline: 0; }
 
 .modal-backdrop {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
-  bottom: 0;
   left: 0;
   z-index: 1040;
   background-color: #000; }
@@ -5740,9 +5741,11 @@ body.login .add-header-top {
         background: #000000;
         bottom: 0;
         left: 0;
-        -webkit-transition: 0.5s;
-        -o-transition: 0.5s;
-        transition: 0.5s; }
+        transition: all 0.3s ease-in;
+        -moz-transition: all 0.3s ease-in;
+        -o-transition: all 0.3s ease-in;
+        -webkit-transition: all 0.3s ease-in;
+        -ms-transition: all 0.3s ease-in; }
       .login-page .tab-content .txt-link span.green:hover:after {
         width: 100%; }
       @media screen and (min-width: 200px) and (max-width: 480px) {
@@ -5904,9 +5907,11 @@ body.login .add-header-top {
         padding: 15px 20px;
         -webkit-border-radius: 2px;
         border-radius: 2px;
-        -webkit-transition: all 0.5s ease 0s;
-        -o-transition: all 0.5s ease 0s;
-        transition: all 0.5s ease 0s;
+        transition: all 0.3s ease-in;
+        -moz-transition: all 0.3s ease-in;
+        -o-transition: all 0.3s ease-in;
+        -webkit-transition: all 0.3s ease-in;
+        -ms-transition: all 0.3s ease-in;
         background: none repeat scroll 0 0 #e6e6e6;
         display: -webkit-box;
         display: -webkit-flex;
@@ -6194,9 +6199,11 @@ body.no_profile .profile_overlay {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 428px auto;
-  -webkit-transition: opacity 0.3s ease-in-out 0s;
-  -o-transition: opacity 0.3s ease-in-out 0s;
-  transition: opacity 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
   -webkit-transform: translate(-50%, -50%);
   /* Chrome, Safari, Opera */
   -moz-transform: translate(-50%, -50%);
@@ -6476,9 +6483,11 @@ body.no_profile .profile_overlay {
   cursor: pointer;
   position: absolute;
   background: transparent;
-  -webkit-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out; }
+  transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in; }
   .x-close:hover {
     -webkit-transform: translateY(0px) rotate(90deg) !important;
     /* Chrome, Safari, Opera */
@@ -6496,9 +6505,11 @@ body.no_profile .profile_overlay {
     content: ' ';
     position: absolute;
     background-color: #ffffff;
-    -webkit-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out; }
+    transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in; }
   .x-close:before {
     -webkit-transform: rotate(45deg);
     /* Chrome, Safari, Opera */
@@ -7292,9 +7303,11 @@ ul.search-sub-menu {
   box-shadow: inset 0 7px 9px -7px rgba(0, 0, 0, 0.4), inset 0 -7px 9px -7px rgba(0, 0, 0, 0.4);
   z-index: 1;
   width: 100%;
-  -webkit-transition: 0.2s;
-  -o-transition: 0.2s;
-  transition: 0.2s; }
+  transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in; }
   ul.search-sub-menu.active {
     margin-top: 0; }
 
@@ -8565,14 +8578,27 @@ ul.menu > li > ul.sub-menu.breaking-news-menu > li > ul.sub-sub-menu > li {
     margin-bottom: 10px;
     display: inline-block; } }
 
+.showOnScroll {
+  top: 0 !important; }
+
+.fixHeader {
+  position: fixed;
+  top: -70px; }
+
 .site-header {
   position: relative;
   padding: 0;
   max-width: none;
   z-index: 140; }
   .site-header .site-header-main {
+    transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
     background: #333333;
-    height: 70px; }
+    height: 70px;
+    width: 100%; }
     @media screen and (max-width: 620px) {
       .site-header .site-header-main {
         padding-top: 0;
@@ -10410,9 +10436,11 @@ body.screen {
   visibility: hidden;
   opacity: 0;
   filter: alpha(opacity=0);
-  -webkit-transition: opacity(0), 2s ease-out;
-  -o-transition: opacity(0), 2s ease-out;
-  transition: opacity(0), 2s ease-out;
+  transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
   background: transparent none repeat scroll 0 0; }
   .btn_overlay .btnhide {
     float: left;
@@ -10427,9 +10455,11 @@ body.screen {
     -webkit-border-radius: 0px;
     border-radius: 0px;
     border: 1px solid rgba(0, 0, 0, 0.9);
-    -webkit-transition: all 0.5s ease 0s;
-    -o-transition: all 0.5s ease 0s;
-    transition: all 0.5s ease 0s;
+    transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
     background: none repeat scroll 0 0 rgba(0, 0, 0, 0.9); }
     .btn_overlay .btnhide:not(:first-child) {
       border-top: 0px none !important; }
@@ -10510,9 +10540,11 @@ body.screen {
   visibility: visible;
   opacity: 1;
   filter: alpha(opacity=100);
-  -webkit-transition: opacity(1), 2s ease-out;
-  -o-transition: opacity(1), 2s ease-out;
-  transition: opacity(1), 2s ease-out; }
+  transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in; }
 
 .col-two-thirds .btn_overlay, .col-full .btn_overlay {
   left: auto;

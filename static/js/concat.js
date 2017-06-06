@@ -27152,6 +27152,7 @@ var extend = function(child, parent) { for (var key in parent) { if (hasProp.cal
 (function ($) {
 
     $.fn.Ajax_LoadBlogArticles = function(options){
+        
         var defaults = {
             'limit': 20,
             'containerClass': 'ajaxArticles',
@@ -28983,35 +28984,6 @@ var socialPostPopupTemplate =
                     '</div>'+
     '</div>'+
  '</div>'   ;   
-// var ArticleController = (function ($) {
-//     return {
-//         view: function () {
-//             ArticleController.View.init();
-//         }
-//     };
-// }(jQuery));
-
-// ArticleController.View = (function ($) {
-
-//     var attachEvents = function () {
-
-//         var fullExcerptHeight = $('.article_main .news__main').height();
-//         $($('.news__sidebar a.card').get().reverse()).each(function () {
-//             var sidebarHeight = $('.article_main .news__sidebar').height();
-//             if (fullExcerptHeight < sidebarHeight) {
-//                 $(this).addClass('hide');
-//             }
-//         });
-//     };
-
-//     return {
-//         init: function () {
-//             attachEvents();
-//         }
-//     };
-
-// }(jQuery));
-
 var AuthController = (function ($) {
     return {
         loginOrSignup: function () {
@@ -30242,16 +30214,14 @@ HomeController.Blog = (function ($) {
 
 }(jQuery));
 $('document').ready(function() {
-
+    console.log('loading events');
     var isMenuBroken, isMobile;
     var sbCustomMenuBreakPoint = 1120;
     var mobileView = 620;
     var desktopView = 1119;
-    var scrollMetric = [$(window).scrollTop()];
-    var foldawayPanel = $("#foldaway-panel");
-    var menuContainer = $("#menuContainer");
-    var menu_top_foldaway = $("#menu-top-foldaway");
-    var menu_bottom_foldaway = $("#menu-bottom-foldaway");
+    var pageWindow = $(window);
+    var scrollMetric = [pageWindow.scrollTop()];
+    var menuContainer = $("#mainHeader");
 
     $('.video-player').videoPlayer();
     
@@ -30261,26 +30231,26 @@ $('document').ready(function() {
 
 
 
-    var isMenuBroken = function(){
-        if (window.innerWidth > sbCustomMenuBreakPoint) {
-            return false;
-        }
-        return true;
-    };
+    // var isMenuBroken = function(){
+    //     if (window.innerWidth > sbCustomMenuBreakPoint) {
+    //         return false;
+    //     }
+    //     return true;
+    // };
 
-    var isMobile = function(){
-        if (window.innerWidth < mobileView) {
-            return true;
-        }
-        return false;
-    };
+    // var isMobile = function(){
+    //     if (window.innerWidth < mobileView) {
+    //         return true;
+    //     }
+    //     return false;
+    // };
 
-    var isDesktop = function(){
-        if (window.innerWidth > desktopView) {
-            return true;
-        }
-        return false;
-    };
+    // var isDesktop = function(){
+    //     if (window.innerWidth > desktopView) {
+    //         return true;
+    //     }
+    //     return false;
+    // };
 
 
     var isScolledPast = function(position){
@@ -30290,62 +30260,45 @@ $('document').ready(function() {
         return false;
     };
 
-    // var stickHeader = function(){
-    //     if ( isScolledPast(210) ){
-    //         $("#topAddBlock").removeClass("fixadd");
-    //         // $("#masthead").removeClass("site-header-extra-padding");
-    //         $("#topAddBlock").css({
-    //             "position": "absolute",
-    //             "top":"212px"
-    //         });
-    //         $(".menu-mobile").data('foldaway', true);
-            
 
-    //         // $('.site-branding-bottom').addClass('branding-bottom-fixed');
-    //     } else {
-    //         $("#topAddBlock").addClass("fixadd");
-    //         // $("#masthead").addClass("site-header-extra-padding");
-    //         $("#topAddBlock").css({
-    //             "position": "",
-    //             "top":""
-    //         });
-    //         // $('.site-branding-bottom').removeClass('branding-bottom-fixed');
+    var scrollUpMenu = function() {
+        console.log(scrollMetric);
+        if ( scrollMetric[1] === 'up' && isScolledPast(70)){
+            console.log('adding class');
+            menuContainer.addClass('showOnScroll');
+        } 
+        else if ( scrollMetric[1] === 'down' && isScolledPast(70)) {
+            menuContainer.addClass('fixHeader');
+            menuContainer.removeClass('showOnScroll');
 
-    //     }
-    //     return false;
-    // };   
-
-
-    // var scrollUpMenu = function() {
-    //     if ( scrollMetric[1] === 'up' && isScolledPast(400) && isDesktop() ){
-    //         foldawayPanel.addClass('showMenuPanel');
-    //         menuContainer.show();
-    //     } else {
-    //         menu_top_foldaway.addClass('hide');
-    //         menu_bottom_foldaway.addClass('hide');
-    //         foldawayPanel.removeClass('showMenuPanel');
-    //         menuContainer.show();
-    //     }
-    // }
+        }
+        else {
+            console.log('removing class');
+            menuContainer.removeClass('fixHeader');
+            menuContainer.removeClass('showOnScroll');
+        }
+    }
 
 
     //Onload and resize events
-    // $(window).on("resize", function () {
-    //     stickHeader();
+    // pageWindow.on("resize", function () {
+    //     // stickHeader();
     //     scrollUpMenu();
     // }).resize();
 
     //On Scroll
-    // $(window).scroll(function() {
-    //     var direction = 'down';
-    //     var scroll = $(window).scrollTop();
-    //     if (scroll < scrollMetric[0]) {
-    //         direction = 'up';
-    //     }
-    //     scrollMetric = [scroll, direction];
-    //     stickHeader();
-    //     scrollUpMenu();
-    // });
+    console.log('adding pagewindow scroll event');
+    pageWindow.scroll(function() {
+        console.log('scrolling');
+        var direction = 'down';
+        var scroll = pageWindow.scrollTop();
+        if (scroll < scrollMetric[0]) {
+            direction = 'up';
+        }
+        scrollMetric = [scroll, direction];
+        // stickHeader();
+        scrollUpMenu();
+    });
 
 
 
@@ -30386,8 +30339,7 @@ $('document').ready(function() {
 
 
     $(".sb-custom-menu > .menuContainer > ul > li").hover(function (e) {
-        console.log('hovering on menu2');
-        if ($(window).width() > sbCustomMenuBreakPoint) {
+        if (pageWindow.width() > sbCustomMenuBreakPoint) {
             $(this).children("ul").stop(true, false).slideToggle(275);
             // $(this).toggleClass('now-active');
             e.preventDefault();
