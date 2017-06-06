@@ -9387,6 +9387,13 @@ button.swiper-pagination-bullet {
   font-size: 1.7rem;
   margin: 0 0 16px 0; }
 
+.videos-section {
+  padding-top: 40px;
+  background: rgba(51, 51, 51, 0.05); }
+  .videos-section h3 {
+    font-size: 1.7rem;
+    margin: 0 0 16px 0; }
+
 .sidebar {
   padding-left: 75px; }
   @media screen and (max-width: 1200px) {
@@ -11114,6 +11121,7 @@ body.screen {
         .card-sm a.card > article > .content > .author {
           display: none; }
         .card-sm a.card > article > .content > time {
+          font-family: "PT Serif", "Times New Roman", Times, serif;
           font-size: 1.2rem;
           padding: 0;
           border: 0;
@@ -11257,6 +11265,17 @@ body.screen {
       @media screen and (max-width: 620px) {
         .card-sm a.card.instagram .category:before {
           display: none; } }
+
+.videos-section .card-sm a.card article > figure {
+  height: 200px; }
+
+.videos-section .card-sm a.card article > .content h2 {
+  margin-top: 5px;
+  height: 52px;
+  font-size: 1.7rem;
+  font-weight: bold;
+  line-height: 1.29;
+  color: #000000; }
 
 @media screen and (max-width: 768px) {
   .sidebar-news .card-sm a.card.without__image > article > .content > p {
