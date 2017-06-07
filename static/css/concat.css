@@ -7937,9 +7937,10 @@ span.leadsentence {
     margin: 30px 15px 60px 0; }
     @media screen and (max-width: 768px) {
       .site-footer .footer-brand {
-        margin-bottom: 30px; } }
+        margin-bottom: 30px;
+        margin-left: -7px; } }
     .site-footer .footer-brand > img {
-      width: 258px; }
+      width: 265px; }
   .site-footer .contact {
     text-align: right;
     color: white; }
