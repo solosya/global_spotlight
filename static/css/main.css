@@ -10077,6 +10077,53 @@ body.article {
       color: #333333;
       margin-bottom: 24px; }
 
+.page.page-supporters {
+  background: #fff; }
+  .page.page-supporters .page-banner {
+    height: 550px;
+    background-image: url("https://res.cloudinary.com/cognitives/image/upload/v1496728861/d4z3txcbw3sbetvwghvm.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 10px; }
+    .page.page-supporters .page-banner > .banner-text {
+      padding-top: 55px;
+      color: #fff; }
+      .page.page-supporters .page-banner > .banner-text h1 {
+        font-size: 4.8rem;
+        margin-bottom: 40px;
+        line-height: 1.4; }
+      .page.page-supporters .page-banner > .banner-text p {
+        font-size: 1.7rem;
+        line-height: 2;
+        font-weight: lighter;
+        margin-bottom: 20px; }
+  .page.page-supporters .statement {
+    margin: 40px 0 30px 0; }
+    .page.page-supporters .statement h1 {
+      font-size: 3.8rem;
+      font-weight: lighter;
+      margin-bottom: 25px; }
+    .page.page-supporters .statement p {
+      font-size: 1.7rem;
+      line-height: 2;
+      font-weight: 300; }
+  .page.page-supporters .partner {
+    margin-bottom: 35px; }
+    .page.page-supporters .partner > div > img {
+      border-radius: 500px;
+      margin: 1em auto 0 auto;
+      display: block; }
+    .page.page-supporters .partner h1 {
+      font-size: 3.8rem;
+      font-weight: lighter;
+      margin-bottom: 25px; }
+    .page.page-supporters .partner p {
+      font-size: 1.6rem;
+      line-height: 2;
+      font-weight: lighter; }
+      .page.page-supporters .partner p a {
+        color: #009E91; }
+
 .card {
   display: block; }
   .card:hover {
