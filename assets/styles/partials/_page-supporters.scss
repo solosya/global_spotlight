@@ -1,59 +1,77 @@
-body.channel.supporters{
+.page {
+    &.page-supporters {
+        background:#fff;
 
-    #pp-donate-button {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        margin-left: -15px;
-    }
+        .page-banner {
+            height:550px;
+            background-image: url('https://res.cloudinary.com/cognitives/image/upload/v1496728861/d4z3txcbw3sbetvwghvm.jpg');
+            background-size:cover;
+            background-repeat: no-repeat;
+            margin-bottom:10px;
+        
+            >.banner-text {
+              // background:pink; 
+              padding-top: 55px;
+              color:#fff;
 
-    h1{
-        font-family:$font-family-sans-serif;
-        font-size: em(47);
-        font-weight: normal;
-        margin-bottom: 30px;
-        margin-top: 45px;
-    }
 
-    h2{
-        font-family:$font-family-sans-serif;
-        font-size: em(18);
-        font-weight: bold;
-        margin-top:38px;
-        margin-bottom:15px;
-        padding:0;
+                h1 {
+                    font-size: rem(48);
+                    margin-bottom:40px;
+                    line-height: 1.4;
+                }
+                p{
+                    font-size: rem(17);
+                    line-height: 2;
+                    font-weight:lighter;
+                    margin-bottom: 20px;
+                }
 
-        &:first-child {
-            margin-top:0;
+            }
+
         }
 
-    }
+        .statement {
+            margin:40px 0 30px 0;
 
-    .content {
-        p {
-            a {
-                color:#15c;
+            h1 {
+                font-size:rem(38);
+                font-weight:lighter;
+                margin-bottom:25px;
+            }
+
+            p{
+                font-size:rem(17);
+                line-height: 2;
+                font-weight: 300;
             }
         }
-    }
 
+        .partner {
+            margin-bottom:35px;
 
-    figure {
-        > img {
-            margin: 20px 0;
-            width:200px;
-            height:200px;
+            > div > img {
+                border-radius:500px; 
+                margin: 1em auto 0 auto;
+                display: block;
+            }
+
+            h1 {
+                font-size:rem(38);
+                font-weight:lighter;
+                margin-bottom:25px;
+            }
+            p {
+                font-size:rem(16);
+                line-height: 2;
+                font-weight:lighter;
+
+                a {
+                    color: #009E91;
+                }
+            }
         }
+
     }
-
-    p {
-        font-size: em(18);
-
-        span {
-            margin-top: 10px;
-            display: block;        }
-    }
-
-   
-
-
 }
+
