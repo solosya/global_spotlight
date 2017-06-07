@@ -9419,7 +9419,7 @@ button.swiper-pagination-bullet {
   background: rgba(51, 51, 51, 0.05); }
   .videos-section h3 {
     font-size: 1.7rem;
-    margin: 0 0 16px 0; }
+    margin-bottom: 16px; }
 
 .sidebar {
   padding-left: 75px; }
@@ -10766,8 +10766,7 @@ body.screen {
           @media screen and (max-width: 620px) {
             .featured-slider a.card article .content .category {
               font-family: "adelle-sans", Helvetica, Arial, sans-serif;
-              font-size: 1em;
-              margin-bottom: 35px; } }
+              font-size: 1em; } }
         .featured-slider a.card article .content h2 {
           order: 3;
           width: 600;
@@ -10832,7 +10831,7 @@ body.screen {
               border: 0;
               color: #dadada;
               font-weight: normal;
-              margin-bottom: 8px; } }
+              margin-bottom: 25px; } }
         .featured-slider a.card article .content .author {
           -ms-flex-negative: 0;
           -webkit-flex-shrink: 0;
@@ -10855,7 +10854,7 @@ body.screen {
               display: none; }
             .featured-slider a.card article .content .author p {
               font-family: "adelle-sans", Helvetica, Arial, sans-serif;
-              font-size: 1.8em;
+              font-size: 1.2em;
               padding: 0;
               color: #FFF; } }
     .featured-slider a.card.social .content .category {

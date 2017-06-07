@@ -147,7 +147,7 @@
                     @media screen and (max-width: $mobile-break){
                         font-family: $font-family-sans-serif;
                         font-size: em(10);
-                        margin-bottom: 35px;
+                        // margin-bottom: 35px;
 
                     }
                 }
@@ -235,7 +235,7 @@
                         border: 0;
                         color: #dadada;
                         font-weight: normal;
-                        margin-bottom:8px;
+                        margin-bottom:25px;
 
                     }
                 }
@@ -264,7 +264,7 @@
                         }
                         p{
                             font-family: $base-font-family;
-                            font-size: em(18);
+                            font-size: em(12);
                             padding: 0;
                             color: #FFF;
                         }
