@@ -98,6 +98,7 @@
                 > h2{
                     font-weight: normal;
                     font-size: em(17);
+                    padding-bottom: inherit;
                     @media screen and (max-width: $mobile-break){
                         height:50px;
                     }
@@ -450,8 +451,8 @@
 
             a.card {
 
-                margin-left:0;
-                margin-right:0;
+                // margin-left:0;
+                // margin-right:0;
                 // height:240px;
 
 

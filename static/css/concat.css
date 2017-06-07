@@ -8155,10 +8155,10 @@ span.leadsentence {
 
 .sb-custom-menu .menu-mobile {
   display: none;
-  width: 95px;
+  width: 45px;
   height: 30px;
   text-decoration: none;
-  background-image: url(../images/mobile-menu_white.svg);
+  background-image: url(../images/mobile-menu_white2.svg);
   background-size: 45px 30px;
   background-position: right;
   background-repeat: no-repeat;
@@ -10446,8 +10446,7 @@ body.article {
           @media screen and (max-width: 620px) {
             .featured-slider a.card article .content .category {
               font-family: "adelle-sans", Helvetica, Arial, sans-serif;
-              font-size: 1em;
-              margin-bottom: 35px; } }
+              font-size: 1em; } }
         .featured-slider a.card article .content h2 {
           order: 3;
           width: 600;
@@ -10512,7 +10511,7 @@ body.article {
               border: 0;
               color: #dadada;
               font-weight: normal;
-              margin-bottom: 8px; } }
+              margin-bottom: 25px; } }
         .featured-slider a.card article .content .author {
           -ms-flex-negative: 0;
           -webkit-flex-shrink: 0;
@@ -10535,7 +10534,7 @@ body.article {
               display: none; }
             .featured-slider a.card article .content .author p {
               font-family: "adelle-sans", Helvetica, Arial, sans-serif;
-              font-size: 1.8em;
+              font-size: 1.2em;
               padding: 0;
               color: #FFF; } }
     .featured-slider a.card.social .content .category {
@@ -10851,7 +10850,8 @@ body.article {
               margin-bottom: 5px; } }
         .card-sm a.card > article > .content > h2 {
           font-weight: normal;
-          font-size: 1.7em; }
+          font-size: 1.7em;
+          padding-bottom: inherit; }
           @media screen and (max-width: 620px) {
             .card-sm a.card > article > .content > h2 {
               height: 50px; } }
@@ -11035,16 +11035,13 @@ body.article {
 @media screen and (max-width: 620px) {
   .index-bottom .card-sm {
     margin-bottom: 20px; }
-    .index-bottom .card-sm a.card {
-      margin-left: 0;
-      margin-right: 0; }
-      .index-bottom .card-sm a.card > article > figure {
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        height: 100%;
-        width: 100%; } }
+    .index-bottom .card-sm a.card > article > figure {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      height: 100%;
+      width: 100%; } }
 
 .card-sm-screen {
   position: relative;
