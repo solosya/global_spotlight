@@ -9953,29 +9953,129 @@ body.article {
   height: 560px;
   background: pink;
   margin-bottom: 180px; }
+  .page.page-about-page .page-banner .cta {
+    height: 346px;
+    width: 353px;
+    background: #39bddc;
+    margin: 0;
+    margin-top: 214px;
+    padding: 60px 25px 0 25px; }
+    @media screen and (max-width: 768px) {
+      .page.page-about-page .page-banner .cta {
+        height: auto;
+        width: 100%;
+        margin-top: 380px;
+        padding: 60px 25px 10px 25px; } }
+    .page.page-about-page .page-banner .cta h1 {
+      margin: 0;
+      color: #fff;
+      font-weight: bold;
+      line-height: 1.04;
+      font-size: 4.8rem;
+      margin-bottom: 25px; }
+      .page.page-about-page .page-banner .cta h1:after {
+        content: "";
+        display: block;
+        background: #fff;
+        width: 115px;
+        height: 1px;
+        margin-top: 30px; }
+      @media screen and (max-width: 768px) {
+        .page.page-about-page .page-banner .cta h1 {
+          font-size: 4rem; } }
+      @media screen and (max-width: 620px) {
+        .page.page-about-page .page-banner .cta h1 {
+          font-size: 3rem; } }
 
 .page.page-about-page .statement {
   margin-bottom: 170px; }
+  .page.page-about-page .statement figure {
+    background: pink;
+    height: 235px; }
+    @media screen and (max-width: 768px) {
+      .page.page-about-page .statement figure {
+        margin-bottom: 20px; } }
+  .page.page-about-page .statement h2 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 1.33;
+    color: #000000;
+    margin: 0 0 25px 0; }
+    .page.page-about-page .statement h2 > span {
+      color: #39bddc; }
+  .page.page-about-page .statement p {
+    font-family: "adelle-sans", Helvetica, Arial, sans-serif;
+    font-size: 2rem;
+    line-height: 1.8;
+    color: #333333;
+    margin-bottom: 34px; }
+    @media screen and (min-width: 768px) {
+      .page.page-about-page .statement p:last-child {
+        margin-bottom: 0; } }
 
 .page.page-about-page .perspective {
-  background: green;
   margin-bottom: 170px; }
+  .page.page-about-page .perspective figure {
+    height: 258px;
+    background: pink; }
+  .page.page-about-page .perspective h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.78;
+    color: #39bddc;
+    margin: 42px 0 20px 0;
+    text-transform: uppercase; }
+  .page.page-about-page .perspective p {
+    color: #333333;
+    margin-bottom: 34px;
+    font-size: 1.8rem; }
+    @media screen and (min-width: 768px) {
+      .page.page-about-page .perspective p:last-child {
+        margin-bottom: 0; } }
 
-.page.page-about-page .full-image {
+.page.page-about-page .full-image > div {
   background: pink; }
-  .page.page-about-page .full-image img {
-    height: 453px; }
+
+.page.page-about-page .full-image img {
+  height: 453px; }
 
 .page.page-about-page .journalists {
-  background: yellow;
-  margin-bottom: 170px; }
+  margin: 60px 0 160px 0; }
+  .page.page-about-page .journalists h2 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 1.33;
+    color: #000000;
+    margin: 0 0 25px 0; }
+    .page.page-about-page .journalists h2 > span {
+      color: #39bddc; }
+  .page.page-about-page .journalists p {
+    font-size: 18px;
+    line-height: 1.44;
+    color: #333333; }
 
 .page.page-about-page .hotspots {
-  background: yellow;
   margin-bottom: 100px; }
   .page.page-about-page .hotspots .hotspot {
-    background: red;
     margin-bottom: 95px; }
+    .page.page-about-page .hotspots .hotspot figure {
+      background: pink;
+      height: 231px; }
+    .page.page-about-page .hotspots .hotspot h2 {
+      font-size: 18px;
+      line-height: 1.78;
+      color: #333333;
+      padding-bottom: 12px;
+      margin-bottom: 18px;
+      margin-top: 10px;
+      font-weight: normal;
+      border-bottom: 1px solid black; }
+    .page.page-about-page .hotspots .hotspot p {
+      font-size: 1.4rem;
+      font-weight: bold;
+      line-height: 1.57;
+      color: #333333;
+      margin-bottom: 24px; }
 
 .card {
   display: block; }
