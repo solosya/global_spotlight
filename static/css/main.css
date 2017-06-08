@@ -8770,27 +8770,31 @@ body.article {
     @media screen and (max-width: 620px) {
       .article article.article-main .related-articles section > h2 {
         margin-bottom: 15px; } }
-  .article article.article-main .related-articles a.card > article > figure {
-    height: 209px; }
-    @media screen and (max-width: 620px) {
-      .article article.article-main .related-articles a.card > article > figure {
-        height: 115px; } }
-    .article article.article-main .related-articles a.card > article > figure > img {
-      max-width: 100%; }
-  .article article.article-main .related-articles a.card > article > .content {
-    border: 1px solid #979797;
-    border-top: none; }
-    @media screen and (max-width: 620px) {
-      .article article.article-main .related-articles a.card > article > .content {
-        border-top: 1px solid #6b6d71;
-        border-left: none;
-        border-right: none; } }
-    .article article.article-main .related-articles a.card > article > .content time {
-      font-family: "PT Serif", "Times New Roman", Times, serif;
-      font-size: 12px;
-      font-style: italic;
-      line-height: 1.25;
-      color: #333333; }
+  .article article.article-main .related-articles a.card {
+    height: 334px; }
+    .article article.article-main .related-articles a.card > article > figure {
+      height: 209px; }
+      @media screen and (max-width: 620px) {
+        .article article.article-main .related-articles a.card > article > figure {
+          height: 115px; } }
+      .article article.article-main .related-articles a.card > article > figure > img {
+        max-width: 100%; }
+    .article article.article-main .related-articles a.card > article > .content {
+      border: 1px solid #979797;
+      border-top: none; }
+      @media screen and (max-width: 620px) {
+        .article article.article-main .related-articles a.card > article > .content {
+          border-top: 1px solid #6b6d71;
+          border-left: none;
+          border-right: none; } }
+      .article article.article-main .related-articles a.card > article > .content time {
+        font-family: "PT Serif", "Times New Roman", Times, serif;
+        font-size: 12px;
+        font-style: italic;
+        line-height: 1.25;
+        color: #333333; }
+    .article article.article-main .related-articles a.card.without__image {
+      border-top: 1px solid #979797; }
 
 .article .page-add {
   text-align: center;
