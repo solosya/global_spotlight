@@ -9272,6 +9272,11 @@ body.channel.hotspots .hotspot {
     margin-left: 60px; }
     body.channel.hotspots .hotspot .card-sm figure {
       height: 250px; }
+      @media screen and (max-width: 620px) {
+        body.channel.hotspots .hotspot .card-sm figure {
+          width: 116px;
+          height: 116px;
+          flex: 0 0 116px; } }
     body.channel.hotspots .hotspot .card-sm h2 {
       font-weight: bold;
       line-height: 1.29; }
@@ -9281,6 +9286,57 @@ body.channel.hotspots .hotspot {
     width: 100%;
     border-bottom: 1px solid #979797;
     margin-top: 30px; }
+  @media screen and (max-width: 991px) {
+    body.channel.hotspots .hotspot .card-sm {
+      margin-top: 20px;
+      margin-left: -15px; } }
+  @media screen and (max-width: 768px) {
+    body.channel.hotspots .hotspot .card-sm {
+      margin-top: 20px;
+      margin-left: -15px; }
+      body.channel.hotspots .hotspot .card-sm a.card {
+        height: auto; }
+        body.channel.hotspots .hotspot .card-sm a.card figure {
+          float: left; }
+        body.channel.hotspots .hotspot .card-sm a.card .content {
+          height: 242px;
+          padding: 23px 28px 0 24px;
+          width: auto; }
+          body.channel.hotspots .hotspot .card-sm a.card .content .category {
+            margin-bottom: 15px; }
+          body.channel.hotspots .hotspot .card-sm a.card .content h2 {
+            font-weight: bold;
+            font-size: 2.4rem;
+            height: 64px;
+            margin-bottom: 7px;
+            line-height: 1.3em; }
+          body.channel.hotspots .hotspot .card-sm a.card .content > p {
+            display: block;
+            height: 66px;
+            font-size: 1.6rem;
+            padding-bottom: 16px;
+            margin-bottom: 16px;
+            border-bottom: 2px solid #dadada; } }
+  @media screen and (max-width: 768px) and (max-width: 620px) {
+    body.channel.hotspots .hotspot .card-sm a.card {
+      margin-top: 20px;
+      margin-left: -15px;
+      height: auto; }
+      body.channel.hotspots .hotspot .card-sm a.card figure {
+        float: left; }
+      body.channel.hotspots .hotspot .card-sm a.card .content {
+        height: 115px;
+        padding: 7px 0 0 10px;
+        width: 100%; }
+        body.channel.hotspots .hotspot .card-sm a.card .content .category {
+          margin-bottom: 5px; }
+        body.channel.hotspots .hotspot .card-sm a.card .content h2 {
+          font-weight: normal;
+          font-size: 1.6rem;
+          margin-bottom: 7px;
+          line-height: 1.3em; }
+        body.channel.hotspots .hotspot .card-sm a.card .content > p {
+          display: none; } }
 
 .card {
   display: block; }

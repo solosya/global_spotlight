@@ -73,9 +73,7 @@
 
                 <div class="row">
                     
-
                     <div class="col-sm-12">
-
 
                         {% for key, value in sections %}
                             {% if sections[key].feed.articles|length > 0 %}
@@ -84,13 +82,13 @@
                                         <a href="{{sections[key].link}}"><h1>{{key | title}}</h1></a>
                                     </div>
 
-                                    <div class="col-md-8">
+                                    <div class="col-sm-12 col-md-8">
                                         {% if sections[key].feed.articles[0] %}                                                                
                                             {{this.render('partials/_single-article.twig', {article: sections[key].feed.articles[0], containerClass: 'card-lg s750x375'}) | raw}}
                                         {% endif %}
                                     </div>
                                     
-                                    <div class="col-md-4">
+                                    <div class="col-sm-12 col-md-4">
                                         {% if sections[key].feed.articles[1] %}                                                                
                                             {{this.render('partials/_single-article.twig', {article: sections[key].feed.articles[1], containerClass: 'card-sm s265x242'}) | raw}}
                                         {% endif %}
