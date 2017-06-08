@@ -81,7 +81,7 @@
                             {% if sections[key].feed.articles|length > 0 %}
                                 <div class="row hotspot">
                                     <div class="col-sm-12">
-                                        <a href="{{sections[key].link}}"><h1>{{key}}</h1></a>
+                                        <a href="{{sections[key].link}}"><h1>{{key | title}}</h1></a>
                                     </div>
 
                                     <div class="col-md-8">
