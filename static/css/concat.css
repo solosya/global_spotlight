@@ -7690,6 +7690,36 @@ span.leadsentence {
       .sidebar-news a.card.social article .content > p {
         height: 60px; } }
 
+@media screen and (max-width: 991px) {
+  .sidebar-news .card-sm a.card {
+    height: auto; } }
+
+@media screen and (max-width: 991px) {
+  .sidebar-news .card-sm a.card .content {
+    height: 242px;
+    padding: 23px 28px 0 24px; } }
+
+@media screen and (max-width: 991px) {
+  .sidebar-news .card-sm a.card .content .category {
+    margin-bottom: 15px; } }
+
+@media screen and (max-width: 991px) {
+  .sidebar-news .card-sm a.card .content h2 {
+    font-weight: bold;
+    font-size: 2.4rem;
+    height: 64px;
+    margin-bottom: 7px;
+    line-height: 1.3em; } }
+
+@media screen and (max-width: 991px) {
+  .sidebar-news .card-sm a.card .content > p {
+    display: block;
+    height: 66px;
+    font-size: 1.6rem;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    border-bottom: 2px solid #dadada; } }
+
 .site-footer {
   width: 100%;
   margin-top: 0;
@@ -10124,7 +10154,7 @@ body.channel.hotspots .hotspot {
 
 .videos-section .card-sm a.card article > figure {
   height: 200px; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 620px) {
     .videos-section .card-sm a.card article > figure {
       height: auto; } }
 

@@ -34,6 +34,15 @@
                 width: auto;
                 overflow: hidden;
                 height:242px;
+
+
+                // @media screen and (max-width: $sm-break-down){
+                //     width: 100px;
+                //     height:110px;
+                //     flex: 0 0 110px;
+                // }
+
+
                 @media screen and (max-width: $mobile-break){
                     width: 116px;
                     height:116px;
@@ -372,7 +381,10 @@
             article {
                 > figure{
                     height:200px;
-                    @media screen and (max-width: $sm-break){
+                    // @media screen and (max-width: $sm-break){
+                    //     height:auto;
+                    // }
+                    @media screen and (max-width: $mobile-break){
                         height:auto;
                     }
                 }
@@ -399,7 +411,6 @@
 
 
 .sidebar-news {
-
 
     @media screen and (max-width: $sm-break){
         .card-sm{
