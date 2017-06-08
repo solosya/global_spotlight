@@ -275,6 +275,7 @@ body.article {
 
 
 		    a.card {
+	        	height:334px;
 
 		        > article {
 
@@ -310,6 +311,10 @@ body.article {
 						}
 
 			        }
+			    }
+
+			    &.without__image {
+					border-top:1px solid #979797;
 			    }
 			}
 		}
