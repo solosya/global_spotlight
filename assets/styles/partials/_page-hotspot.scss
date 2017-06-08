@@ -35,14 +35,14 @@ body.channel.hotspots {
             margin-top: 30px;
         }
 
-        @media screen and (max-width: $mmd-break-down){
-            .card-sm {
-                margin-top:20px;
-                margin-left:0;
-            }
-        }
+        // @media screen and (max-width: $mmd-break-down){
+        //     .card-sm {
+        //         margin-top:20px;
+        //         margin-left:0;
+        //     }
+        // }
 
-        @media screen and (max-width: $sm-break){
+        @media screen and (max-width: $mmd-break-down){
 
             .card-sm {
                 margin-top:20px;
