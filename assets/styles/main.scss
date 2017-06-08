@@ -6,7 +6,6 @@
 @import "font-awesome-4.7.0/scss/font-awesome";
 @import "mixins";
 @import "login";
-
 @import "profile";
 @import "user_profile";
 @import "user_posts";
@@ -18,29 +17,22 @@
 
 //Partials
 @import "common";
-@import "icons";
+// @import "icons";
 @import "placeholder";
-@import "social-links";
-@import "advertisements";
 @import "sidebar-news";
-@import "most-popular";
+// @import "most-popular";
 @import "site-footer";
-@import "page-hero";
+// @import "page-hero";
 
 //Header
 @import "primary-menu";
 @import "site-header";
 
 //Home page
-@import "slider";
-@import "top-stories";
+// @import "slider";
 @import "page-index";
 
-
-
 // MODAL
-// @import "social-modal";
-
 
 //Article page
 @import "article";
@@ -50,8 +42,10 @@
 
 //Static Pages
 @import "page-about";
-@import "page-supporters";
+@import "page-project";
 
+// layouts
+@import "page-hotspot";
 
 
 //Cards
@@ -59,9 +53,4 @@
 @import "card-slider";
 @import "card-rec";
 @import "card-sm";
-@import "card-sm-screen";
-@import "card-vr";
 @import "card-lg";
-@import "card-lg-screen";
-@import "card-view-featured";
-@import "card-future";

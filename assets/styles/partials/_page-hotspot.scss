@@ -1,0 +1,35 @@
+body.channel.hotspots {
+
+
+    .hotspot {
+        margin-bottom: 55px;
+
+        h1 {
+            font-size: rem(26);
+            margin-bottom: 12px;
+        }
+
+        .card-sm {
+            margin-bottom:0;
+            margin-left: 60px;
+            figure {
+                height:250px;
+
+            }
+            h2 {
+                font-weight: bold;
+                line-height: 1.29;
+            }
+        }
+        .card-lg {
+            margin-bottom:0;
+            
+        }
+        .line {
+            width:100%;
+            border-bottom: 1px solid #979797;
+            margin-top: 30px;
+        }
+    }
+}
+
