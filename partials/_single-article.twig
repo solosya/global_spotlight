@@ -10,7 +10,6 @@
         {% set imgWidth = 1280 %}
         {% set imgHeight = 720 %}
 
-
         {% if 's100x110' in containerClass %}
             {% set imgWidth = 100 %}
             {% set imgHeight = 110 %}
@@ -18,6 +17,18 @@
         {% elseif 's203x130' in containerClass %}
             {% set imgWidth = 203 %}
             {% set imgHeight = 130 %}
+
+        {% elseif 's265x242' in containerClass %}
+            {% set imgWidth = 265 %}
+            {% set imgHeight = 242 %}
+
+        {% elseif 's330x235' in containerClass %}
+            {% set imgWidth = 330 %}
+            {% set imgHeight = 235 %}
+
+        {% elseif 's750x375' in containerClass %}
+            {% set imgWidth = 750 %}
+            {% set imgHeight = 375 %}
 
        {% endif %}
 
@@ -27,8 +38,8 @@
     {% set promotedClass = (article.isPromoted) ? 'ad_icon' : '' %}
     {% set hasArticleMediaClass = (article.hasMedia == 'TRUE' or article.hasPreviewMedia == 'TRUE') ? 'withImage__content': 'without__image' %}
 
-    {% set publishDate = _AppHelper.getDefaultTimezoneDateTime(article.publishDate) %}
-    {% set publishedAgo = _AppHelper.getSecondsSincePublished(article.publishDateTime) %}
+    {% set publishDate = _AppHelper.getDateTimeBasedOnTimezone(article.publishDate, 'F, Y') %}
+    {# {% set publishedAgo = _AppHelper.getSecondsSincePublished(article.publishDateTime) %} #}
     {# {% set publishedAgo = 1 %} #}
 
 {#     {% set updatedRelativeTime = "" %}
@@ -39,9 +50,9 @@
         {% endif %}
     {% endif %}
  #}
-    {% set publishedRelativeTime = '' %}
+    {# {% set publishedRelativeTime = '' %} #}
     {# {% if publishedAgo < 86400 %} #}
-        {% set publishedRelativeTime = _AppHelper.getRelativeTime(article.publishDateTime) ~ " ago" %}
+        {# {% set publishedRelativeTime = _AppHelper.getRelativeTime(article.publishDateTime) ~ " ago" %} #}
     {# {% endif %} #}
 
     {% set profileImg = _Media.getMediaUrl(article.createdBy['media'], 34, 34, {radius: 'max', gravity: 'face', 'crop': 'thumb', type: 'user'}) %}
@@ -68,7 +79,7 @@
                     <figure class="{{figureClass}}">
                         <picture>
                             <source media="(max-width: 620px)" srcset="{{articleImgSmall}}">
-                            <img class="img-responsive lazyload" data-original="{{articleImg}}"  {% if articleImg is not empty %} style="background-image:url('{{placeholder}}');" {%endif%}>
+                            <img class="img-responsive" src="{{articleImg}}" data-original="{{articleImg}}"  {% if articleImg is not empty %} style="background-image:url('{{placeholder}}');" {%endif%}>
                         </picture>
                     </figure>
                 {% endif %}
@@ -83,9 +94,7 @@
                         <p>{{ quotes.smarten(article.excerpt | raw) }}</p>
                     {% endif %}
                     
-                    {% if publishedRelativeTime != '' %}  
-                        <time datetime="2016-11-16">{{publishedRelativeTime}}</time>
-                    {% endif %}
+                    <time datetime="{{publishDate}}">{{publishDate}}</time>
                     
                     <div class="author">
                         <img src="{{profileImg}}" class="img-circle">

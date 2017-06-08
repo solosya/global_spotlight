@@ -8974,24 +8974,26 @@ body.page .page-about {
   background: #fff; }
   body.page .page-about .page-banner {
     height: 550px;
-    background-image: url("https://res.cloudinary.com/cognitives/image/upload/v1496728861/d4z3txcbw3sbetvwghvm.jpg");
+    background-image: url("https://res.cloudinary.com/cognitives/image/upload/c_fill,dpr_auto,f_auto,fl_lossy,h_550,q_auto,w_1280/v1496728861/d4z3txcbw3sbetvwghvm.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     margin-bottom: 10px; }
     body.page .page-about .page-banner > .banner-text {
-      padding-top: 55px;
+      padding-top: 95px;
       color: #fff; }
       body.page .page-about .page-banner > .banner-text h1 {
         font-size: 4.8rem;
         margin-bottom: 40px;
-        line-height: 1.4; }
+        line-height: 1.4;
+        width: 600px; }
       body.page .page-about .page-banner > .banner-text p {
         font-size: 1.7rem;
         line-height: 2;
         font-weight: lighter;
-        margin-bottom: 20px; }
+        margin-bottom: 20px;
+        width: 600px; }
   body.page .page-about .statement {
-    margin: 40px 0 30px 0; }
+    margin: 40px 0 90px 0; }
     body.page .page-about .statement h1 {
       font-size: 3.8rem;
       font-weight: lighter;
@@ -8999,7 +9001,8 @@ body.page .page-about {
     body.page .page-about .statement p {
       font-size: 1.7rem;
       line-height: 2;
-      font-weight: 300; }
+      font-weight: 300;
+      margin-bottom: 20px; }
   body.page .page-about .partner {
     margin-bottom: 35px; }
     body.page .page-about .partner > div > img {

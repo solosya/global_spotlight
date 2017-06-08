@@ -147,7 +147,7 @@
             {% for i in 0..2 %}
 
                 {% if articles[articleCount] %}                                                                
-                    {{this.render('partials/_single-article.twig', {article: articles[articleCount], containerClass:  'col-sm-4 card-rec' }) | raw }}
+                    {{this.render('partials/_single-article.twig', {article: articles[articleCount], containerClass:  'col-sm-4 card-rec s330x235' }) | raw }}
                     {% set articleCount = articleCount + 1 %}
                 {% endif %}
 

@@ -4,14 +4,14 @@ body.page {
 
         .page-banner {
             height:550px;
-            background-image: url('https://res.cloudinary.com/cognitives/image/upload/v1496728861/d4z3txcbw3sbetvwghvm.jpg');
+            background-image: url('https://res.cloudinary.com/cognitives/image/upload/c_fill,dpr_auto,f_auto,fl_lossy,h_550,q_auto,w_1280/v1496728861/d4z3txcbw3sbetvwghvm.jpg');
             background-size:cover;
             background-repeat: no-repeat;
             margin-bottom:10px;
         
             >.banner-text {
               // background:pink; 
-              padding-top: 55px;
+              padding-top: 95px;
               color:#fff;
 
 
@@ -19,12 +19,14 @@ body.page {
                     font-size: rem(48);
                     margin-bottom:40px;
                     line-height: 1.4;
+                    width: 600px;
                 }
                 p{
                     font-size: rem(17);
                     line-height: 2;
                     font-weight:lighter;
                     margin-bottom: 20px;
+                    width: 600px;
                 }
 
             }
@@ -32,7 +34,7 @@ body.page {
         }
 
         .statement {
-            margin:40px 0 30px 0;
+            margin:40px 0 90px 0;
 
             h1 {
                 font-size:rem(38);
@@ -44,6 +46,7 @@ body.page {
                 font-size:rem(17);
                 line-height: 2;
                 font-weight: 300;
+                margin-bottom:20px;
             }
         }
 

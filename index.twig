@@ -75,7 +75,7 @@
                 <div class="col-sm-12 col-md-8 main-content">
                     {% for i in 0..4 %}
                         {% if articles[articleCount] %}                                                                
-                            {{this.render('partials/_single-article.twig', {article: articles[articleCount], position: (articleCount+1), containerClass: 'card-rec'}) | raw}}
+                            {{this.render('partials/_single-article.twig', {article: articles[articleCount], position: (articleCount+1), containerClass: 'card-rec s330x235'}) | raw}}
                             {% set articleCount = articleCount + 1 %}
                         {% endif %}
                     {% endfor %}
@@ -127,7 +127,7 @@
                             <div class="row">
                                 {# {% for i in 0..1 %} #}
                                 {% if articles[articleCount] %}                                                                
-                                    {{this.render('partials/_single-article.twig', {article: articles[articleCount], position: (articleCount+1), containerClass: 'col-xs-12 col-sm-6 col-md-12 card-sm'}) | raw}}
+                                    {{this.render('partials/_single-article.twig', {article: articles[articleCount], position: (articleCount+1), containerClass: 'col-xs-12 col-sm-6 col-md-12 card-sm s265x242'}) | raw}}
                                     {% set articleCount = articleCount + 1 %}
                                     {% endif %}
                                 {# {% endfor %} #}
@@ -157,7 +157,7 @@
 
                         {% for i in 0..3 %}
                             {% if sections['solutions'].feed.articles[i] %}                                                                
-                                {{this.render('partials/_single-article.twig', {article: sections['solutions'].feed.articles[i], swap: 'false', containerClass: 'col-xs-12 col-sm-6 col-md-3 card-sm'}) | raw}}
+                                {{this.render('partials/_single-article.twig', {article: sections['solutions'].feed.articles[i], swap: 'false', containerClass: 'col-xs-12 col-sm-6 col-md-3 card-sm s265x242'}) | raw}}
                             {% endif %}
                         {% endfor %}
                     </div>
@@ -185,7 +185,7 @@
 
                             {% for i in 0..3 %}
                                 {% if sections['videos'].feed.articles[i] %}                                                                
-                                    {{this.render('partials/_single-article.twig', {article: sections['videos'].feed.articles[i], swap: 'false', containerClass: 'col-xs-12 col-sm-6 col-md-3 card-sm'}) | raw}}
+                                    {{this.render('partials/_single-article.twig', {article: sections['videos'].feed.articles[i], swap: 'false', containerClass: 'col-xs-12 col-sm-6 col-md-3 card-sm s265x242'}) | raw}}
                                 {% endif %}
                             {% endfor %}
                         </div>

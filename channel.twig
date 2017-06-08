@@ -57,14 +57,14 @@
                         
                             <div class="">
                                 {% if articles[0] %}                                                                
-                                    {{this.render('partials/_single-article.twig', {article: articles[0], position: 1, containerClass: 'card-lg'}) | raw}}
+                                    {{this.render('partials/_single-article.twig', {article: articles[0], position: 1, containerClass: 'card-lg s750x375'}) | raw}}
                                     {% set articleCount = articleCount + 1 %}
                                 {% endif %}
 
 
                                 {% for i in 0..4 %}
                                     {% if articles[articleCount] %}                                                                
-                                        {{this.render('partials/_single-article.twig', {article: articles[articleCount], position: (articleCount+1), containerClass: 'card-rec'}) | raw}}
+                                        {{this.render('partials/_single-article.twig', {article: articles[articleCount], position: (articleCount+1), containerClass: 'card-rec s330x235'}) | raw}}
                                         {% set articleCount = articleCount + 1 %}
                                     {% endif %}
                                 {% endfor %}
@@ -103,7 +103,7 @@
                         <div class="row">
                             {% for i in 0..3 %}
                                 {% if articles[articleCount] %}                                                                
-                                    {{this.render('partials/_single-article.twig', {article: articles[articleCount], position: (articleCount+1), containerClass: 'card-sm col-sm-6 col-md-12'}) | raw}}
+                                    {{this.render('partials/_single-article.twig', {article: articles[articleCount], position: (articleCount+1), containerClass: 'card-sm s265x242 col-sm-6 col-md-12'}) | raw}}
                                     {% set articleCount = articleCount + 1 %}
                                 {% endif %}
                             {% endfor %}
