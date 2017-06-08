@@ -8970,11 +8970,58 @@ body.article {
       .channel .section-sidepanel-news a.card .content .author p {
         display: block; }
 
-.page.page-about-page .page-banner {
+.page.page-about {
+  background: #fff; }
+  .page.page-about .page-banner {
+    height: 550px;
+    background-image: url("https://res.cloudinary.com/cognitives/image/upload/v1496728861/d4z3txcbw3sbetvwghvm.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 10px; }
+    .page.page-about .page-banner > .banner-text {
+      padding-top: 55px;
+      color: #fff; }
+      .page.page-about .page-banner > .banner-text h1 {
+        font-size: 4.8rem;
+        margin-bottom: 40px;
+        line-height: 1.4; }
+      .page.page-about .page-banner > .banner-text p {
+        font-size: 1.7rem;
+        line-height: 2;
+        font-weight: lighter;
+        margin-bottom: 20px; }
+  .page.page-about .statement {
+    margin: 40px 0 30px 0; }
+    .page.page-about .statement h1 {
+      font-size: 3.8rem;
+      font-weight: lighter;
+      margin-bottom: 25px; }
+    .page.page-about .statement p {
+      font-size: 1.7rem;
+      line-height: 2;
+      font-weight: 300; }
+  .page.page-about .partner {
+    margin-bottom: 35px; }
+    .page.page-about .partner > div > img {
+      border-radius: 500px;
+      margin: 1em auto 0 auto;
+      display: block; }
+    .page.page-about .partner h1 {
+      font-size: 3.8rem;
+      font-weight: lighter;
+      margin-bottom: 25px; }
+    .page.page-about .partner p {
+      font-size: 1.6rem;
+      line-height: 2;
+      font-weight: lighter; }
+      .page.page-about .partner p a {
+        color: #009E91; }
+
+.page.page-the-project .page-banner {
   height: 560px;
   background: pink;
   margin-bottom: 180px; }
-  .page.page-about-page .page-banner .cta {
+  .page.page-the-project .page-banner .cta {
     height: 346px;
     width: 353px;
     background: #39bddc;
@@ -8982,19 +9029,19 @@ body.article {
     margin-top: 214px;
     padding: 60px 25px 0 25px; }
     @media screen and (max-width: 768px) {
-      .page.page-about-page .page-banner .cta {
+      .page.page-the-project .page-banner .cta {
         height: auto;
         width: 100%;
         margin-top: 380px;
         padding: 60px 25px 10px 25px; } }
-    .page.page-about-page .page-banner .cta h1 {
+    .page.page-the-project .page-banner .cta h1 {
       margin: 0;
       color: #fff;
       font-weight: bold;
       line-height: 1.04;
       font-size: 4.8rem;
       margin-bottom: 25px; }
-      .page.page-about-page .page-banner .cta h1:after {
+      .page.page-the-project .page-banner .cta h1:after {
         content: "";
         display: block;
         background: #fff;
@@ -9002,87 +9049,87 @@ body.article {
         height: 1px;
         margin-top: 30px; }
       @media screen and (max-width: 768px) {
-        .page.page-about-page .page-banner .cta h1 {
+        .page.page-the-project .page-banner .cta h1 {
           font-size: 4rem; } }
       @media screen and (max-width: 620px) {
-        .page.page-about-page .page-banner .cta h1 {
+        .page.page-the-project .page-banner .cta h1 {
           font-size: 3rem; } }
 
-.page.page-about-page .statement {
+.page.page-the-project .statement {
   margin-bottom: 170px; }
-  .page.page-about-page .statement figure {
+  .page.page-the-project .statement figure {
     background: pink;
     height: 235px; }
     @media screen and (max-width: 768px) {
-      .page.page-about-page .statement figure {
+      .page.page-the-project .statement figure {
         margin-bottom: 20px; } }
-  .page.page-about-page .statement h2 {
+  .page.page-the-project .statement h2 {
     font-size: 2.4rem;
     font-weight: bold;
     line-height: 1.33;
     color: #000000;
     margin: 0 0 25px 0; }
-    .page.page-about-page .statement h2 > span {
+    .page.page-the-project .statement h2 > span {
       color: #39bddc; }
-  .page.page-about-page .statement p {
+  .page.page-the-project .statement p {
     font-family: "adelle-sans", Helvetica, Arial, sans-serif;
     font-size: 2rem;
     line-height: 1.8;
     color: #333333;
     margin-bottom: 34px; }
     @media screen and (min-width: 768px) {
-      .page.page-about-page .statement p:last-child {
+      .page.page-the-project .statement p:last-child {
         margin-bottom: 0; } }
 
-.page.page-about-page .perspective {
+.page.page-the-project .perspective {
   margin-bottom: 170px; }
-  .page.page-about-page .perspective figure {
+  .page.page-the-project .perspective figure {
     height: 258px;
     background: pink; }
-  .page.page-about-page .perspective h2 {
+  .page.page-the-project .perspective h2 {
     font-size: 1.8rem;
     font-weight: bold;
     line-height: 1.78;
     color: #39bddc;
     margin: 42px 0 20px 0;
     text-transform: uppercase; }
-  .page.page-about-page .perspective p {
+  .page.page-the-project .perspective p {
     color: #333333;
     margin-bottom: 34px;
     font-size: 1.8rem; }
     @media screen and (min-width: 768px) {
-      .page.page-about-page .perspective p:last-child {
+      .page.page-the-project .perspective p:last-child {
         margin-bottom: 0; } }
 
-.page.page-about-page .full-image > div {
+.page.page-the-project .full-image > div {
   background: pink; }
 
-.page.page-about-page .full-image img {
+.page.page-the-project .full-image img {
   height: 453px; }
 
-.page.page-about-page .journalists {
+.page.page-the-project .journalists {
   margin: 60px 0 160px 0; }
-  .page.page-about-page .journalists h2 {
+  .page.page-the-project .journalists h2 {
     font-size: 2.4rem;
     font-weight: bold;
     line-height: 1.33;
     color: #000000;
     margin: 0 0 25px 0; }
-    .page.page-about-page .journalists h2 > span {
+    .page.page-the-project .journalists h2 > span {
       color: #39bddc; }
-  .page.page-about-page .journalists p {
+  .page.page-the-project .journalists p {
     font-size: 18px;
     line-height: 1.44;
     color: #333333; }
 
-.page.page-about-page .hotspots {
+.page.page-the-project .hotspots {
   margin-bottom: 100px; }
-  .page.page-about-page .hotspots .hotspot {
+  .page.page-the-project .hotspots .hotspot {
     margin-bottom: 95px; }
-    .page.page-about-page .hotspots .hotspot figure {
+    .page.page-the-project .hotspots .hotspot figure {
       background: pink;
       height: 231px; }
-    .page.page-about-page .hotspots .hotspot h2 {
+    .page.page-the-project .hotspots .hotspot h2 {
       font-size: 18px;
       line-height: 1.78;
       color: #333333;
@@ -9091,59 +9138,12 @@ body.article {
       margin-top: 10px;
       font-weight: normal;
       border-bottom: 1px solid black; }
-    .page.page-about-page .hotspots .hotspot p {
+    .page.page-the-project .hotspots .hotspot p {
       font-size: 1.4rem;
       font-weight: bold;
       line-height: 1.57;
       color: #333333;
       margin-bottom: 24px; }
-
-.page.page-supporters {
-  background: #fff; }
-  .page.page-supporters .page-banner {
-    height: 550px;
-    background-image: url("https://res.cloudinary.com/cognitives/image/upload/v1496728861/d4z3txcbw3sbetvwghvm.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-bottom: 10px; }
-    .page.page-supporters .page-banner > .banner-text {
-      padding-top: 55px;
-      color: #fff; }
-      .page.page-supporters .page-banner > .banner-text h1 {
-        font-size: 4.8rem;
-        margin-bottom: 40px;
-        line-height: 1.4; }
-      .page.page-supporters .page-banner > .banner-text p {
-        font-size: 1.7rem;
-        line-height: 2;
-        font-weight: lighter;
-        margin-bottom: 20px; }
-  .page.page-supporters .statement {
-    margin: 40px 0 30px 0; }
-    .page.page-supporters .statement h1 {
-      font-size: 3.8rem;
-      font-weight: lighter;
-      margin-bottom: 25px; }
-    .page.page-supporters .statement p {
-      font-size: 1.7rem;
-      line-height: 2;
-      font-weight: 300; }
-  .page.page-supporters .partner {
-    margin-bottom: 35px; }
-    .page.page-supporters .partner > div > img {
-      border-radius: 500px;
-      margin: 1em auto 0 auto;
-      display: block; }
-    .page.page-supporters .partner h1 {
-      font-size: 3.8rem;
-      font-weight: lighter;
-      margin-bottom: 25px; }
-    .page.page-supporters .partner p {
-      font-size: 1.6rem;
-      line-height: 2;
-      font-weight: lighter; }
-      .page.page-supporters .partner p a {
-        color: #009E91; }
 
 body.channel.hotspots .hotspot {
   margin-bottom: 55px; }
