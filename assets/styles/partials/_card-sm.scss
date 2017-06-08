@@ -375,116 +375,80 @@
 }
 
 
-.videos-section {
-    .card-sm{
-        a.card {
-            article {
-                > figure{
-                    height:200px;
-                    // @media screen and (max-width: $sm-break){
-                    //     height:auto;
-                    // }
-                    @media screen and (max-width: $mobile-break){
-                        height:auto;
-                    }
+
+.index-bottom, .videos-section {
+    .card-sm {
+
+        @media screen and (max-width: $sm-break){
+            a.card {
+                height:auto;
+                
+                figure {
+                    float:left;
                 }
 
-                >.content {
+
+                .content {
+                    height:242px;
+                    padding: 23px 28px 0 24px;
+                    width:auto;
+
+                    .category {
+                        margin-bottom: 15px;
+                    }
+
                     h2 {
-                        margin-top:5px;
-                        height: 52px;
-                        font-size: rem(17);
                         font-weight: bold;
-                        line-height: 1.29;
-                        color: #000000;
+                        font-size: rem(24);
+                        height: 64px;
+                        margin-bottom: 7px;
+                        line-height: 1.3em;
+                    }
+                    >p {
+                        display:block;
+                        height: 66px;
+                        font-size: rem(16);
+                        padding-bottom: 16px;
+                        margin-bottom: 16px;
+                        border-bottom: 2px solid #dadada;
                     }
                 }
             }
-            &.social {
-                article {
-                    background:transparent;
-                }
-            }
         }
-    }
-}
 
-
-.sidebar-news {
-
-    @media screen and (max-width: $sm-break){
-        .card-sm{
+        @media screen and (max-width: $mobile-break){
             a.card {
-                &.without__image {
-                    > article {
-                        > .content{
-                            > p {   
-                                min-height:185px;
-                                font-size:rem(30);
-                                margin-top: 0;
-                            }
-                        }
+                height:auto;
+
+                figure {
+                    float:left;
+                }
+
+
+                .content {
+                    height:115px;
+                    padding: 7px 0 0 10px;
+                    width:100%;
+
+
+                    .category {
+                        margin-bottom: 5px;
                     }
 
+                    h2 {
+                        font-weight: normal;
+                        font-size: rem(16);
+                        // height: 64px;
+                        margin-bottom: 7px;
+                        line-height: 1.3em;
+                    }
+                    >p {
+                        display:none;
+                    }
                 }
             }
         }
-    }
 
 
-
-    @media screen and (max-width: $mobile-break){
-        .card-sm{
-            a.card {
-                &.without__image {
-                    > article {
-                        > .content{
-                            > p {   
-                                font-size:rem(18);
-
-                                min-height:50px;
-                                margin-top: 0;
-                            }
-                        }
-                    }
-
-                }
-            }
-        }
-    }
-}
-
-.index-bottom {
-    @media screen and (max-width: $mobile-break){
-
-        .card-sm{
-            
-            margin-bottom:20px;
-
-            a.card {
-
-                // margin-left:0;
-                // margin-right:0;
-                // height:240px;
-
-
-                > article {
-
-                    > figure {
-                        position: absolute;
-                        left: 0;
-                        right: 0;
-                        top: 0;
-                        height:100%;
-                        width: 100%;
-
-                    }
-                    > .content{
-                    }
-                }
-
-            }
-
-        }
     }
 }

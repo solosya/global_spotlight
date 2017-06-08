@@ -146,34 +146,26 @@
     }
 
     .card-sm {
-        a.card {
-            @media screen and (max-width: $mmd-break-down){
+        @media screen and (max-width: $mmd-break-down){
+            a.card {
                 height:auto;
-            }
 
-            .content {
-                @media screen and (max-width: $mmd-break-down){
+                .content {
                     height:242px;
                     padding: 23px 28px 0 24px;
-                }
 
-                .category {
-                    @media screen and (max-width: $mmd-break-down){
+                    .category {
                         margin-bottom: 15px;
                     }
-                }
 
-                h2 {
-                    @media screen and (max-width: $mmd-break-down){
+                    h2 {
                         font-weight: bold;
                         font-size: rem(24);
                         height: 64px;
                         margin-bottom: 7px;
                         line-height: 1.3em;
                     }
-                }
-                >p {
-                    @media screen and (max-width: $mmd-break-down){
+                    >p {
                         display:block;
                         height: 66px;
                         font-size: rem(16);
@@ -182,9 +174,36 @@
                         border-bottom: 2px solid #dadada;
                     }
                 }
-
             }
         }
+
+        @media screen and (max-width: $mobile-break){
+            a.card {
+                height:auto;
+
+                .content {
+                    height:115px;
+                    padding: 7px 0 0 10px;
+
+                    .category {
+                        margin-bottom: 5px;
+                    }
+
+                    h2 {
+                        font-weight: normal;
+                        font-size: rem(16);
+                        // height: 64px;
+                        margin-bottom: 7px;
+                        line-height: 1.3em;
+                    }
+                    >p {
+                        display:none;
+                    }
+                }
+            }
+        }
+
+
     }
 
 
