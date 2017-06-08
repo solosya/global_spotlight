@@ -9289,11 +9289,11 @@ body.channel.hotspots .hotspot {
   @media screen and (max-width: 991px) {
     body.channel.hotspots .hotspot .card-sm {
       margin-top: 20px;
-      margin-left: -15px; } }
+      margin-left: 0; } }
   @media screen and (max-width: 768px) {
     body.channel.hotspots .hotspot .card-sm {
       margin-top: 20px;
-      margin-left: -15px; }
+      margin-left: 0; }
       body.channel.hotspots .hotspot .card-sm a.card {
         height: auto; }
         body.channel.hotspots .hotspot .card-sm a.card figure {
