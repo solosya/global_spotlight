@@ -27,8 +27,8 @@
     {% set promotedClass = (article.isPromoted) ? 'ad_icon' : '' %}
     {% set hasArticleMediaClass = (article.hasMedia == 'TRUE' or article.hasPreviewMedia == 'TRUE') ? 'withImage__content': 'without__image' %}
 
-    {% set publishDate = _AppHelper.getDefaultTimezoneDateTime(article.publishDate) %}
-    {% set publishedAgo = _AppHelper.getSecondsSincePublished(article.publishDateTime) %}
+    {% set publishDate = _AppHelper.getDateTimeBasedOnTimezone(article.publishDate, 'F, Y') %}
+    {# {% set publishedAgo = _AppHelper.getSecondsSincePublished(article.publishDateTime) %} #}
     {# {% set publishedAgo = 1 %} #}
 
 {#     {% set updatedRelativeTime = "" %}
@@ -39,9 +39,9 @@
         {% endif %}
     {% endif %}
  #}
-    {% set publishedRelativeTime = '' %}
+    {# {% set publishedRelativeTime = '' %} #}
     {# {% if publishedAgo < 86400 %} #}
-        {% set publishedRelativeTime = _AppHelper.getRelativeTime(article.publishDateTime) ~ " ago" %}
+        {# {% set publishedRelativeTime = _AppHelper.getRelativeTime(article.publishDateTime) ~ " ago" %} #}
     {# {% endif %} #}
 
     {% set profileImg = _Media.getMediaUrl(article.createdBy['media'], 34, 34, {radius: 'max', gravity: 'face', 'crop': 'thumb', type: 'user'}) %}
@@ -83,9 +83,7 @@
                         <p>{{ quotes.smarten(article.excerpt | raw) }}</p>
                     {% endif %}
                     
-                    {% if publishedRelativeTime != '' %}  
-                        <time datetime="2016-11-16">{{publishedRelativeTime}}</time>
-                    {% endif %}
+                    <time datetime="{{publishDate}}">{{publishDate}}</time>
                     
                     <div class="author">
                         <img src="{{profileImg}}" class="img-circle">
