@@ -10016,6 +10016,11 @@ body.channel.hotspots .hotspot {
         width: auto;
         overflow: hidden;
         height: 242px; }
+        @media screen and (max-width: 767px) {
+          .card-sm a.card > article > figure {
+            width: 265px;
+            height: 242px;
+            flex: 0 0 265px; } }
         @media screen and (max-width: 620px) {
           .card-sm a.card > article > figure {
             width: 116px;
@@ -10255,7 +10260,9 @@ body.channel.hotspots .hotspot {
         margin-bottom: 7px;
         line-height: 1.3em; }
       .index-bottom .card-sm a.card .content > p, .videos-section .card-sm a.card .content > p {
-        display: none; } }
+        display: none; }
+    .index-bottom .card-sm a.card.social .content > p, .videos-section .card-sm a.card.social .content > p {
+      display: block; } }
 
 .card-lg {
   margin-bottom: 45px; }

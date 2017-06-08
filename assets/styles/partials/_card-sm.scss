@@ -36,11 +36,11 @@
                 height:242px;
 
 
-                // @media screen and (max-width: $sm-break-down){
-                //     width: 100px;
-                //     height:110px;
-                //     flex: 0 0 110px;
-                // }
+                @media screen and (max-width: $sm-break-down){
+                    width: 265px;
+                    height:242px;
+                    flex: 0 0 265px;
+                }
 
 
                 @media screen and (max-width: $mobile-break){
@@ -444,6 +444,13 @@
                     }
                     >p {
                         display:none;
+                    }
+                }
+                &.social {
+                    .content {
+                        >p {
+                            display:block;
+                        }
                     }
                 }
             }
