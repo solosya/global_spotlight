@@ -2654,7 +2654,7 @@ select[multiple].input-lg,
 
 .navbar-brand {
   float: left;
-  padding: 12px;
+  padding: 28px 15px;
   font-size: 13px;
   line-height: 14px;
   height: 70px; }
@@ -2662,8 +2662,6 @@ select[multiple].input-lg,
     text-decoration: none; }
   .navbar-brand > img {
     display: block; }
-  .navbar-brand > img.text-logo {
-    margin-top: 12px; }
   @media (min-width: 768px) {
     .navbar > .container .navbar-brand, .login-page .navbar > .container .navbar-brand, .navbar > .profile__container .navbar-brand,
     .navbar > .container-fluid .navbar-brand {
@@ -2999,9 +2997,10 @@ select[multiple].input-lg,
   outline: 0; }
 
 .modal-backdrop {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
+  bottom: 0;
   left: 0;
   z-index: 1040;
   background-color: #000; }
@@ -9104,8 +9103,8 @@ body.page .page-about {
 
 body.page .page-project .page-banner {
   height: 560px;
-  background: pink;
-  margin-bottom: 180px; }
+  margin-bottom: 180px;
+  background-image: url("https://res.cloudinary.com/cognitives/image/upload/v1496900449/ibpe1rnsfvvsn3ugt7rb.jpg\a"); }
   body.page .page-project .page-banner .cta {
     height: 346px;
     width: 353px;
@@ -9143,7 +9142,6 @@ body.page .page-project .page-banner {
 body.page .page-project .statement {
   margin-bottom: 170px; }
   body.page .page-project .statement figure {
-    background: pink;
     height: 235px; }
     @media screen and (max-width: 768px) {
       body.page .page-project .statement figure {
@@ -9169,8 +9167,7 @@ body.page .page-project .statement {
 body.page .page-project .perspective {
   margin-bottom: 170px; }
   body.page .page-project .perspective figure {
-    height: 258px;
-    background: pink; }
+    height: 258px; }
   body.page .page-project .perspective h2 {
     font-size: 1.8rem;
     font-weight: bold;
@@ -9185,9 +9182,6 @@ body.page .page-project .perspective {
     @media screen and (min-width: 768px) {
       body.page .page-project .perspective p:last-child {
         margin-bottom: 0; } }
-
-body.page .page-project .full-image > div {
-  background: pink; }
 
 body.page .page-project .full-image img {
   height: 453px; }
@@ -9212,7 +9206,6 @@ body.page .page-project .hotspots {
   body.page .page-project .hotspots .hotspot {
     margin-bottom: 95px; }
     body.page .page-project .hotspots .hotspot figure {
-      background: pink;
       height: 231px; }
     body.page .page-project .hotspots .hotspot h2 {
       font-size: 18px;

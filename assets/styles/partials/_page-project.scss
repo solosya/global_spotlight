@@ -3,8 +3,10 @@ body.page {
         
         .page-banner {
             height:560px;
-            background:pink;
+            // background:pink;
             margin-bottom:180px;
+            background-image: url("https://res.cloudinary.com/cognitives/image/upload/v1496900449/ibpe1rnsfvvsn3ugt7rb.jpg
+");
 
             .cta {
                 height:346px;
@@ -56,7 +58,7 @@ body.page {
             margin-bottom:170px;
 
             figure {
-                background:pink;
+                // background:pink;
                 height: 235px;
                 @media screen and (max-width: $sm-break){
                     margin-bottom:20px;
@@ -96,7 +98,7 @@ body.page {
 
             figure {
                 height: 258px;
-                background:pink;
+                // background:pink;
             }
         
             h2 {
@@ -128,7 +130,7 @@ body.page {
 
         .full-image {
             > div {
-                background:pink;
+                // background:pink;
             }
             img {
                 height:453px;
@@ -168,7 +170,7 @@ body.page {
                 margin-bottom:95px;
 
                 figure {
-                    background:pink;
+                    // background:pink;
                     height:231px;
                 }
 
