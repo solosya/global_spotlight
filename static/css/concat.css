@@ -9145,22 +9145,22 @@ body.article {
       .page.page-supporters .partner p a {
         color: #009E91; }
 
-body.channel.livingroom .hotspot {
+body.channel.hotspots .hotspot {
   margin-bottom: 55px; }
-  body.channel.livingroom .hotspot h1 {
+  body.channel.hotspots .hotspot h1 {
     font-size: 2.6rem;
     margin-bottom: 12px; }
-  body.channel.livingroom .hotspot .card-sm {
+  body.channel.hotspots .hotspot .card-sm {
     margin-bottom: 0;
     margin-left: 60px; }
-    body.channel.livingroom .hotspot .card-sm figure {
+    body.channel.hotspots .hotspot .card-sm figure {
       height: 250px; }
-    body.channel.livingroom .hotspot .card-sm h2 {
+    body.channel.hotspots .hotspot .card-sm h2 {
       font-weight: bold;
       line-height: 1.29; }
-  body.channel.livingroom .hotspot .card-lg {
+  body.channel.hotspots .hotspot .card-lg {
     margin-bottom: 0; }
-  body.channel.livingroom .hotspot .line {
+  body.channel.hotspots .hotspot .line {
     width: 100%;
     border-bottom: 1px solid #979797;
     margin-top: 30px; }
