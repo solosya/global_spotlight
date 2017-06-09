@@ -9143,6 +9143,9 @@ body.page .page-project .page-banner {
   height: 560px;
   margin-bottom: 180px;
   background-image: url("http://res.cloudinary.com/cognitives/image/upload/c_fill,dpr_auto,f_auto,fl_lossy,g_faces,h_720,q_auto,w_1280/ibpe1rnsfvvsn3ugt7rb\a"); }
+  @media screen and (max-width: 1119px) and (min-width: 769px) {
+    body.page .page-project .page-banner {
+      margin-bottom: 85px; } }
   @media screen and (max-width: 768px) {
     body.page .page-project .page-banner {
       background-position-x: -450px;
@@ -9184,6 +9187,9 @@ body.page .page-project .page-banner {
 
 body.page .page-project .statement {
   margin-bottom: 170px; }
+  @media screen and (max-width: 1119px) {
+    body.page .page-project .statement {
+      margin-bottom: 85px; } }
   @media screen and (max-width: 768px) {
     body.page .page-project .statement {
       margin-bottom: 15px; } }
@@ -9212,6 +9218,9 @@ body.page .page-project .statement {
 
 body.page .page-project .perspective {
   margin-bottom: 170px; }
+  @media screen and (max-width: 1119px) {
+    body.page .page-project .perspective {
+      margin-bottom: 85px; } }
   @media screen and (max-width: 768px) {
     body.page .page-project .perspective {
       margin-bottom: 15px; } }
@@ -9243,6 +9252,9 @@ body.page .page-project .full-image img {
 
 body.page .page-project .journalists {
   margin: 60px -15px 160px -15px; }
+  @media screen and (max-width: 1119px) {
+    body.page .page-project .journalists {
+      margin: 30px -15px 65px -15px; } }
   @media screen and (max-width: 768px) {
     body.page .page-project .journalists {
       margin: 10px -15px 15px -15px; } }
@@ -9261,11 +9273,17 @@ body.page .page-project .journalists {
 
 body.page .page-project .hotspots {
   margin-bottom: 100px; }
+  @media screen and (max-width: 1119px) {
+    body.page .page-project .hotspots {
+      margin-bottom: 50px; } }
   @media screen and (max-width: 768px) {
     body.page .page-project .hotspots {
       margin-bottom: 15px; } }
   body.page .page-project .hotspots .hotspot {
     margin-bottom: 95px; }
+    @media screen and (max-width: 1119px) {
+      body.page .page-project .hotspots .hotspot {
+        margin-bottom: 50px; } }
     @media screen and (max-width: 768px) {
       body.page .page-project .hotspots .hotspot {
         margin-bottom: 15px; } }
