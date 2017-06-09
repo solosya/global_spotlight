@@ -6371,7 +6371,8 @@ body.no_profile .profile_overlay {
 
 .modal-backdrop.in {
   opacity: 0.95;
-  filter: alpha(opacity=95); }
+  filter: alpha(opacity=95);
+  display: none; }
 
 .modal-intro {
   color: #ffffff;

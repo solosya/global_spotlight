@@ -9,6 +9,8 @@
 }
 .modal-backdrop.in {
 	@include opacity(0.95);
+	display: none;
+
 }
 .modal-intro {
 	color:$white;
