@@ -192,7 +192,7 @@
                              {{ quotes.smarten(social.content  | raw) }}
                     </p>
 
-                    <time datetime="2016-11-16">{{_AppHelper.getDateTimeBasedOnTimezone(social.publishDate,'d M Y')}}</time>
+                    <time datetime="2016-11-16">{{_AppHelper.getDateTimeBasedOnTimezone(social.publishDate, 'F, Y')}}</time>
                     
                     <div class="author">
                         <img src="{{social.user.media.path}}" class="img-circle">
