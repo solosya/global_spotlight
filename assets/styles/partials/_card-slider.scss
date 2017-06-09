@@ -40,8 +40,8 @@
 
 
     @media screen and (max-width: $sm-break){
-        margin-left: -15px;
-        margin-right: -15px;
+        // margin-left: -15px;
+        // margin-right: -15px;
     }
 
     .featured {
@@ -130,7 +130,7 @@
                     height:100%;
                     position: absolute;
                     top:0;
-                    padding:73px 20px 0 20px;
+                    padding:63px 20px 0 20px;
                     color: #FFF;
                 }
                 
@@ -235,7 +235,7 @@
                         border: 0;
                         color: #dadada;
                         font-weight: normal;
-                        margin-bottom:25px;
+                        margin-bottom:20px;
 
                     }
                 }
@@ -267,6 +267,7 @@
                             font-size: em(12);
                             padding: 0;
                             color: #FFF;
+                            margin-top:10px;
                         }
                     }
                 }
