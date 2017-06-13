@@ -471,10 +471,8 @@ Card.prototype.events = function()
             'blog_guid' : container.data('blogid')
         };
 
-        console.log(options);
 
         $.fn.Ajax_LoadBlogArticles(options).done(function(data) {
-            console.log(data);
 
             if (data.success == 1) {
 

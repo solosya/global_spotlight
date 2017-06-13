@@ -4,7 +4,10 @@
 {{ set(this, 'title', article.title) }}
 {% set networkData = _Network.getNetworkData() %}
 {% set blogData      = _Blog.getBlog() %}
-{% set blogName      = blogData.title %}
+{# {% set blogName      = blogData.title %} #}
+
+{# {{dump(blogData)}}; #}
+{% set articlesArr = _Blog.getBlogFeed({'limit': limit, 'offset': 0}) %}
 
 
 {# {{this.registerJs("ArticleController.view();")}} #}
@@ -147,7 +150,7 @@
                             <section class="row">
                                 <h2>Related articles</h2>
 
-                                {% set popularArticles = _Article.getPopularArticles({ limit: 4, excludeArticleIds : article.id, sortBy : "VIEWS" }) %}
+                                {# {% set popularArticles = _Article.getPopularArticles({ limit: 4, excludeArticleIds : article.id, sortBy : "VIEWS" }) %} #}
                                 {% if popularArticles|length > 0 %}
                                     {% for article in popularArticles %}
                                         {{this.render('partials/_single-article.twig', {article: article, containerClass: 'col-sm-6 col-md-3 card-sm s110x110'}) | raw}}
