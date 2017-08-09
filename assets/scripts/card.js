@@ -78,12 +78,9 @@ Card.prototype.screen = function()
         var screenOption = currentScreen-1;
         options.currentScreen = currentScreen;
 
-        // console.log('grigidig');
         options.limit = options.screens[screenOption].limit;
         options.containerClass = options.screens[screenOption].style;
 
-        // articleCount = articleCount + options.limit;
-        // console.log('Article Count: ', articleCount);
         if (articleCount >= options.count) {
             articleCount = 0;
         }
@@ -91,11 +88,8 @@ Card.prototype.screen = function()
         options.offset = articleCount;
         options.nonpinned = articleCount;
 
-        // console.log(options);
         $.fn.Ajax_LoadBlogArticles(options).done(function(data) {
-            // console.log(data);
             if (data.articles.length == 0 ) {
-                // console.log('setting article count to zero');
                 articleCount = 0;
                 return;
             }
@@ -167,7 +161,7 @@ Card.prototype.bindPinUnpinArticle = function()
 
 Card.prototype.bindDeleteHideArticle = function()
 {
-
+    console.log('binding delete article');
     $('button.HideBlogArticle').Ajax_deleteArticle({
         onSuccess: function(data, obj){
             // var section = $(obj).closest('.section__content');
@@ -432,11 +426,14 @@ Card.prototype.events = function()
     console.log('events');
     var self = this;
 
+
+    console.log(_appJsConfig );
     if(_appJsConfig.isUserLoggedIn === 1 && _appJsConfig.userHasBlogAccess === 1) {
         initSwap();
     }
 
     function initSwap() {
+        console.log('init swap');
         self.initDroppable();
         self.initDraggable();
         
