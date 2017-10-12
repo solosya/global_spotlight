@@ -2,11 +2,6 @@
     "module" : {
         "debug" : {
            "enabled" : true
-        },
-        "page" : {
-            "contentEditor" : {
-                "enabled" : true
-            }
         }
     }
 }
